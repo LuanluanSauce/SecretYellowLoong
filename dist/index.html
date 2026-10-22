@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="偷偷摆奶龙，吸引同学打卡，赶在安保到来前抱龙跑路。一个校园躲猫猫与放置经营小游戏。">
+  <title>此处禁止摆龙 · 校园摆龙计划</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/nailoong.svg">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 6h4l2-3h4l2 3h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8V4Z"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 2-2.5 2-2.5 4M12 17h.01"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4ZM16 8a6 6 0 0 1 0 8M19 4a11 11 0 0 1 0 16"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4ZM17 9l5 6m0-6-5 6"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2 3h3l3 12h11l3-8H6M9 15l-1 3h11"/><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2ZM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m2 5 6-3 8 3 6-3v17l-6 3-8-3-6 3V5ZM8 2v17M16 5v17"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-6 9-9 10-3-1-9-5-9-10V6l9-4Z"/><path d="M12 7v6m0 4h.01"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 0 1-10 0V3ZM7 5H3v2a5 5 0 0 0 5 5m9-7h4v2a5 5 0 0 1-5 5M12 14v6m-5 1h10"/></symbol>
+  </defs></svg>
+  <header class="site-header">
+    <a href="./" class="brand" aria-label="此处禁止摆龙 首页"><span class="brand-mark"><img src="./assets/nailoong.svg" alt=""></span><span>此处禁止摆龙<span class="brand-dot">✳</span></span></a>
+    <span class="header-caption">校园摆龙计划 <i></i> VOL. 01</span>
+    <div class="header-actions"><span class="best-label"><svg class="icon"><use href="#i-trophy"/></svg> 最高打卡 <b id="best">0</b></span><button id="help-button" class="icon-button" aria-label="玩法说明" title="玩法说明"><svg class="icon"><use href="#i-help"/></svg></button><button id="sound-button" class="icon-button" aria-label="开启音效" title="开启音效"><svg class="icon"><use id="sound-use" href="#i-mute"/></svg></button></div>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow"><span></span> 一场很新的校园游击展览</p><h1>奶龙可以撤，<span>热度不能凉。</span></h1><p class="intro-copy">找个好位置，把奶龙摆成校园顶流。安保来了？抱起就跑。</p></div><div class="intro-sticker"><svg class="icon"><use href="#i-spark"/></svg><span>今日社团任务<br><b>让全校看见这条龙</b></span><span class="sticker-star">✳</span></div></section>
+    <div class="game-layout">
+      <section class="game-panel" aria-label="校园游戏区域">
+        <div class="game-topbar"><div class="campus-name"><span class="live-dot"></span> 龙潭大学 <span class="campus-name-en">CAMPUS MAP</span></div><div class="game-stats"><span class="timer"><svg class="icon"><use href="#i-clock"/></svg><b id="time">03:00</b></span><span class="inventory" title="剩余立牌，包括当前这一张"><span class="tiny-board">▰</span><b id="lives">3</b><span>张立牌</span></span><button id="pause-button" class="icon-button small" aria-label="暂停游戏" disabled><svg class="icon"><use id="pause-use" href="#i-pause"/></svg></button></div></div>
+        <div class="map-wrap" id="map-wrap">
+          <canvas id="game" width="1008" height="672" role="img" aria-label="俯视校园地图：左上食堂、右上图书馆、左下教学楼、右下宿舍。使用方向键移动，E 放下或抱起奶龙。"></canvas>
+          <div class="map-corner"><span class="compass">N<span>↑</span></span><span>龙潭大学 · 不完全地图</span></div>
+          <div id="alert-banner" class="alert-banner" hidden><svg class="icon"><use href="#i-shield"/></svg><span id="alert-text">有人注意到奶龙了</span></div>
+          <div id="grove-badge" class="grove-badge" hidden><span>✳</span> 树荫掩护中</div>
+          <div class="stage-overlay" id="stage-overlay">
+            <div class="start-card" id="start-card"><div class="card-sticker">社团机密 · 阅后即摆</div><img class="start-dragon" src="./assets/nailoong.svg" alt="举着小爪子的黄色奶龙立牌"><p class="eyebrow">OPERATION: NAILOONG</p><h2>今天，摆在哪里？</h2><p>3 分钟，<b id="ready-target">24</b> 人打卡。<br>在安保收走立牌前，把快乐传出去。</p><div class="mode-switch" aria-label="游戏难度"><button data-mode="easy">轻松摆摆</button><button data-mode="normal" class="selected">认真跑路</button></div><button id="start-button" class="primary-button">带上奶龙，出发 <svg class="icon"><use href="#i-arrow"/></svg></button><div class="start-note">WASD / 方向键移动 · E 放置或抱起</div></div>
+            <div class="pause-card" id="pause-card" hidden><span class="pause-illustration">☕</span><p class="eyebrow">TAKE A LITTLE BREAK</p><h2>奶龙也要歇一会儿</h2><p>校园时间暂停了，放心摸鱼。</p><button id="resume-button" class="primary-button">继续摆龙 <svg class="icon"><use href="#i-play"/></svg></button><button class="text-button" id="restart-button">重新开一局</button></div>
+            <div class="result-card" id="result-card" hidden><img src="./assets/nailoong.svg" alt="奶龙" class="result-dragon"><p class="eyebrow" id="result-eyebrow">CAMPUS SUPERSTAR</p><h2 id="result-title">今天的校园顶流！</h2><p id="result-copy"></p><div class="result-stats"><div><b id="result-score">0</b><span>同学打卡</span></div><div><b id="result-earned">0</b><span>累计好感</span></div><div><b id="result-moves">0</b><span>次流动摆摊</span></div></div><button id="again-button" class="primary-button">再摆一局 <svg class="icon"><use href="#i-arrow"/></svg></button><span class="new-record" id="new-record" hidden>✦ 新纪录！龙潭大学记住了你</span></div>
+          </div>
+        </div>
+        <div class="game-bottom"><div class="board-status"><span class="board-status-dot" id="board-status-dot"></span><span id="board-location">奶龙在怀里，校园在等你</span></div><div class="map-legend"><span><i class="legend-player"></i>你</span><span><i class="legend-student"></i>同学</span><span><i class="legend-guard"></i>安保</span><span><i class="legend-grove"></i>藏身点</span></div></div>
+      </section>
+      <aside class="sidebar" aria-label="经营面板">
+        <section class="mission-card"><div class="section-heading"><h2>校园顶流养成中</h2><span class="mini-label">本局目标</span></div><div class="photo-score"><svg class="icon"><use href="#i-camera"/></svg><b id="score">0</b><span>/ <span id="target">24</span> 人打卡</span><span class="score-stamp" id="goal-stamp">还差一点点</span></div><div class="progress-track"><div id="goal-progress"></div></div><div class="heat-row"><span>围观热度 <span class="heat-emoji">♨</span></span><b id="heat-label">无人问津</b></div><div class="heat-meter"><div id="heat-progress"></div><span></span><span></span><span></span></div><p class="heat-hint" id="heat-hint">越热闹，越容易引来安保。</p></section>
+        <section class="upgrade-card"><div class="section-heading"><h2>社团后勤部</h2><span class="heart-wallet"><svg class="icon"><use href="#i-heart"/></svg><b id="hearts">12</b></span></div><p class="section-description">同学的好感，都变成了摆龙经费。</p>
+          <button class="upgrade-button" data-upgrade="cart"><span class="upgrade-icon cart"><svg class="icon"><use href="#i-cart"/></svg></span><span class="upgrade-info"><b>小推车 <span class="level" id="cart-level"></span></b><small id="cart-detail">抱龙移速 +22%</small></span><span class="upgrade-price" id="cart-price">12 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+          <button class="upgrade-button" data-upgrade="decor"><span class="upgrade-icon decor"><svg class="icon"><use href="#i-spark"/></svg></span><span class="upgrade-info"><b>发光灯牌 <span class="level" id="decor-level"></span></b><small id="decor-detail">吸引范围 +30%</small></span><span class="upgrade-price" id="decor-price">15 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+          <button class="upgrade-button" data-upgrade="map"><span class="upgrade-icon map"><svg class="icon"><use href="#i-map"/></svg></span><span class="upgrade-info"><b>校园情报 <span class="level" id="map-level"></span></b><small id="map-detail">看见安保巡逻路线</small></span><span class="upgrade-price" id="map-price">18 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+        </section>
+        <section class="diary-card"><div class="section-heading"><h2>校园小道消息</h2><span class="diary-live"><i></i> 实时</span></div><div id="event-feed" class="event-feed" role="log" aria-live="polite" aria-relevant="additions"></div><div class="diary-footnote">“再拍一张就走” —— 每个被收龙的你</div></section>
+      </aside>
+    </div>
+    <section class="control-bar" aria-label="游戏操作"><div class="keyboard-guide"><span class="key-group"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span>移动<span class="control-sub">也可点击地图</span></span><i></i><kbd class="wide-key">Shift</kbd><span>冲刺<span class="stamina-track"><span id="stamina"></span></span></span></div><div class="touch-pad" aria-label="方向控制"><button data-dir="up" aria-label="向上">↑</button><button data-dir="left" aria-label="向左">←</button><button data-dir="down" aria-label="向下">↓</button><button data-dir="right" aria-label="向右">→</button></div><div class="action-area"><button class="run-button" id="run-button" aria-pressed="false">冲刺 <span>↑</span></button><span class="action-hint" id="action-hint">找个好地方，开摆！</span><button class="interact-button" id="interact-button" disabled><kbd>E</kbd><span id="interact-label">放下奶龙</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></section>
+    <footer><span>✳ 快乐可以是纸做的。</span><button id="credits-button">玩法与创作参考 <span>↗</span></button><span>一个认真胡闹的校园小游戏</span></footer>
+  </main>
+  <dialog id="help-dialog"><div class="dialog-top"><span class="eyebrow">社团新生入门手册</span><button class="icon-button" id="close-help" aria-label="关闭说明"><svg class="icon"><use href="#i-close"/></svg></button></div><h2>摆得下，也要跑得掉。</h2><div class="help-steps"><div><span>01</span><p><b>选个好位置</b>方向键 / WASD 移动，或点击地图寻路。食堂打卡快，树林能藏身。按 <kbd>E</kbd> 或空格放下立牌。</p></div><div><span>02</span><p><b>等同学来打卡</b>站在立牌附近的同学会自动拍照，每人只算一次。打卡得好感，可以购买右侧三种升级。</p></div><div><span>03</span><p><b>安保来了就搬家</b>黄色视野变红时，赶快靠近立牌按 <kbd>E</kbd> 抱走。按住 <kbd>Shift</kbd> 冲刺；抱龙躲进树荫能避开远处视线。</p></div><div><span>04</span><p><b>撑到下课就算赢</b>3 分钟内达成打卡目标，并保住至少 1 张立牌。立牌被撤或抱龙被追上会损失 1 张，南门有备用立牌。</p></div></div><div class="help-note">前 11 秒是新手保护期。<kbd>Esc</kbd> / <kbd>P</kbd> 暂停。手机可用方向按钮、冲刺和放置按钮。</div><div class="credits"><h3>开源与形象参考</h3><p>格子地图与 Canvas 循环参考 <a href="https://gist.github.com/straker/769fb461e066147ea16ac2cb9463beae" target="_blank" rel="noreferrer">Straker · Basic Bomberman（CC0）↗</a>；校园规则、AI、经营系统和界面为本项目编写。</p><p>奶龙造型参考 <a href="https://www.nailoong.com/ipStar/Nailong/" target="_blank" rel="noreferrer">第七印象奶龙官网 ↗</a>，游戏内使用手绘简化 SVG 同人立牌。</p><p><a href="https://github.com/LuanluanSauce/SecretYellowLoong/archive/refs/heads/main.zip" download>下载这一版完整源码 ↗</a> · <a href="./offline.html" download="SecretYellowLoong-offline.html">下载离线版 ↗</a> · <a href="./assets/nailoong.svg" download="nailoong.svg">奶龙 SVG 立牌 ↗</a></p></div><button id="help-ok" class="primary-button">懂了，这就去摆龙 <svg class="icon"><use href="#i-arrow"/></svg></button></dialog>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

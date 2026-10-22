@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 210" fill="none">
+  <title>奶龙简化 SVG 同人立牌</title>
+  <defs><linearGradient id="yellow" x1="40" y1="20" x2="145" y2="195" gradientUnits="userSpaceOnUse"><stop stop-color="#FFDD60"/><stop offset="1" stop-color="#FFC33F"/></linearGradient></defs>
+  <g stroke="#B08234" stroke-width="2.3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M129 158c19 5 26 0 35-12-1 22-16 30-35 20" fill="#F6BE3C"/>
+    <path d="M59 96c-12 2-18-8-23-20-5-12-18-10-21 0-7 23 11 53 34 54M124 95c13-3 20-14 22-26 2-14 17-16 20-3 7 27-9 52-30 61" fill="url(#yellow)"/>
+    <path d="m18 71-2-7 6 3m5-2 1-8 5 7m116-1 1-9 6 6m5 1 5-4-1 9" fill="#AC8951"/>
+    <ellipse cx="26" cy="80" rx="8" ry="6" fill="#F1B17E" stroke="none"/>
+    <ellipse cx="155" cy="72" rx="8" ry="6" fill="#F1B17E" stroke="none"/>
+    <path d="M52 96c-12 19-14 40-11 63 1 15 1 28 8 36 6 6 25 6 30 0l6-16h18l6 17c7 7 25 4 28-2 6-11 1-18 2-37 0-23-5-45-18-60" fill="url(#yellow)"/>
+    <ellipse cx="93" cy="146" rx="33" ry="38" fill="#FFF0A8" stroke="none"/>
+    <path d="M51 99C32 89 26 67 32 44 39 15 63 9 88 12c30-4 53 16 56 42 3 24-4 42-23 50-19 11-51 10-70-5Z" fill="url(#yellow)"/>
+    <path d="M43 44c7-15 20-21 36-21" stroke="#FFE991" stroke-width="5"/>
+    <ellipse cx="68" cy="59" rx="10" ry="13" fill="#FFF8D5"/>
+    <ellipse cx="111" cy="54" rx="10" ry="13" fill="#FFF8D5"/>
+    <ellipse cx="70" cy="61" rx="7.5" ry="10" fill="#6AA56A" stroke="none"/>
+    <ellipse cx="111" cy="56" rx="7.5" ry="10" fill="#6AA56A" stroke="none"/>
+    <ellipse cx="71" cy="62" rx="5.3" ry="7.7" fill="#234932" stroke="none"/>
+    <ellipse cx="112" cy="57" rx="5.3" ry="7.7" fill="#234932" stroke="none"/>
+    <circle cx="73" cy="58" r="2.4" fill="white" stroke="none"/>
+    <circle cx="114" cy="53" r="2.4" fill="white" stroke="none"/>
+    <ellipse cx="53" cy="80" rx="15" ry="11" fill="#FFD558" stroke="none"/>
+    <ellipse cx="126" cy="76" rx="12" ry="9" fill="#FFD558" stroke="none"/>
+    <path d="M87 81c5 1 12-3 17-6 4 10 3 20-4 22-8 2-12-6-13-16Z" fill="#915430"/>
+    <path d="M92 92c4-5 9-5 13-3-1 6-8 9-13 3Z" fill="#E68B70" stroke="none"/>
+    <path d="m95 79 7-2 1 4-7 2Z" fill="#FFF6D6" stroke="none"/>
+    <path d="M57 193c-4-4-8-1-8 3m12 0c-1-5 5-5 6 0m5-1c0-5 5-5 6-1m37 1c-1-5 5-5 6 0m5 0c-1-5 5-6 6-1" stroke="#A17E48" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="偷偷摆奶龙，吸引同学打卡，赶在安保到来前抱龙跑路。一个校园躲猫猫与放置经营小游戏。">
+  <title>此处禁止摆龙 · 校园摆龙计划</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==">
+  <style>
+:root{--ink:#254e45;--muted:#8b9990;--paper:#f6f5ee;--line:#e2e5d9;--orange:#e38a58;--green:#3f7663;--cream:#fffef7;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;font-size:14px;-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:not-allowed}button:focus-visible,a:focus-visible{outline:3px solid #eaa76d;outline-offset:4px}a{color:inherit}.icon-definitions{position:absolute;width:0;height:0;overflow:hidden}.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}[hidden]{display:none!important}.site-header{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:30px;padding:0 max(30px,calc((100vw - 1400px)/2));background:#fbfaf5}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:21px;font-weight:850;letter-spacing:1px;white-space:nowrap}.brand-mark{display:block;width:40px;height:43px;overflow:hidden;background:#f6db74;border-radius:12px 12px 15px 15px;transform:rotate(-5deg);border:1.5px solid #cdb057}.brand-mark img{width:40px;height:48px;object-fit:contain;margin-top:3px}.brand-dot{font-size:10px;margin-left:3px;vertical-align:super;font-weight:500;letter-spacing:0;color:#9caa98}.header-caption{font-size:11px;color:#8e9a8b;letter-spacing:1.8px;display:flex;align-items:center;gap:10px}.header-caption i{width:4px;height:4px;background:#b9c1ae;border-radius:50%}.header-actions{margin-left:auto;display:flex;align-items:center;gap:10px}.best-label{display:flex;align-items:center;gap:7px;font-size:12px;color:#829381;margin-right:15px}.best-label b{font-family:var(--mono);font-size:15px;color:#49735d;margin-left:4px}.best-label .icon{width:16px;height:16px}.icon-button{border:1px solid var(--line);background:transparent;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;transition:background .15s}.icon-button:hover:not(:disabled){background:#e9edde}.icon-button:disabled{opacity:.35}.icon-button.small{width:30px;height:30px;border-color:#d8e0d0}.icon-button.small .icon{width:15px;height:15px}main{max-width:1400px;margin:auto;padding:0 30px}.intro{display:flex;align-items:center;justify-content:space-between;padding:32px 0 27px}.eyebrow{font-size:10px;font-weight:650;letter-spacing:1.9px;margin:0 0 10px;display:flex;gap:7px;align-items:center;color:#8c9d83}.eyebrow>span{width:5px;height:5px;border-radius:50%;background:#8d9c73}.intro h1{font-size:31px;letter-spacing:1px;margin:0;font-weight:850;line-height:1.5}.intro h1>span{color:#d67d4e}.intro-copy{font-size:12px;color:#8c9789;margin:8px 0 0;letter-spacing:.4px}.intro-sticker{display:flex;align-items:center;gap:13px;background:#eeecdb;padding:13px 18px;border-radius:5px;transform:rotate(2deg);position:relative;margin-right:6px;border:1px solid #e1e1c8}.intro-sticker:before{content:'';position:absolute;top:-6px;left:40%;width:37px;height:15px;background:#d9ddc5aa;transform:rotate(-8deg)}.intro-sticker>.icon{width:28px;height:28px;color:#9ca27b}.intro-sticker>span{font-size:10px;color:#8b927d;line-height:1.9}.intro-sticker b{font-size:13px;color:#627658;font-weight:600}.intro-sticker .sticker-star{font-size:34px;color:#b2b591;margin-left:17px}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:21px;align-items:stretch}.game-panel{border:1px solid #d3ddcc;border-radius:13px;overflow:hidden;background:#fffef7;box-shadow:0 5px 0 #e9ecdf;position:relative;align-self:start}.game-topbar{height:48px;padding:0 18px;display:flex;align-items:center;justify-content:space-between;background:#fcfcf5;border-bottom:1px solid #dce4d3}.campus-name{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.7px}.live-dot{width:6px;height:6px;border-radius:50%;background:#7d9b70;box-shadow:0 0 0 3px #e9eddf}.campus-name-en{font-family:var(--mono);color:#a0ac97;font-size:8px;font-weight:400;margin-left:2px;letter-spacing:1.4px}.game-stats{display:flex;align-items:center;gap:18px}.timer{display:flex;align-items:center;gap:6px}.timer .icon{width:15px;height:15px;color:#8e9c83}.timer b{font-size:16px;font-family:var(--mono);font-weight:600;letter-spacing:1px}.timer.urgent{color:#c76c50}.inventory{display:flex;align-items:center;gap:5px;font-size:10px;color:#9a9e87}.inventory b{color:#7d805c;font-family:var(--mono);font-size:13px}.tiny-board{color:#d6ab54;transform:rotate(-12deg);font-size:19px}.map-wrap{position:relative;aspect-ratio:1008/672;isolation:isolate;background:#dce6cb;overflow:hidden}canvas{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}.map-corner{position:absolute;top:13px;left:18px;color:#7a8e6c;display:flex;align-items:center;gap:9px;font-size:8px;letter-spacing:1px;pointer-events:none}.compass{display:flex;flex-direction:column;align-items:center;line-height:1;font:8px var(--mono)}.compass>span{font-size:20px}.alert-banner{position:absolute;top:16px;left:50%;transform:translateX(-50%);background:#fff4df;border:1px solid #e4b77c;color:#b57442;border-radius:30px;font-size:11px;display:flex;align-items:center;gap:7px;padding:8px 13px;white-space:nowrap;box-shadow:0 3px 8px #5b62431a;pointer-events:none}.alert-banner.danger{color:#b65a4a;background:#fff0e9;border-color:#e9aa8f;animation:alertPulse 1.2s infinite}.alert-banner .icon{width:15px;height:15px}.grove-badge{position:absolute;bottom:20px;left:20px;background:#426b4ddf;color:#f0f2da;padding:7px 11px;font-size:10px;border-radius:5px;pointer-events:none}.grove-badge span{margin-right:5px}.stage-overlay{position:absolute;inset:0;display:grid;place-items:center;background:#3b65451c;backdrop-filter:blur(1.5px);z-index:3}.start-card,.pause-card,.result-card{width:325px;text-align:center;border:1px solid #d2d5ba;border-radius:12px;background:#fffef5f5;padding:22px 26px 18px;position:relative;box-shadow:0 8px 0 #53634c14,0 20px 55px #2d54392b}.card-sticker{position:absolute;top:13px;right:-12px;background:#eccb74;color:#8b7147;transform:rotate(9deg);font-size:8px;padding:5px 10px;letter-spacing:1px;border:1px dashed #c6a44d}.start-dragon{height:100px;width:88px;object-fit:contain;margin:0 0 4px;filter:drop-shadow(0 4px 0 #e0d8b1)}.start-card .eyebrow,.pause-card .eyebrow,.result-card .eyebrow{justify-content:center;color:#9b9a76;font-size:8px;letter-spacing:2px;margin:7px 0}.start-card h2,.pause-card h2,.result-card h2{margin:7px 0 9px;font-size:24px;letter-spacing:.5px;font-weight:850}.start-card>p:not(.eyebrow),.pause-card>p:not(.eyebrow),.result-card>p:not(.eyebrow){font-size:11px;color:#87917d;line-height:1.9;margin:0 0 15px}.start-card p b{color:#d58952}.mode-switch{display:grid;grid-template-columns:1fr 1fr;background:#f0f0e3;border-radius:6px;padding:3px;margin:12px 0 10px;gap:3px}.mode-switch button{border:0;background:transparent;font-size:10px;padding:7px;border-radius:4px;color:#949b83}.mode-switch button.selected{background:#fffef7;box-shadow:0 1px 4px #4a634311;color:#406951;font-weight:700}.primary-button{background:#335f4e;color:#fffef1;border:0;border-radius:6px;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;padding:13px;font-size:12px;font-weight:650;transition:background .15s,transform .15s}.primary-button:hover{background:#254c3e;transform:translateY(-1px)}.primary-button .icon{width:15px;height:15px}.start-note{font-size:8px;color:#a0a48e;margin-top:13px;letter-spacing:.3px}.pause-illustration{display:block;font-size:38px;padding:10px}.pause-card{padding-bottom:20px}.pause-card h2{font-size:21px}.text-button{border:0;background:transparent;font-size:10px;color:#8d9781;margin-top:12px;text-decoration:underline;text-underline-offset:4px}.result-card{width:350px}.result-dragon{height:84px;transform:rotate(7deg)}.result-card h2{font-size:22px}.result-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:10px 0 18px;margin-bottom:13px;border-bottom:1px dashed #dce0cb;gap:5px}.result-stats b{font-family:var(--mono);font-size:25px;display:block;color:#d48956}.result-stats span{display:block;font-size:9px;color:#929c84;margin-top:4px}.new-record{display:block;font-size:9px;color:#ac9656;margin-top:12px}.game-bottom{height:38px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;gap:8px;background:#fbfcf4;border-top:1px solid #d9e2cd}.board-status{display:flex;align-items:center;gap:6px;font-size:10px;color:#7d9073;white-space:nowrap}.board-status-dot{width:5px;height:5px;border-radius:50%;background:#d7ad62}.board-status-dot.placed{background:#6f9c6a}.map-legend{display:flex;align-items:center;gap:11px;font-size:8px;color:#93a087;white-space:nowrap}.map-legend>span{display:flex;align-items:center;gap:4px}.map-legend i{width:6px;height:6px;border-radius:50%;display:block}.legend-player{background:#dc8b58}.legend-student{background:#bb9bc0}.legend-guard{background:#627b8b}.map-legend .legend-grove{background:#7e9b66;border-radius:2px}.sidebar{display:flex;flex-direction:column;gap:14px;min-width:0}.mission-card,.upgrade-card,.diary-card{border:1px solid var(--line);border-radius:10px;padding:17px 17px 15px;background:#fffef8}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}.section-heading h2{font-size:12px;font-weight:700;margin:0;letter-spacing:.3px}.mini-label{font-size:8px;color:#a2aa92;border:1px solid #e2e5d6;padding:3px 5px;border-radius:3px}.photo-score{display:flex;align-items:baseline;gap:5px;margin:17px 0 9px;position:relative}.photo-score>.icon{width:21px;height:21px;color:#9ba98b;margin-right:1px;align-self:center}.photo-score>b{font-size:34px;font-family:var(--mono);font-weight:600;line-height:1}.photo-score>span:not(.score-stamp){color:#9a9e88;font-size:10px}.photo-score .score-stamp{margin-left:auto;color:#ad9d6e;font-size:8px;align-self:center;transform:rotate(-8deg);border-bottom:1px dashed #cfc69e;padding:3px 0}.progress-track{height:7px;background:#ecefe2;border-radius:4px;overflow:hidden}.progress-track>div{height:100%;background:#7e9e75;border-radius:4px;transition:width .3s;width:0}.heat-row{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;font-size:10px;color:#859075}.heat-row b{font-size:9px;font-weight:500;color:#9aa28b}.heat-emoji{color:#d88b64;font-size:15px;margin-left:3px}.heat-meter{height:6px;background:#eeece0;border-radius:4px;overflow:hidden;position:relative}.heat-meter>div{height:100%;background:linear-gradient(90deg,#e3c77a,#e49164,#cb6f5d);border-radius:4px;width:0;transition:width .3s}.heat-meter>span{position:absolute;top:0;bottom:0;left:25%;width:2px;background:#fffef8}.heat-meter>span:nth-of-type(2){left:50%}.heat-meter>span:nth-of-type(3){left:75%}.heat-hint{font-size:9px;color:#a5ac96;margin:8px 0 0;line-height:1.6}.upgrade-card{padding-bottom:7px}.heart-wallet{display:flex;align-items:center;gap:5px;background:#f8e9e3;color:#bb7d70;padding:4px 7px;border-radius:4px;font-family:var(--mono);font-size:11px}.heart-wallet .icon{width:11px;height:11px;fill:#d49684;stroke:none}.section-description{font-size:9px;color:#a2a68f;margin:6px 0 11px}.upgrade-button{display:flex;align-items:center;width:100%;padding:11px 0;border:0;border-top:1px dashed #e7e8db;background:transparent;text-align:left;gap:10px;transition:opacity .15s}.upgrade-button:hover:not(:disabled) .upgrade-price{background:#dfe8d7;color:#406c50}.upgrade-icon{width:34px;height:34px;border-radius:7px;display:grid;place-items:center;flex-shrink:0}.upgrade-icon .icon{width:18px;height:18px}.cart{background:#edf0df;color:#87966b}.decor{background:#fbecd4;color:#c09952}.map{background:#e5eee8;color:#78978b}.upgrade-info{display:flex;flex-direction:column;gap:5px;min-width:0}.upgrade-info b{font-size:10px;font-weight:600}.upgrade-info small{font-size:8px;color:#a2a78f;white-space:nowrap}.level{font-size:8px;font-weight:400;color:#a3ab91;margin-left:2px}.upgrade-price{margin-left:auto;display:flex;align-items:center;justify-content:center;gap:3px;font-family:var(--mono);font-size:11px;padding:5px 7px;min-width:38px;border-radius:4px;background:#f0f1e6;color:#82926e;transition:background .15s}.upgrade-price .icon{width:9px;height:9px;fill:currentColor;stroke:none}.upgrade-button:disabled .upgrade-price{color:#b3b9a3;background:#f3f4ed}.upgrade-button.maxed .upgrade-price{font-family:inherit;font-size:8px;background:#e9efdf;color:#8b9e75}.upgrade-button.affordable{opacity:1}.diary-card{padding-bottom:0;flex:1;display:flex;flex-direction:column;min-height:170px;max-height:223px;overflow:hidden}.diary-live{display:flex;align-items:center;gap:4px;font-size:8px;color:#9ca88f}.diary-live i{width:4px;height:4px;border-radius:50%;background:#8da678}.event-feed{margin-top:11px;flex:1;overflow:auto;scrollbar-width:thin;scrollbar-color:#d4dcc8 transparent;max-height:130px}.event-item{display:flex;gap:7px;margin:0 0 12px;font-size:9px;line-height:1.7}.event-dot{width:5px;height:5px;border-radius:50%;background:#94a880;flex-shrink:0;margin-top:5px}.event-item.alert .event-dot,.event-item.loss .event-dot{background:#d99b71}.event-item.photo .event-dot{background:#d3a6a8}.event-item p{margin:0;color:#8c9981}.event-item p b{font-size:8px;color:#617d5d;font-weight:600;margin-right:7px}.event-item time{font:7px var(--mono);color:#b3b8a6;white-space:nowrap}.diary-footnote{font-size:8px;color:#b2b79e;border-top:1px solid #e8eadc;padding:11px 0;margin-top:auto;white-space:nowrap}.control-bar{margin-top:20px;border:1px solid #e0e4d6;border-radius:9px;padding:13px 17px;background:#fbfbf3;display:flex;align-items:center;justify-content:space-between;gap:20px}.keyboard-guide{display:flex;gap:10px;align-items:center;color:#84927a;font-size:10px}.keyboard-guide>span:not(.key-group){display:flex;flex-direction:column;gap:4px}.control-sub{font-size:8px;color:#adb49e}.keyboard-guide>i{height:23px;width:1px;background:#e1e6d6;margin:0 7px}.key-group{display:flex;align-items:center;flex-direction:column;gap:2px}.key-group>span{display:flex;gap:2px}kbd{display:inline-grid;place-items:center;font-family:var(--mono);font-size:8px;border:1px solid #d9dfca;border-bottom-width:2px;border-radius:3px;background:#f8f9ef;color:#8c9c7b;min-width:18px;height:17px;line-height:1}.wide-key{width:41px;height:25px;font-size:9px}.stamina-track{height:3px;width:48px;background:#e3e8d7;border-radius:2px;overflow:hidden;display:block}.stamina-track>span{display:block;height:100%;background:#a5b68c;width:100%;transition:width .1s}.action-area{display:flex;align-items:center;gap:15px}.action-hint{font-size:10px;color:#91a07c}.interact-button{background:#e7a16c;color:#fffdf1;padding:11px 17px;border:1px solid #d38e5b;box-shadow:0 3px 0 #c98c59;border-radius:6px;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:650;min-width:152px;justify-content:center;transition:background .15s,transform .1s}.interact-button:hover:not(:disabled){background:#de945c}.interact-button:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 #c98c59}.interact-button>kbd{background:#f0b883;border-color:#e1a16c;color:#fff9e9;min-width:21px;height:20px;font-size:10px}.interact-button>.icon{width:14px;height:14px;margin-left:5px}.interact-button:disabled{opacity:.6}.touch-pad,.run-button{display:none}footer{display:flex;align-items:center;gap:24px;padding:22px 0;color:#a0ab91;font-size:9px;letter-spacing:.5px}footer>span:last-child{margin-left:auto;color:#b3baa6}footer>button{border:0;padding:0;background:none;color:#99a68d;font-size:9px}footer>button:hover{color:#507653}footer>button span{padding-left:4px}dialog{width:min(570px,calc(100vw - 32px));border:1px solid #cdd8bf;border-radius:14px;padding:25px 30px;background:#fffef7;color:var(--ink);max-height:90dvh;overflow:auto;box-shadow:0 25px 100px #244c4433}dialog::backdrop{background:#24453766;backdrop-filter:blur(4px)}.dialog-top{display:flex;align-items:center;justify-content:space-between}.dialog-top .eyebrow{font-size:8px;letter-spacing:2px}dialog>h2{font-size:25px;margin:10px 0 22px;letter-spacing:.5px}.help-steps{display:flex;flex-direction:column;gap:17px}.help-steps>div{display:flex;gap:14px;align-items:flex-start}.help-steps>div>span{font-family:var(--mono);color:#d9a577;background:#f6edda;border-radius:5px;padding:6px;font-size:12px;flex-shrink:0}.help-steps p{font-size:11px;line-height:1.9;color:#8b9980;margin:0}.help-steps b{display:block;font-size:12px;color:#54714f;font-weight:650;margin-bottom:3px}.help-note{font-size:10px;color:#97a48b;line-height:1.9;background:#f0f3e6;padding:11px 13px;border-radius:6px;margin:22px 0 18px}.credits{border-top:1px dashed #dfe4d2;padding:12px 0 14px}.credits h3{font-size:11px;margin:0 0 7px}.credits p{font-size:9px;line-height:1.9;color:#a0a990;margin:6px 0}.credits a{color:#829b73;text-underline-offset:2px}body.keyboard-input .map-wrap{outline:none}@keyframes alertPulse{50%{box-shadow:0 0 0 4px #d9795114}}@media(min-width:1550px){.intro{padding-top:38px;padding-bottom:32px}.intro h1{font-size:35px}.game-layout{grid-template-columns:minmax(0,1fr) 305px;gap:24px}.sidebar{gap:18px}.mission-card,.upgrade-card,.diary-card{padding:20px}.diary-card{padding-bottom:0;max-height:245px}.upgrade-button{padding:13px 0}.diary-footnote{padding:13px 0}.section-heading h2{font-size:13px}.intro-copy{font-size:13px}}
+@media(max-width:1100px){.header-caption{display:none}main{padding:0 22px}.site-header{padding:0 22px}.game-layout{grid-template-columns:minmax(0,1fr) 255px;gap:15px}.sidebar{gap:10px}.mission-card,.upgrade-card,.diary-card{padding:13px}.diary-card{padding-bottom:0;min-height:135px;max-height:180px}.upgrade-button{gap:7px;padding:9px 0}.upgrade-icon{width:29px;height:29px}.intro h1{font-size:27px}.intro-sticker{padding:10px 13px}.intro-sticker .sticker-star{display:none}.intro-sticker b{font-size:11px}.intro-sticker>.icon{width:23px;height:23px}.event-feed{max-height:88px}.photo-score{margin-top:14px}.heat-row{margin-top:14px}.start-card{width:285px;padding:15px 23px}.start-dragon{height:75px}.start-card h2{font-size:22px}.start-card>p:not(.eyebrow){margin-bottom:10px}.start-note{margin-top:10px}.game-topbar{padding:0 12px}.game-stats{gap:11px}.campus-name-en{display:none}.map-legend{gap:7px}.board-status{font-size:9px}.map-corner{top:10px;left:12px}.game-bottom{padding:0 11px}.diary-footnote{font-size:7px;padding:9px 0}.action-hint{display:none}.control-bar{margin-top:17px}}
+@media(max-width:850px){.game-layout{grid-template-columns:minmax(0,1fr)}.sidebar{display:grid;grid-template-columns:1fr 1.1fr;gap:13px}.diary-card{display:none}.mission-card{padding:18px}.upgrade-card{padding:15px 15px 5px}.photo-score{margin-top:20px}.heat-row{margin-top:22px}.intro{padding:24px 0}.intro h1{font-size:28px}.intro-sticker{margin-right:3px}.start-card{width:305px;padding:20px 26px}.start-dragon{height:90px}.stage-overlay{backdrop-filter:blur(1px)}.map-legend{font-size:9px;gap:12px}.board-status{font-size:10px}.action-hint{display:inline}.control-bar{order:1}.game-layout .game-panel{box-shadow:0 4px 0 #e9ecdf}.map-corner{top:13px;left:17px;font-size:8px}.header-actions{gap:8px}footer{padding:22px 0}}
+@media(max-width:600px){main{padding:0 12px}.site-header{height:65px;padding:0 15px}.brand{font-size:17px;gap:8px}.brand-mark{width:32px;height:36px;border-radius:10px}.brand-mark img{width:33px;height:40px}.header-actions{gap:7px}.header-actions .icon-button{height:30px;width:30px}.header-actions .icon{width:16px;height:16px}.best-label{font-size:0;margin-right:0;gap:4px}.best-label .icon{width:14px;height:14px}.best-label b{font-size:12px;margin-left:0}.intro{padding:23px 3px 20px}.intro h1{font-size:23px;letter-spacing:.1px}.intro .eyebrow{font-size:8px;letter-spacing:1.3px;margin-bottom:9px}.intro-copy{font-size:10px;line-height:1.8;margin-top:5px;max-width:290px}.intro-sticker{display:none}.game-topbar{height:41px;padding:0 10px}.campus-name{font-size:10px;gap:6px}.game-stats{gap:10px}.timer b{font-size:14px}.timer .icon{width:12px;height:12px}.inventory{font-size:8px;gap:3px}.tiny-board{font-size:15px}.inventory b{font-size:11px}.game-topbar .icon-button{width:25px;height:25px}.map-wrap{aspect-ratio:1.15;overflow:hidden}.map-wrap canvas{width:100%;height:100%;object-fit:fill}.map-corner{font-size:6px;top:6px;left:9px;gap:4px}.compass{font-size:6px}.compass>span{font-size:15px}.game-bottom{height:33px;padding:0 9px}.board-status{font-size:8px}.map-legend{font-size:7px;gap:6px}.map-legend i{width:4px;height:4px}.start-card{width:250px;padding:13px 20px 14px}.start-dragon{height:60px;margin-bottom:0}.start-card .eyebrow{font-size:7px;margin:4px 0}.start-card h2{font-size:20px;margin:6px 0}.start-card>p:not(.eyebrow){font-size:10px;line-height:1.7;margin-bottom:8px}.mode-switch{margin-top:8px;margin-bottom:8px}.mode-switch button{font-size:9px;padding:5px}.primary-button{font-size:11px;padding:11px}.start-note{font-size:7px;margin-top:9px}.card-sticker{font-size:6px;top:7px;right:-8px;padding:4px 7px}.sidebar{gap:10px;grid-template-columns:.95fr 1.1fr}.mission-card{padding:12px}.upgrade-card{padding:12px 10px 4px}.section-heading h2{font-size:10px}.mini-label{font-size:6px;padding:2px 4px}.photo-score{margin-top:18px;margin-bottom:10px}.photo-score>b{font-size:29px}.photo-score>.icon{width:16px;height:16px}.photo-score>span:not(.score-stamp){font-size:8px}.score-stamp{display:none}.heat-row{margin-top:18px;font-size:8px}.heat-row b{font-size:7px}.heat-hint{font-size:8px;line-height:1.8}.progress-track{height:6px}.heart-wallet{font-size:9px;padding:3px 5px}.heart-wallet .icon{width:9px;height:9px}.section-description{font-size:7px;line-height:1.6;margin:6px 0 6px}.upgrade-button{gap:6px;padding:8px 0}.upgrade-icon{width:25px;height:25px;border-radius:5px}.upgrade-icon .icon{width:14px;height:14px}.upgrade-info b{font-size:9px}.upgrade-info small{font-size:6px;letter-spacing:-.2px}.upgrade-info{gap:4px}.level{font-size:6px;margin:0}.upgrade-price{padding:4px;min-width:27px;font-size:9px;gap:2px}.upgrade-price .icon{width:7px;height:7px}.control-bar{padding:12px 10px;gap:8px;flex-wrap:nowrap;margin:12px 0 13px}.keyboard-guide{display:none}.touch-pad{display:grid;grid-template-columns:repeat(3,29px);grid-template-rows:repeat(2,25px);gap:4px;touch-action:none}.touch-pad button{display:grid;place-items:center;border:1px solid #d5ddc6;border-bottom:3px solid #c6d1b7;border-radius:5px;background:#f3f6e9;color:#849a73;font-size:16px;line-height:1;touch-action:none;padding:0;user-select:none}.touch-pad button:active,.touch-pad button.pressed{background:#dbe5c9;border-bottom-width:1px;transform:translateY(2px)}.touch-pad [data-dir=up]{grid-column:2}.touch-pad [data-dir=left]{grid-column:1;grid-row:2}.touch-pad [data-dir=down]{grid-column:2;grid-row:2}.touch-pad [data-dir=right]{grid-column:3;grid-row:2}.action-area{gap:7px}.action-hint{display:none}.run-button{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;background:#f1f3e5;border:1px solid #dce3cf;border-bottom:3px solid #c9d5bb;border-radius:6px;font-size:9px;height:45px;padding:5px 9px;min-width:40px}.run-button>span{font-size:11px}.run-button[aria-pressed=true]{background:#dce7c9}.interact-button{min-width:122px;padding:11px 10px;gap:6px;font-size:11px;height:45px}.interact-button>kbd{font-size:8px;min-width:17px;height:17px}.interact-button>.icon{display:none}.alert-banner{font-size:8px;top:9px;padding:6px 9px;gap:4px}.alert-banner .icon{width:12px;height:12px}.grove-badge{font-size:8px;left:10px;bottom:10px;padding:5px 8px}.result-card{width:270px;padding:14px 20px}.result-dragon{height:62px}.result-card h2{font-size:20px}.result-card>p:not(.eyebrow){font-size:9px;margin-bottom:7px}.result-stats{padding:5px 0 12px;margin-bottom:11px}.result-stats b{font-size:22px}.result-stats span{font-size:8px}.pause-card{width:270px;padding:17px 22px}.pause-illustration{font-size:30px;padding:5px}.pause-card h2{font-size:19px}.pause-card>p:not(.eyebrow){font-size:10px}.pause-card .eyebrow{font-size:7px}.text-button{font-size:9px}footer{padding:3px 2px 20px;gap:12px;font-size:7px}footer>span:last-child{display:none}footer>button{margin-left:auto;font-size:7px}dialog{padding:19px 20px}dialog>h2{font-size:22px}.help-steps p{font-size:10px}.help-steps b{font-size:11px}.help-steps>div{gap:10px}.help-steps{gap:13px}}
+@media(max-width:850px){main{display:flex;flex-direction:column}.intro{order:0}.game-layout{display:contents}.game-panel{order:1;width:100%}.control-bar{order:2;margin-bottom:18px}.sidebar{order:3}footer{order:4}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+  <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 6h4l2-3h4l2 3h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8V4Z"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .5c0 2-2.5 2-2.5 4M12 17h.01"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4ZM16 8a6 6 0 0 1 0 8M19 4a11 11 0 0 1 0 16"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4ZM17 9l5 6m0-6-5 6"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M2 3h3l3 12h11l3-8H6M9 15l-1 3h11"/><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2ZM20 2v4m-2-2h4"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m2 5 6-3 8 3 6-3v17l-6 3-8-3-6 3V5ZM8 2v17M16 5v17"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-6 9-9 10-3-1-9-5-9-10V6l9-4Z"/><path d="M12 7v6m0 4h.01"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 0 1-10 0V3ZM7 5H3v2a5 5 0 0 0 5 5m9-7h4v2a5 5 0 0 1-5 5M12 14v6m-5 1h10"/></symbol>
+  </defs></svg>
+  <header class="site-header">
+    <a href="./" class="brand" aria-label="此处禁止摆龙 首页"><span class="brand-mark"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==" alt=""></span><span>此处禁止摆龙<span class="brand-dot">✳</span></span></a>
+    <span class="header-caption">校园摆龙计划 <i></i> VOL. 01</span>
+    <div class="header-actions"><span class="best-label"><svg class="icon"><use href="#i-trophy"/></svg> 最高打卡 <b id="best">0</b></span><button id="help-button" class="icon-button" aria-label="玩法说明" title="玩法说明"><svg class="icon"><use href="#i-help"/></svg></button><button id="sound-button" class="icon-button" aria-label="开启音效" title="开启音效"><svg class="icon"><use id="sound-use" href="#i-mute"/></svg></button></div>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow"><span></span> 一场很新的校园游击展览</p><h1>奶龙可以撤，<span>热度不能凉。</span></h1><p class="intro-copy">找个好位置，把奶龙摆成校园顶流。安保来了？抱起就跑。</p></div><div class="intro-sticker"><svg class="icon"><use href="#i-spark"/></svg><span>今日社团任务<br><b>让全校看见这条龙</b></span><span class="sticker-star">✳</span></div></section>
+    <div class="game-layout">
+      <section class="game-panel" aria-label="校园游戏区域">
+        <div class="game-topbar"><div class="campus-name"><span class="live-dot"></span> 龙潭大学 <span class="campus-name-en">CAMPUS MAP</span></div><div class="game-stats"><span class="timer"><svg class="icon"><use href="#i-clock"/></svg><b id="time">03:00</b></span><span class="inventory" title="剩余立牌，包括当前这一张"><span class="tiny-board">▰</span><b id="lives">3</b><span>张立牌</span></span><button id="pause-button" class="icon-button small" aria-label="暂停游戏" disabled><svg class="icon"><use id="pause-use" href="#i-pause"/></svg></button></div></div>
+        <div class="map-wrap" id="map-wrap">
+          <canvas id="game" width="1008" height="672" role="img" aria-label="俯视校园地图：左上食堂、右上图书馆、左下教学楼、右下宿舍。使用方向键移动，E 放下或抱起奶龙。"></canvas>
+          <div class="map-corner"><span class="compass">N<span>↑</span></span><span>龙潭大学 · 不完全地图</span></div>
+          <div id="alert-banner" class="alert-banner" hidden><svg class="icon"><use href="#i-shield"/></svg><span id="alert-text">有人注意到奶龙了</span></div>
+          <div id="grove-badge" class="grove-badge" hidden><span>✳</span> 树荫掩护中</div>
+          <div class="stage-overlay" id="stage-overlay">
+            <div class="start-card" id="start-card"><div class="card-sticker">社团机密 · 阅后即摆</div><img class="start-dragon" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==" alt="举着小爪子的黄色奶龙立牌"><p class="eyebrow">OPERATION: NAILOONG</p><h2>今天，摆在哪里？</h2><p>3 分钟，<b id="ready-target">24</b> 人打卡。<br>在安保收走立牌前，把快乐传出去。</p><div class="mode-switch" aria-label="游戏难度"><button data-mode="easy">轻松摆摆</button><button data-mode="normal" class="selected">认真跑路</button></div><button id="start-button" class="primary-button">带上奶龙，出发 <svg class="icon"><use href="#i-arrow"/></svg></button><div class="start-note">WASD / 方向键移动 · E 放置或抱起</div></div>
+            <div class="pause-card" id="pause-card" hidden><span class="pause-illustration">☕</span><p class="eyebrow">TAKE A LITTLE BREAK</p><h2>奶龙也要歇一会儿</h2><p>校园时间暂停了，放心摸鱼。</p><button id="resume-button" class="primary-button">继续摆龙 <svg class="icon"><use href="#i-play"/></svg></button><button class="text-button" id="restart-button">重新开一局</button></div>
+            <div class="result-card" id="result-card" hidden><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==" alt="奶龙" class="result-dragon"><p class="eyebrow" id="result-eyebrow">CAMPUS SUPERSTAR</p><h2 id="result-title">今天的校园顶流！</h2><p id="result-copy"></p><div class="result-stats"><div><b id="result-score">0</b><span>同学打卡</span></div><div><b id="result-earned">0</b><span>累计好感</span></div><div><b id="result-moves">0</b><span>次流动摆摊</span></div></div><button id="again-button" class="primary-button">再摆一局 <svg class="icon"><use href="#i-arrow"/></svg></button><span class="new-record" id="new-record" hidden>✦ 新纪录！龙潭大学记住了你</span></div>
+          </div>
+        </div>
+        <div class="game-bottom"><div class="board-status"><span class="board-status-dot" id="board-status-dot"></span><span id="board-location">奶龙在怀里，校园在等你</span></div><div class="map-legend"><span><i class="legend-player"></i>你</span><span><i class="legend-student"></i>同学</span><span><i class="legend-guard"></i>安保</span><span><i class="legend-grove"></i>藏身点</span></div></div>
+      </section>
+      <aside class="sidebar" aria-label="经营面板">
+        <section class="mission-card"><div class="section-heading"><h2>校园顶流养成中</h2><span class="mini-label">本局目标</span></div><div class="photo-score"><svg class="icon"><use href="#i-camera"/></svg><b id="score">0</b><span>/ <span id="target">24</span> 人打卡</span><span class="score-stamp" id="goal-stamp">还差一点点</span></div><div class="progress-track"><div id="goal-progress"></div></div><div class="heat-row"><span>围观热度 <span class="heat-emoji">♨</span></span><b id="heat-label">无人问津</b></div><div class="heat-meter"><div id="heat-progress"></div><span></span><span></span><span></span></div><p class="heat-hint" id="heat-hint">越热闹，越容易引来安保。</p></section>
+        <section class="upgrade-card"><div class="section-heading"><h2>社团后勤部</h2><span class="heart-wallet"><svg class="icon"><use href="#i-heart"/></svg><b id="hearts">12</b></span></div><p class="section-description">同学的好感，都变成了摆龙经费。</p>
+          <button class="upgrade-button" data-upgrade="cart"><span class="upgrade-icon cart"><svg class="icon"><use href="#i-cart"/></svg></span><span class="upgrade-info"><b>小推车 <span class="level" id="cart-level"></span></b><small id="cart-detail">抱龙移速 +22%</small></span><span class="upgrade-price" id="cart-price">12 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+          <button class="upgrade-button" data-upgrade="decor"><span class="upgrade-icon decor"><svg class="icon"><use href="#i-spark"/></svg></span><span class="upgrade-info"><b>发光灯牌 <span class="level" id="decor-level"></span></b><small id="decor-detail">吸引范围 +30%</small></span><span class="upgrade-price" id="decor-price">15 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+          <button class="upgrade-button" data-upgrade="map"><span class="upgrade-icon map"><svg class="icon"><use href="#i-map"/></svg></span><span class="upgrade-info"><b>校园情报 <span class="level" id="map-level"></span></b><small id="map-detail">看见安保巡逻路线</small></span><span class="upgrade-price" id="map-price">18 <svg class="icon"><use href="#i-heart"/></svg></span></button>
+        </section>
+        <section class="diary-card"><div class="section-heading"><h2>校园小道消息</h2><span class="diary-live"><i></i> 实时</span></div><div id="event-feed" class="event-feed" role="log" aria-live="polite" aria-relevant="additions"></div><div class="diary-footnote">“再拍一张就走” —— 每个被收龙的你</div></section>
+      </aside>
+    </div>
+    <section class="control-bar" aria-label="游戏操作"><div class="keyboard-guide"><span class="key-group"><kbd>W</kbd><span><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span></span><span>移动<span class="control-sub">也可点击地图</span></span><i></i><kbd class="wide-key">Shift</kbd><span>冲刺<span class="stamina-track"><span id="stamina"></span></span></span></div><div class="touch-pad" aria-label="方向控制"><button data-dir="up" aria-label="向上">↑</button><button data-dir="left" aria-label="向左">←</button><button data-dir="down" aria-label="向下">↓</button><button data-dir="right" aria-label="向右">→</button></div><div class="action-area"><button class="run-button" id="run-button" aria-pressed="false">冲刺 <span>↑</span></button><span class="action-hint" id="action-hint">找个好地方，开摆！</span><button class="interact-button" id="interact-button" disabled><kbd>E</kbd><span id="interact-label">放下奶龙</span><svg class="icon"><use href="#i-arrow"/></svg></button></div></section>
+    <footer><span>✳ 快乐可以是纸做的。</span><button id="credits-button">玩法与创作参考 <span>↗</span></button><span>一个认真胡闹的校园小游戏</span></footer>
+  </main>
+  <dialog id="help-dialog"><div class="dialog-top"><span class="eyebrow">社团新生入门手册</span><button class="icon-button" id="close-help" aria-label="关闭说明"><svg class="icon"><use href="#i-close"/></svg></button></div><h2>摆得下，也要跑得掉。</h2><div class="help-steps"><div><span>01</span><p><b>选个好位置</b>方向键 / WASD 移动，或点击地图寻路。食堂打卡快，树林能藏身。按 <kbd>E</kbd> 或空格放下立牌。</p></div><div><span>02</span><p><b>等同学来打卡</b>站在立牌附近的同学会自动拍照，每人只算一次。打卡得好感，可以购买右侧三种升级。</p></div><div><span>03</span><p><b>安保来了就搬家</b>黄色视野变红时，赶快靠近立牌按 <kbd>E</kbd> 抱走。按住 <kbd>Shift</kbd> 冲刺；抱龙躲进树荫能避开远处视线。</p></div><div><span>04</span><p><b>撑到下课就算赢</b>3 分钟内达成打卡目标，并保住至少 1 张立牌。立牌被撤或抱龙被追上会损失 1 张，南门有备用立牌。</p></div></div><div class="help-note">前 11 秒是新手保护期。<kbd>Esc</kbd> / <kbd>P</kbd> 暂停。手机可用方向按钮、冲刺和放置按钮。</div><div class="credits"><h3>开源与形象参考</h3><p>格子地图与 Canvas 循环参考 <a href="https://gist.github.com/straker/769fb461e066147ea16ac2cb9463beae" target="_blank" rel="noreferrer">Straker · Basic Bomberman（CC0）↗</a>；校园规则、AI、经营系统和界面为本项目编写。</p><p>奶龙造型参考 <a href="https://www.nailoong.com/ipStar/Nailong/" target="_blank" rel="noreferrer">第七印象奶龙官网 ↗</a>，游戏内使用手绘简化 SVG 同人立牌。</p><p><a href="https://github.com/LuanluanSauce/SecretYellowLoong/archive/refs/heads/main.zip" download>下载这一版完整源码 ↗</a> · <a href="./offline.html" download="SecretYellowLoong-offline.html">下载离线版 ↗</a> · <a href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==" download="nailoong.svg">奶龙 SVG 立牌 ↗</a></p></div><button id="help-ok" class="primary-button">懂了，这就去摆龙 <svg class="icon"><use href="#i-arrow"/></svg></button></dialog>
+  <script type="module">
+/* Grid + requestAnimationFrame architecture inspired by Straker's CC0
+ * Basic Bomberman: https://gist.github.com/straker/769fb461e066147ea16ac2cb9463beae
+ * Campus simulation, movement, vision and economy implemented for this game. */
+const TILE = 48, COLS = 21, ROWS = 14, WIDTH = COLS * TILE, HEIGHT = ROWS * TILE;
+const BUILDINGS = [
+  { col: 2, row: 2, w: 5, h: 3, name: '第一食堂', sub: '干饭人的快乐老家', color: '#e89869', roof: '#efb78b', icon: 'food' },
+  { col: 14, row: 2, w: 5, h: 3, name: '图书馆', sub: '轻声打卡，请勿大笑', color: '#7ba6a0', roof: '#b0c6b5', icon: 'book' },
+  { col: 2, row: 10, w: 4, h: 2, name: '教学楼', sub: '这节课先不摆龙', color: '#b3a1bd', roof: '#d1bed6', icon: 'school' },
+  { col: 15, row: 10, w: 4, h: 2, name: '学生宿舍', sub: '全宿舍都来围观', color: '#d4b166', roof: '#ead59d', icon: 'home' },
+];
+const GROVES = [{ x: 54, y: 304, w: 210, h: 142 }, { x: 761, y: 363, w: 190, h: 91 }];
+const SPOTS = [
+  { x: 264, y: 264, name: '食堂门口', label: '人来人往', multiplier: 1.5, color: '#dd864f' },
+  { x: 744, y: 264, name: '图书馆前', label: '低调营业', multiplier: 1.15, color: '#4f9186' },
+  { x: 216, y: 408, name: '小树林', label: '隐蔽躲藏', multiplier: .7, color: '#6c9463' },
+  { x: 744, y: 600, name: '宿舍路口', label: '潜力股', multiplier: 1.3, color: '#b49553' },
+];
+const PATROLS = [
+  [[19, 1], [12, 1], [12, 8], [19, 8]],
+  [[1, 7], [7, 7], [7, 12], [1, 12]],
+  [[12, 12], [12, 5], [19, 5], [19, 12]],
+];
+const UPGRADES = {
+  cart: { name: '小推车', prices: [12, 24], detail: ['抱龙移速 +22%', '抱龙移速再 +22%'] },
+  decor: { name: '发光灯牌', prices: [15, 30], detail: ['吸引范围 +30%', '打卡好感 +1'] },
+  map: { name: '校园情报', prices: [18], detail: ['看见安保巡逻路线'] },
+};
+const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+const center = (col, row) => ({ x: (col + .5) * TILE, y: (row + .5) * TILE });
+function blocked(col, row) {
+  if (col < 1 || row < 1 || col >= COLS - 1 || row >= ROWS - 1) return true;
+  if (BUILDINGS.some(b => col >= b.col && col < b.col + b.w && row >= b.row && row < b.row + b.h)) return true;
+  return col >= 9 && col <= 11 && row >= 5 && row <= 6;
+}
+function pathfind(from, to) {
+  const sc = Math.floor(from.x / TILE), sr = Math.floor(from.y / TILE);
+  const tc = Math.floor(to.x / TILE), tr = Math.floor(to.y / TILE);
+  if (blocked(tc, tr) || blocked(sc, sr)) return [];
+  const start = sr * COLS + sc, end = tr * COLS + tc;
+  if (start === end) return [{ x: to.x, y: to.y }];
+  const queue = [start], prev = new Map([[start, -1]]);
+  for (let i = 0; i < queue.length && !prev.has(end); i++) {
+    const n = queue[i], c = n % COLS, r = Math.floor(n / COLS);
+    for (const [dc, dr] of [[1, 0], [0, 1], [-1, 0], [0, -1]]) {
+      const nc = c + dc, nr = r + dr, next = nr * COLS + nc;
+      if (!blocked(nc, nr) && !prev.has(next)) { prev.set(next, n); queue.push(next); }
+    }
+  }
+  if (!prev.has(end)) return [];
+  const result = [];
+  for (let n = end; n !== start; n = prev.get(n)) result.push(center(n % COLS, Math.floor(n / COLS)));
+  result.reverse();
+  // Align perpendicular to the first step. Replanning never sends a walking
+  // actor backwards to the previous tile center, but still respects corners.
+  const initial = center(sc, sr), first = result[0];
+  const alignment = first.x !== initial.x ? { x: from.x, y: initial.y } : { x: initial.x, y: from.y };
+  if (distance(alignment, from) > 2) result.unshift(alignment);
+  result[result.length - 1] = { x: to.x, y: to.y };
+  return result;
+}
+function lineOfSight(from, to) {
+  const length = distance(from, to), steps = Math.max(1, Math.ceil(length / 10));
+  for (let i = 1; i <= steps; i++) {
+    const t = i / steps;
+    if (blocked(Math.floor((from.x + (to.x - from.x) * t) / TILE), Math.floor((from.y + (to.y - from.y) * t) / TILE))) return false;
+  }
+  return true;
+}
+const inGrove = p => GROVES.some(g => p.x > g.x && p.x < g.x + g.w && p.y > g.y && p.y < g.y + g.h);
+const spotAt = p => SPOTS.find(s => distance(s, p) < 73) || { name: '校园步道', multiplier: 1, color: '#758c7c' };
+
+function canOccupy(x, y, radius = 11) {
+  return [[-radius, -radius], [radius, -radius], [radius, radius], [-radius, radius]]
+    .every(([dx, dy]) => !blocked(Math.floor((x + dx) / TILE), Math.floor((y + dy) / TILE)));
+}
+function walk(actor, dx, dy) {
+  const oldX = actor.x, oldY = actor.y;
+  if (canOccupy(actor.x + dx, actor.y)) actor.x += dx;
+  if (canOccupy(actor.x, actor.y + dy)) actor.y += dy;
+  if (distance(actor, { x: oldX, y: oldY }) > .02) {
+    actor.angle = Math.atan2(actor.y - oldY, actor.x - oldX);
+    actor.moving = true;
+  } else actor.moving = false;
+}
+function follow(actor, dt, speed) {
+  actor.moving = false;
+  let budget = dt * speed;
+  while (budget > .001 && actor.path.length) {
+    const dest = actor.path[0], d = distance(actor, dest);
+    if (d < 1) { actor.path.shift(); continue; }
+    const move = Math.min(budget, d);
+    walk(actor, (dest.x - actor.x) / d * move, (dest.y - actor.y) / d * move);
+    budget -= move;
+    if (d <= move + 1) actor.path.shift();
+    else break;
+  }
+}
+function guardActor(index) {
+  const [c, r] = PATROLS[index][0];
+  return { ...center(c, r), index, angle: Math.PI, moving: false, path: [], routeIndex: 1, state: 'patrol', suspicion: 0, search: 0, repath: 0, lastSeen: null };
+}
+
+class CampusGame {
+  constructor(seed = Date.now()) {
+    this.seed = seed >>> 0;
+    this.reset('normal');
+  }
+  random() {
+    this.seed = (1664525 * this.seed + 1013904223) >>> 0;
+    return this.seed / 4294967296;
+  }
+  reset(mode = this.mode) {
+    this.mode = mode || 'normal';
+    this.status = 'ready'; this.elapsed = 0; this.duration = 180;
+    this.target = this.mode === 'easy' ? 18 : 24;
+    this.score = 0; this.hearts = 12; this.earned = 0; this.heat = 0; this.lives = 3;
+    this.relocations = 0; this.losses = 0; this.stamina = 100; this.invincible = 0;
+    this.upgrades = { cart: 0, decor: 0, map: 0 };
+    this.player = { ...center(7, 6), angle: Math.PI / 2, moving: false, path: [] };
+    this.board = { ...this.player, held: true, confiscate: 0, placedFor: 0 };
+    this.guards = [guardActor(0), guardActor(1)];
+    this.students = []; this.effects = []; this.events = []; this.spawnTimer = 3;
+    this.alarm = 0; this.flash = 0; this.nextId = 0; this.result = null;
+    this.log('社团群', '奶龙已就位，今天也要偷偷当顶流。', 'welcome');
+    for (let i = 0; i < 12; i++) this.spawnStudent(true);
+  }
+  start() {
+    if (this.status === 'ready') { this.status = 'playing'; this.log('摆龙日记', '先找个好位置，按 E 放下奶龙！', 'start'); }
+  }
+  pause() { if (this.status === 'playing') { this.status = 'paused'; this.player.path = []; } }
+  resume() { if (this.status === 'paused') this.status = 'playing'; }
+  log(who, message, type = 'info') {
+    this.events.unshift({ who, message, type, time: this.elapsed, id: ++this.nextId });
+    if (this.events.length > 25) this.events.pop();
+  }
+  effect(x, y, text, color = '#338473') { this.effects.push({ x, y, text, color, life: 1.8, total: 1.8 }); }
+  moveTo(point) {
+    if (this.status !== 'playing') return;
+    const dest = center(Math.floor(point.x / TILE), Math.floor(point.y / TILE));
+    if (!blocked(Math.floor(dest.x / TILE), Math.floor(dest.y / TILE))) this.player.path = pathfind(this.player, dest);
+  }
+  interact() {
+    if (this.status !== 'playing') return false;
+    if (this.board.held) {
+      const dest = center(Math.floor(this.player.x / TILE), Math.floor(this.player.y / TILE));
+      if (blocked(Math.floor(dest.x / TILE), Math.floor(dest.y / TILE))) return false;
+      Object.assign(this.board, dest, { held: false, confiscate: 0, placedFor: 0 });
+      this.relocations++;
+      const place = spotAt(this.board).name;
+      this.effect(this.board.x, this.board.y - 52, '开摆！', '#dd864f');
+      this.log('摆龙日记', `已在${place}营业，等同学来打卡。`, 'place');
+    } else if (distance(this.player, this.board) < 83) {
+      this.board.held = true; this.board.confiscate = 0;
+      this.effect(this.player.x, this.player.y - 45, '抱龙跑路！', '#dd864f');
+      this.log('摆龙日记', '奶龙已抱起，换个地方继续营业。', 'pickup');
+    } else { this.effect(this.player.x, this.player.y - 36, '再靠近奶龙一点', '#5a776c'); return false; }
+    return true;
+  }
+  buy(type) {
+    const item = UPGRADES[type], level = this.upgrades[type];
+    if (this.status !== 'playing' || !item || level >= item.prices.length || this.hearts < item.prices[level]) return false;
+    this.hearts -= item.prices[level]; this.upgrades[type]++;
+    this.log('后勤补给', `${item.name}升级成功！${item.detail[level]}。`, 'upgrade');
+    this.effect(this.player.x, this.player.y - 45, `${item.name} +1`, '#338473');
+    return true;
+  }
+  randomDestination() {
+    const edge = this.random();
+    if (edge < .25) return center(1, 5 + Math.floor(this.random() * 4));
+    if (edge < .5) return center(19, 5 + Math.floor(this.random() * 4));
+    if (edge < .75) return center(7 + Math.floor(this.random() * 6), 1);
+    return center(7 + Math.floor(this.random() * 6), 12);
+  }
+  spawnStudent(initial = false) {
+    let point = this.randomDestination();
+    if (initial) {
+      const options = [[5, 5], [8, 4], [13, 5], [15, 5], [8, 8], [5, 8], [12, 9], [13, 11], [7, 2], [1, 9], [19, 7], [9, 11]];
+      point = center(...options[this.students.length % options.length]);
+    }
+    const student = { ...point, id: ++this.nextId, angle: 0, moving: false, path: [], color: Math.floor(this.random() * 6), interest: this.random(), age: 0, photo: 0, photographed: false, rethink: this.random() * 2, state: 'walk', bubble: 0, speed: 39 + this.random() * 15 };
+    student.path = pathfind(student, this.randomDestination());
+    this.students.push(student);
+  }
+  photograph(student) {
+    student.photographed = true; student.state = 'happy'; student.bubble = 2;
+    this.score++; const earned = 3 + (this.upgrades.decor >= 2 ? 1 : 0);
+    this.hearts += earned; this.earned += earned; this.heat = Math.min(100, this.heat + 5.5);
+    this.flash = .16;
+    this.effect(student.x, student.y - 28, `♥ +${earned}`, '#d97c7f');
+    const lines = ['谁把奶龙摆这儿了哈哈哈', '拍完了，已经发宿舍群！', '这个点位，包出片的。', '等一下，我把室友摇过来。', '不许撤！我还没拍！', '今日份电子小宠物 ✓'];
+    if (this.score <= 2 || this.score % 3 === 0) this.log('路过同学', lines[Math.floor(this.random() * lines.length)], 'photo');
+    if (this.score === this.target) this.log('校园热搜', '目标达成！继续保住立牌，撑到下课就赢了！', 'goal');
+  }
+  updateStudents(dt) {
+    const attraction = 242 * (1 + this.upgrades.decor * .3) + this.heat;
+    for (const s of this.students) {
+      s.age += dt; s.rethink -= dt; s.bubble = Math.max(0, s.bubble - dt);
+      if (s.state === 'happy') {
+        if (s.bubble <= 0) { s.state = 'walk'; s.path = pathfind(s, this.randomDestination()); }
+        continue;
+      }
+      if (!s.photographed && !this.board.held && distance(s, this.board) < attraction && lineOfSight(s, this.board) && s.interest < .84) {
+        s.state = 'interested';
+        if (distance(s, this.board) < 89) {
+          s.path = []; s.moving = false;
+          s.photo += dt * spotAt(this.board).multiplier;
+          s.angle = Math.atan2(this.board.y - s.y, this.board.x - s.x);
+          if (s.photo >= 2.2) this.photograph(s);
+          continue;
+        }
+        if (s.rethink <= 0) {
+          const options = [[0, 1], [1, 0], [-1, 0], [0, -1], [1, 1], [-1, 1]];
+          const offset = options[s.id % options.length];
+          let dest = center(Math.floor(this.board.x / TILE) + offset[0], Math.floor(this.board.y / TILE) + offset[1]);
+          if (blocked(Math.floor(dest.x / TILE), Math.floor(dest.y / TILE))) dest = { ...this.board };
+          s.path = pathfind(s, dest); s.rethink = 1;
+        }
+      } else if (s.state === 'interested') { s.state = 'walk'; s.photo = 0; s.path = pathfind(s, this.randomDestination()); }
+      if (!s.path.length && s.rethink <= 0) { s.path = pathfind(s, this.randomDestination()); s.rethink = 4; }
+      follow(s, dt, s.speed);
+    }
+    this.students = this.students.filter(s => s.age < (s.photographed ? 36 : 66));
+    this.spawnTimer -= dt;
+    if (this.spawnTimer <= 0 && this.students.length < 28) {
+      this.spawnStudent(); this.spawnTimer = Math.max(1.3, 3.5 - this.heat * .022);
+    }
+  }
+  guardSees(guard, point, held = false) {
+    const d = distance(guard, point);
+    if (held && inGrove(point) && d > 62) return false;
+    if (!held && inGrove(point) && d > 110) return false;
+    if (d > (this.mode === 'easy' ? 160 : 190) + this.heat * .35) return false;
+    if (d < 43) return lineOfSight(guard, point);
+    const angle = Math.atan2(point.y - guard.y, point.x - guard.x);
+    const delta = Math.atan2(Math.sin(angle - guard.angle), Math.cos(angle - guard.angle));
+    return Math.abs(delta) < .7 && lineOfSight(guard, point);
+  }
+  updateGuards(dt) {
+    if (this.guards.length < 3 && (this.heat >= 58 || this.elapsed > 112) && this.mode !== 'easy') {
+      this.guards.push(guardActor(2));
+      this.log('校园广播', '围观热度上来了，安保增加了一条巡逻线。', 'alert');
+    }
+    let maxSuspicion = 0, removing = false;
+    const point = this.board.held ? this.player : this.board;
+    for (const g of this.guards) {
+      g.repath -= dt;
+      const sees = this.elapsed > 11 && this.invincible <= 0 && this.guardSees(g, point, this.board.held);
+      const noise = !this.board.held && this.heat > 35 && distance(g, this.board) < 230 && this.elapsed > 11;
+      if (sees || noise) {
+        g.suspicion = Math.min(1, g.suspicion + dt * (sees ? .85 : .35));
+        g.lastSeen = { x: point.x, y: point.y }; g.search = 5.5;
+        if (g.suspicion >= .65 && g.state === 'patrol') {
+          g.state = this.board.held ? 'chase' : 'investigate'; g.repath = 0;
+          this.log('安保动态', this.board.held ? '同学，那个黄色的先放一下！' : '这边怎么围了这么多人？过去看看。', 'alert');
+        }
+      } else {
+        g.suspicion = Math.max(0, g.suspicion - dt * .24); g.search -= dt;
+      }
+      if (g.state !== 'patrol' && g.search <= 0) { g.state = 'patrol'; g.path = []; g.repath = 0; }
+      if (g.state !== 'patrol' && sees) g.state = this.board.held ? 'chase' : 'investigate';
+      if (g.repath <= 0) {
+        if (g.state === 'patrol') {
+          const dest = center(...PATROLS[g.index][g.routeIndex]);
+          if (distance(g, dest) < 12) g.routeIndex = (g.routeIndex + 1) % PATROLS[g.index].length;
+          g.path = pathfind(g, center(...PATROLS[g.index][g.routeIndex]));
+        } else if (g.lastSeen) g.path = pathfind(g, g.lastSeen);
+        g.repath = g.state === 'patrol' ? 1.6 : .75;
+      }
+      const speed = (g.state === 'patrol' ? 55 : 95 + this.heat * .22) * (this.mode === 'easy' ? .75 : 1);
+      follow(g, dt, speed);
+      if (this.invincible <= 0 && this.elapsed > 11 && g.state !== 'patrol') {
+        if (this.board.held && distance(g, this.player) < 27) { this.confiscated(); break; }
+        if (!this.board.held && distance(g, this.board) < 34) { removing = true; g.state = 'remove'; }
+      }
+      maxSuspicion = Math.max(maxSuspicion, g.suspicion);
+    }
+    this.alarm = maxSuspicion;
+    if (!this.board.held) {
+      this.board.confiscate = removing ? this.board.confiscate + dt : Math.max(0, this.board.confiscate - dt * .7);
+      if (this.board.confiscate >= 2) this.confiscated();
+    }
+  }
+  confiscated() {
+    this.lives--; this.losses++; this.heat = Math.max(0, this.heat - 18);
+    this.effect(this.board.held ? this.player.x : this.board.x, this.board.held ? this.player.y - 40 : this.board.y - 45, '立牌被撤走了！', '#d77061');
+    this.log('社团后勤', this.lives > 0 ? `纸板被收走一张！还有 ${this.lives} 张备用，南门重新出发。` : '备用立牌用完了，今日摆龙提前收摊。', 'loss');
+    Object.assign(this.player, center(10, 12), { path: [], moving: false });
+    this.board.held = true; this.board.confiscate = 0; this.invincible = 5; this.alarm = 0;
+    for (const g of this.guards) { g.state = 'patrol'; g.suspicion = 0; g.repath = 0; }
+    if (this.lives <= 0) this.finish();
+  }
+  finish() {
+    this.status = 'finished'; this.player.moving = false;
+    this.result = { won: this.score >= this.target && this.lives > 0, score: this.score, earned: this.earned, relocations: this.relocations, losses: this.losses, survived: Math.floor(this.elapsed), mode: this.mode };
+  }
+  update(dt, input = {}) {
+    if (this.status !== 'playing') return;
+    dt = Math.max(0, Math.min(dt, .05));
+    this.elapsed += dt; this.invincible = Math.max(0, this.invincible - dt);
+    this.heat = Math.max(0, this.heat - dt * .48); this.flash = Math.max(0, this.flash - dt);
+    this.effects = this.effects.filter(e => (e.life -= dt) > 0);
+    let dx = input.x || 0, dy = input.y || 0;
+    const moving = !!(dx || dy || this.player.path.length);
+    const running = !!input.run && this.stamina > 4 && moving;
+    this.running = running;
+    this.stamina = Math.max(0, Math.min(100, this.stamina + dt * (running ? -34 : 23)));
+    const carrySpeed = 118 * (1 + this.upgrades.cart * .22);
+    const speed = (this.board.held ? carrySpeed : 148) * (running ? 1.55 : 1);
+    if (dx || dy) {
+      this.player.path = [];
+      const len = Math.hypot(dx, dy); dx /= len; dy /= len;
+      walk(this.player, dx * dt * speed, dy * dt * speed);
+    } else follow(this.player, dt, speed);
+    if (this.board.held) { this.board.x = this.player.x; this.board.y = this.player.y; }
+    else this.board.placedFor += dt;
+    this.updateStudents(dt);
+    this.updateGuards(dt);
+    if (this.elapsed >= this.duration && this.status === 'playing') { this.elapsed = this.duration; this.finish(); }
+  }
+}
+
+
+const $ = id => document.getElementById(id);
+const canvas = $('game'), ctx = canvas.getContext('2d');
+const game = new CampusGame();
+const dragon = new Image(); dragon.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMjEwIiBmaWxsPSJub25lIj4KICA8dGl0bGU+5aW26b6Z566A5YyWIFNWRyDlkIzkurrnq4vniYw8L3RpdGxlPgogIDxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0ieWVsbG93IiB4MT0iNDAiIHkxPSIyMCIgeDI9IjE0NSIgeTI9IjE5NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkRENjAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRkMzM0YiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8ZyBzdHJva2U9IiNCMDgyMzQiIHN0cm9rZS13aWR0aD0iMi4zIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPHBhdGggZD0iTTEyOSAxNThjMTkgNSAyNiAwIDM1LTEyLTEgMjItMTYgMzAtMzUgMjAiIGZpbGw9IiNGNkJFM0MiLz4KICAgIDxwYXRoIGQ9Ik01OSA5NmMtMTIgMi0xOC04LTIzLTIwLTUtMTItMTgtMTAtMjEgMC03IDIzIDExIDUzIDM0IDU0TTEyNCA5NWMxMy0zIDIwLTE0IDIyLTI2IDItMTQgMTctMTYgMjAtMyA3IDI3LTkgNTItMzAgNjEiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0ibTE4IDcxLTItNyA2IDNtNS0yIDEtOCA1IDdtMTE2LTEgMS05IDYgNm01IDEgNS00LTEgOSIgZmlsbD0iI0FDODk1MSIvPgogICAgPGVsbGlwc2UgY3g9IjI2IiBjeT0iODAiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8ZWxsaXBzZSBjeD0iMTU1IiBjeT0iNzIiIHJ4PSI4IiByeT0iNiIgZmlsbD0iI0YxQjE3RSIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNNTIgOTZjLTEyIDE5LTE0IDQwLTExIDYzIDEgMTUgMSAyOCA4IDM2IDYgNiAyNSA2IDMwIDBsNi0xNmgxOGw2IDE3YzcgNyAyNSA0IDI4LTIgNi0xMSAxLTE4IDItMzcgMC0yMy01LTQ1LTE4LTYwIiBmaWxsPSJ1cmwoI3llbGxvdykiLz4KICAgIDxlbGxpcHNlIGN4PSI5MyIgY3k9IjE0NiIgcng9IjMzIiByeT0iMzgiIGZpbGw9IiNGRkYwQTgiIHN0cm9rZT0ibm9uZSIvPgogICAgPHBhdGggZD0iTTUxIDk5QzMyIDg5IDI2IDY3IDMyIDQ0IDM5IDE1IDYzIDkgODggMTJjMzAtNCA1MyAxNiA1NiA0MiAzIDI0LTQgNDItMjMgNTAtMTkgMTEtNTEgMTAtNzAtNVoiIGZpbGw9InVybCgjeWVsbG93KSIvPgogICAgPHBhdGggZD0iTTQzIDQ0YzctMTUgMjAtMjEgMzYtMjEiIHN0cm9rZT0iI0ZGRTk5MSIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgICA8ZWxsaXBzZSBjeD0iNjgiIGN5PSI1OSIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMTEiIGN5PSI1NCIgcng9IjEwIiByeT0iMTMiIGZpbGw9IiNGRkY4RDUiLz4KICAgIDxlbGxpcHNlIGN4PSI3MCIgY3k9IjYxIiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMSIgY3k9IjU2IiByeD0iNy41IiByeT0iMTAiIGZpbGw9IiM2QUE1NkEiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjcxIiBjeT0iNjIiIHJ4PSI1LjMiIHJ5PSI3LjciIGZpbGw9IiMyMzQ5MzIiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjExMiIgY3k9IjU3IiByeD0iNS4zIiByeT0iNy43IiBmaWxsPSIjMjM0OTMyIiBzdHJva2U9Im5vbmUiLz4KICAgIDxjaXJjbGUgY3g9IjczIiBjeT0iNTgiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGNpcmNsZSBjeD0iMTE0IiBjeT0iNTMiIHI9IjIuNCIgZmlsbD0id2hpdGUiIHN0cm9rZT0ibm9uZSIvPgogICAgPGVsbGlwc2UgY3g9IjUzIiBjeT0iODAiIHJ4PSIxNSIgcnk9IjExIiBmaWxsPSIjRkZENTU4IiBzdHJva2U9Im5vbmUiLz4KICAgIDxlbGxpcHNlIGN4PSIxMjYiIGN5PSI3NiIgcng9IjEyIiByeT0iOSIgZmlsbD0iI0ZGRDU1OCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJNODcgODFjNSAxIDEyLTMgMTctNiA0IDEwIDMgMjAtNCAyMi04IDItMTItNi0xMy0xNloiIGZpbGw9IiM5MTU0MzAiLz4KICAgIDxwYXRoIGQ9Ik05MiA5MmM0LTUgOS01IDEzLTMtMSA2LTggOS0xMyAzWiIgZmlsbD0iI0U2OEI3MCIgc3Ryb2tlPSJub25lIi8+CiAgICA8cGF0aCBkPSJtOTUgNzkgNy0yIDEgNC03IDJaIiBmaWxsPSIjRkZGNkQ2IiBzdHJva2U9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik01NyAxOTNjLTQtNC04LTEtOCAzbTEyIDBjLTEtNSA1LTUgNiAwbTUtMWMwLTUgNS01IDYtMW0zNyAxYy0xLTUgNS01IDYgMG01IDBjLTEtNSA1LTYgNi0xIiBzdHJva2U9IiNBMTdFNDgiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KPC9zdmc+Cg==';
+const map = document.createElement('canvas'); map.width = WIDTH; map.height = HEIGHT;
+const ground = map.getContext('2d');
+const keys = new Set(), touches = new Set();
+let last = 0, uiTimer = 0, feedId = -1, renderedStatus = '', muted = true, audio = null, runToggle = false, resultReported = false, helpWasPlaying = false, previousScore = 0, previousLosses = 0, mode = 'normal';
+let best = 0;
+try { best = Number(localStorage.getItem('nailoong-campus-best') || 0) || 0; } catch {}
+$('best').textContent = best;
+
+function rounded(c, x, y, w, h, radius, fill, stroke, lineWidth = 1) {
+  c.beginPath(); c.roundRect(x, y, w, h, radius);
+  if (fill) { c.fillStyle = fill; c.fill(); }
+  if (stroke) { c.strokeStyle = stroke; c.lineWidth = lineWidth; c.stroke(); }
+}
+function ellipse(c, x, y, rx, ry, color) { c.beginPath(); c.ellipse(x, y, rx, ry, 0, 0, Math.PI * 2); c.fillStyle = color; c.fill(); }
+function line(c, x, y, xx, yy, color, width = 1) { c.beginPath(); c.moveTo(x, y); c.lineTo(xx, yy); c.strokeStyle = color; c.lineWidth = width; c.stroke(); }
+function text(c, value, x, y, size = 12, color = '#708566', weight = '500', align = 'center') {
+  c.font = `${weight} ${size}px "PingFang SC","Microsoft YaHei",sans-serif`; c.fillStyle = color; c.textAlign = align; c.textBaseline = 'middle'; c.fillText(value, x, y);
+}
+function polygon(c, points, fill, stroke) {
+  c.beginPath(); points.forEach(([x, y], i) => i ? c.lineTo(x, y) : c.moveTo(x, y)); c.closePath();
+  if (fill) { c.fillStyle = fill; c.fill(); } if (stroke) { c.strokeStyle = stroke; c.lineWidth = 1; c.stroke(); }
+}
+function tree(c, x, y, r = 29, tone = 0) {
+  const colors = [['#93b179', '#a7bf8e', '#b7cb9f'], ['#7fa477', '#95b58a', '#aac49a']][tone % 2];
+  ellipse(c, x + 4, y + 7, r * .9, r * .4, '#66865a15');
+  rounded(c, x - 3, y - 15, 7, 25, 2, '#b3986a');
+  ellipse(c, x - r * .3, y - 21, r * .65, r * .65, colors[0]);
+  ellipse(c, x + r * .35, y - 23, r * .67, r * .7, colors[0]);
+  ellipse(c, x, y - 34, r * .76, r * .73, colors[1]);
+  ellipse(c, x - 6, y - 43, r * .42, r * .35, colors[2]);
+  c.globalAlpha = .5; line(c, x - 9, y - 29, x - 4, y - 34, colors[0], 2); line(c, x + 8, y - 35, x + 12, y - 31, colors[0], 2); c.globalAlpha = 1;
+}
+function flower(c, x, y) { ellipse(c, x, y, 2.4, 2.4, '#efdd9a'); ellipse(c, x + 3, y - 2, 2, 2, '#f9ecbb'); }
+function drawBuilding(b) {
+  const c = ground, x = b.col * TILE + 2, y = b.row * TILE + 1, w = b.w * TILE - 4, h = b.h * TILE - 2;
+  rounded(c, x + 6, y + 8, w, h - 2, 7, '#63725022');
+  rounded(c, x, y + 9, w, h - 8, 6, '#f2e8cd', '#bcbda0');
+  rounded(c, x + 3, y + 4, w - 6, h - 30, 5, b.color, '#a69778');
+  rounded(c, x - 4, y - 2, w + 8, h - 35, 5, b.roof, '#baa780');
+  rounded(c, x + 3, y + 3, w - 6, h - 45, 3, null, '#ffffff55');
+  for (let i = x + 15; i < x + w - 8; i += 25) line(c, i, y + 6, i, y + h - 42, '#fff9de30');
+  rounded(c, x + w / 2 - 44, y + h * .35 - 14, 88, 28, 4, '#fff9dfed', '#ffffff66');
+  text(c, b.name, x + w / 2, y + h * .35, 17, '#696d54', '700');
+  text(c, b.sub, x + w / 2, y + h * .35 + 25, 8, '#766f54', '400');
+  for (let wx = x + 18; wx < x + w - 12; wx += 34) {
+    rounded(c, wx, y + h - 23, 19, 15, 2, '#8ba99d', '#c4c3a5');
+    line(c, wx + 10, y + h - 22, wx + 10, y + h - 9, '#d5ded0');
+  }
+  rounded(c, x + w / 2 - 14, y + h - 28, 28, 28, [3, 3, 0, 0], '#819486', '#a2b09a');
+  line(c, x + w / 2, y + h - 24, x + w / 2, y + h, '#d7deca');
+  rounded(c, x + w / 2 - 24, y + h - 1, 48, 7, 2, '#d5cfb4');
+  if (b.icon === 'food') {
+    for (let i = 0; i < 10; i++) rounded(c, x + 5 + i * ((w - 10) / 10), y + h - 38, (w - 10) / 10, 14, [0, 0, 4, 4], i % 2 ? '#fff0ca' : '#d98c65');
+    text(c, '☀', x + 23, y + 21, 20, '#fff1c6');
+    rounded(c, x + w - 43, y + 15, 25, 14, 3, '#e9c5a1', '#d4ab85');
+    line(c, x + w - 39, y + 20, x + w - 22, y + 20, '#bf9f7d'); line(c, x + w - 39, y + 24, x + w - 22, y + 24, '#bf9f7d');
+  } else if (b.icon === 'book') {
+    rounded(c, x + w - 46, y + 13, 27, 17, 3, '#c5d4be', '#9fb59e');
+    line(c, x + w - 32, y + 16, x + w - 32, y + 27, '#91a68e');
+    for (let i = 0; i < 3; i++) line(c, x + w - 42, y + 18 + i * 3, x + w - 35, y + 18 + i * 3, '#9bb297');
+  } else {
+    rounded(c, x + 11, y + 10, 22, 13, 2, '#fffae455');
+    line(c, x + 22, y + 10, x + 22, y + 23, '#a8a387');
+  }
+}
+function drawMap() {
+  const c = ground;
+  c.fillStyle = '#dce6cb'; c.fillRect(0, 0, WIDTH, HEIGHT);
+  let seed = 443;
+  const rand = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+  for (let y = 0; y < HEIGHT; y += TILE) for (let x = 0; x < WIDTH; x += TILE) {
+    c.fillStyle = (x / TILE + y / TILE) % 2 === 0 ? '#e0e8d0' : '#dce6cb'; c.fillRect(x, y, TILE, TILE);
+  }
+  const paths = [[48, 48, 912, 48], [48, 240, 912, 48], [48, 448, 912, 32], [48, 576, 912, 48], [336, 48, 96, 576], [576, 48, 96, 576], [48, 48, 48, 576], [912, 48, 48, 576], [264, 288, 72, 160], [672, 288, 72, 160], [432, 336, 144, 144]];
+  for (const p of paths) rounded(c, ...p, 1, '#edead8');
+  c.strokeStyle = '#d6d9c44a'; c.lineWidth = .7;
+  for (let x = 48; x < WIDTH; x += TILE) line(c, x, 48, x, 624, '#bdc9ae24');
+  for (let y = 48; y < HEIGHT; y += TILE) line(c, 48, y, 960, y, '#bdc9ae24');
+  for (let i = 0; i < 145; i++) {
+    const x = 50 + rand() * 900, y = 55 + rand() * 555;
+    const inPath = paths.some(([px, py, pw, ph]) => x >= px && x < px + pw && y >= py && y < py + ph);
+    if (inPath || blocked(Math.floor(x / TILE), Math.floor(y / TILE))) continue;
+    if (i % 8 === 0) flower(c, x, y);
+    else { line(c, x, y + 3, x - 2, y - 1, '#9bb28544'); line(c, x, y + 3, x + 3, y - 2, '#9bb28544'); }
+  }
+  // An enclosing planted border leaves all playable paths inside the campus.
+  rounded(c, 20, 37, 968, 600, 20, null, '#b5c69e', 2);
+  for (let x = 25; x < WIDTH; x += 40) {
+    ellipse(c, x, 12, 25, 22, '#b5c69e'); ellipse(c, x + 4, 5, 22, 17, '#c3d1ac');
+    if (x < 435 || x > 570) { ellipse(c, x, 662, 24, 20, '#b8cba5'); ellipse(c, x + 3, 657, 17, 13, '#c5d5b4'); }
+  }
+  for (let y = 46; y < HEIGHT - 25; y += 35) { ellipse(c, 11, y, 19, 24, '#bdd0aa'); ellipse(c, 998, y, 18, 25, '#b6cba2'); }
+  BUILDINGS.forEach(drawBuilding);
+  for (const g of GROVES) {
+    rounded(c, g.x, g.y, g.w, g.h, 27, '#a6c28b55');
+    c.setLineDash([3, 5]); rounded(c, g.x + 6, g.y + 6, g.w - 12, g.h - 12, 23, null, '#8bab6e66'); c.setLineDash([]);
+  }
+  // Trees frame accessible, shaded hiding areas; their canopy is not a solid wall.
+  [[86, 345, 32, 0], [147, 342, 31, 1], [211, 347, 28, 0], [84, 414, 29, 1], [231, 418, 27, 1], [800, 409, 28, 1], [859, 405, 30, 0], [921, 413, 28, 1]].forEach(a => tree(c, ...a));
+  rounded(c, 117, 383, 85, 21, 3, '#f5f1d9', '#b9be99'); text(c, '✳ 树荫藏身处', 159, 393, 9, '#7e946c');
+  text(c, '树荫藏身处', 858, 438, 8, '#81976e');
+  // Central fountain is a solid island; routes go around it.
+  rounded(c, 434, 242, 140, 92, 15, '#c2cfa9', '#a8bc93');
+  rounded(c, 442, 249, 124, 77, 11, '#dddcc0', '#f2edce');
+  ellipse(c, 504, 291, 43, 26, '#a6b8a3'); ellipse(c, 504, 287, 43, 26, '#e8e3c8');
+  ellipse(c, 504, 285, 35, 20, '#abcac3'); ellipse(c, 504, 280, 28, 13, '#bed9cf');
+  ellipse(c, 504, 280, 13, 7, '#8eb4a7'); rounded(c, 499, 260, 10, 22, 3, '#d9dac1');
+  ellipse(c, 504, 259, 18, 8, '#e9e5cc'); ellipse(c, 504, 256, 14, 5, '#b4cdbf');
+  text(c, '中央广场', 504, 354, 9, '#a3a78b');
+  for (const s of SPOTS) {
+    c.globalAlpha = .7; ellipse(c, s.x, s.y, 27, 13, '#fffcdf'); c.globalAlpha = 1;
+    c.setLineDash([3, 3]); c.beginPath(); c.ellipse(s.x, s.y, 30, 17, 0, 0, Math.PI * 2); c.strokeStyle = s.color + '66'; c.lineWidth = 1; c.stroke(); c.setLineDash([]);
+    rounded(c, s.x - 8, s.y - 6, 16, 11, 3, null, s.color + '88', 1.3); ellipse(c, s.x, s.y - 1, 3, 3, s.color + '66');
+    rounded(c, s.x - 40, s.y + 22, 80, 19, 4, '#faf8e7dd', '#d2d8bc');
+    text(c, `${s.name} ×${s.multiplier}`, s.x, s.y + 32, 8, s.color);
+  }
+  // Little campus details, kept out of the movement routes.
+  for (const [x, y] of [[306, 114], [704, 116], [709, 509], [301, 530]]) {
+    rounded(c, x - 9, y - 4, 18, 9, 2, '#b7a17b'); line(c, x - 6, y + 5, x - 6, y + 9, '#938d69', 2); line(c, x + 6, y + 5, x + 6, y + 9, '#938d69', 2);
+  }
+  for (const [x, y] of [[381, 134], [625, 169], [383, 518], [626, 524]]) {
+    ellipse(c, x + 3, y + 2, 10, 4, '#899f7222'); rounded(c, x - 2, y - 28, 4, 31, 1, '#9ba98b'); ellipse(c, x, y - 28, 6, 5, '#f8f0c7');
+  }
+  rounded(c, 459, 618, 90, 19, 3, '#faf6dd', '#c2c8aa'); text(c, '南门 · 社团据点', 504, 628, 8, '#8e9a78');
+  rounded(c, 441, 45, 126, 22, 4, '#f7f4df', '#c4cdb1'); text(c, '龙潭大学 · 快乐分校', 504, 56, 9, '#8f9b7c');
+}
+drawMap();
+
+function drawVision(g) {
+  const active = g.state !== 'patrol', radius = (game.mode === 'easy' ? 160 : 190) + game.heat * .35;
+  const gradient = ctx.createRadialGradient(g.x, g.y, 10, g.x, g.y, radius);
+  gradient.addColorStop(0, active ? '#da835632' : '#e4c77932'); gradient.addColorStop(1, active ? '#e391630a' : '#e4c7790a');
+  ctx.beginPath(); ctx.moveTo(g.x, g.y);
+  for (let i = 0; i <= 28; i++) {
+    const a = g.angle - .7 + i / 28 * 1.4; let d = 0;
+    for (d = 8; d <= radius; d += 8) if (blocked(Math.floor((g.x + Math.cos(a) * d) / TILE), Math.floor((g.y + Math.sin(a) * d) / TILE))) break;
+    d = Math.min(d - 5, radius); ctx.lineTo(g.x + Math.cos(a) * d, g.y + Math.sin(a) * d);
+  }
+  ctx.closePath(); ctx.fillStyle = gradient; ctx.fill();
+  ctx.strokeStyle = active ? '#c87e4825' : '#bdab5425'; ctx.lineWidth = 1; ctx.stroke();
+}
+function drawRoutes() {
+  if (!game.upgrades.map) return;
+  for (const g of game.guards) {
+    ctx.beginPath(); ctx.moveTo(g.x, g.y);
+    const points = g.state !== 'patrol' ? g.path : pathfind(g, center(...PATROLS[g.index][g.routeIndex]));
+    for (const p of points) ctx.lineTo(p.x, p.y);
+    ctx.setLineDash([4, 6]); ctx.strokeStyle = '#6e8e9a77'; ctx.lineWidth = 1.5; ctx.stroke(); ctx.setLineDash([]);
+    if (points.length) { const p = points[points.length - 1]; ellipse(ctx, p.x, p.y, 4, 4, '#7d9daa66'); }
+  }
+}
+function drawBoard(x, y, held = false, time = 0) {
+  const scale = held ? .72 : 1;
+  ctx.save(); ctx.translate(x, y); ctx.scale(scale, scale);
+  if (!held) ellipse(ctx, 1, 5, 24, 8, '#68754a24');
+  const wiggle = held ? Math.sin(time * 11) * .03 : Math.sin(time * 2) * .012;
+  ctx.rotate(wiggle);
+  line(ctx, -14, -5, -20, 7, '#a98c5b', 3); line(ctx, 14, -5, 20, 7, '#a98c5b', 3);
+  rounded(ctx, -25, -68, 50, 66, 5, '#fffdf0', '#d3bc83', 1.5);
+  if (dragon.complete && dragon.naturalWidth) ctx.drawImage(dragon, -24, -69, 48, 57);
+  else { ellipse(ctx, 0, -39, 16, 23, '#ffcf49'); ellipse(ctx, -5, -47, 2, 3, '#536840'); ellipse(ctx, 5, -47, 2, 3, '#536840'); }
+  rounded(ctx, -24, -14, 48, 12, [0, 0, 4, 4], '#f6dc87'); text(ctx, '奶龙在此', 0, -8, 7, '#a48748', '700');
+  if (!held && game.upgrades.decor) {
+    ctx.shadowColor = '#f6df8a'; ctx.shadowBlur = 8;
+    for (let i = 0; i < 4; i++) ellipse(ctx, -22 + i * 15, -67, 2, 2, i % 2 ? '#fbdf82' : '#f8eee0');
+    ctx.shadowBlur = 0;
+  }
+  ctx.restore();
+}
+const shirts = ['#b8a0bc', '#c99c86', '#97aba8', '#c9b479', '#a4ae85', '#b7b7ca'];
+function drawPerson(p, kind, time) {
+  const player = kind === 'player', guard = kind === 'guard';
+  const bob = p.moving ? Math.sin(time * (player && game.running ? 18 : 11) + (p.id || 0)) * 1.3 : Math.sin(time * 2 + (p.id || 0)) * .4;
+  ctx.save(); ctx.translate(p.x, p.y);
+  if (player && game.invincible > 0) ctx.globalAlpha = Math.sin(time * 18) > 0 ? .5 : 1;
+  ellipse(ctx, 1, 3, player ? 12 : 10, 4.5, '#526d4d25');
+  ctx.translate(0, bob);
+  const stride = p.moving ? Math.sin(time * 11 + (p.id || 0)) * 2.7 : 0;
+  rounded(ctx, -7, -4 + stride, 5, 7, 2, guard ? '#53616a' : '#6c7964');
+  rounded(ctx, 2, -4 - stride, 5, 7, 2, guard ? '#53616a' : '#6c7964');
+  if (player) { rounded(ctx, -11, -20, 22, 21, 7, '#fffdf2'); rounded(ctx, -9, -20, 18, 19, 6, '#e49a68', '#c68055'); }
+  else rounded(ctx, -8, -20, 16, 19, 5, guard ? '#708c9a' : shirts[p.color], guard ? '#5e7886' : '#667f6f33');
+  rounded(ctx, -11, -18, 4, 12, 2, player ? '#df9c6b' : guard ? '#6b8491' : shirts[p.color]);
+  rounded(ctx, 7, -18, 4, 12, 2, player ? '#df9c6b' : guard ? '#6b8491' : shirts[p.color]);
+  if (player) { rounded(ctx, -6, -13, 12, 9, 3, '#eac28c'); line(ctx, -6, -9, 6, -9, '#ceab7b'); }
+  ellipse(ctx, 0, -25, player ? 10 : 8.7, player ? 10 : 9, '#f2caa1');
+  if (guard) {
+    rounded(ctx, -10, -35, 20, 10, [7, 7, 2, 2], '#547387', '#456575');
+    rounded(ctx, -10, -28, 24, 4, 2, '#456577'); rounded(ctx, -2, -34, 4, 4, 1, '#dfcc83');
+    line(ctx, -7, -15, 7, -15, '#c6c69a', 1.5); ellipse(ctx, 3, -12, 1.4, 1.4, '#e4d79e');
+    if (gAlert(p)) {
+      ellipse(ctx, 12, -43, 8, 8, p.state === 'patrol' ? '#efcf8c' : '#e5a07d');
+      text(ctx, p.state === 'patrol' ? '?' : '!', 12, -43, 11, '#fff9e4', '800');
+    }
+  } else {
+    ellipse(ctx, 0, -30, player ? 10 : 9, 6.5, player ? '#6c6652' : '#6c6958');
+    rounded(ctx, -9, -29, 5, 7, 2, player ? '#6c6652' : '#6c6958');
+    if (player) { rounded(ctx, -8, -35, 16, 7, [5, 5, 0, 0], '#f5eed3', '#cabe94'); line(ctx, -7, -29, 11, -29, '#d9ca9d', 3); }
+  }
+  // Faces follow horizontal movement, with a small, readable expression.
+  const faceOffset = Math.cos(p.angle) * 1.8;
+  ellipse(ctx, -2 + faceOffset, -24, 1, 1.3, '#5c6451'); ellipse(ctx, 4 + faceOffset, -24, 1, 1.3, '#5c6451');
+  if (!guard) line(ctx, .5 + faceOffset, -20, 2.5 + faceOffset, -20, '#c38f74');
+  if (player) {
+    polygon(ctx, [[-4, -46], [4, -46], [0, -41]], '#e18b53');
+    text(ctx, '你', 0, -53, 9, '#c98250', '700');
+    if (game.board.held) drawBoard(22, -5, true, time);
+    if (game.upgrades.cart && game.board.held) { line(ctx, 12, 6, 38, 6, '#9d9d72', 2); ellipse(ctx, 16, 9, 3, 3, '#7f8f72'); ellipse(ctx, 33, 9, 3, 3, '#7f8f72'); }
+    if (game.running) { ctx.globalAlpha *= .5; line(ctx, -18, -11, -24, -11, '#aa9c6c', 1.5); line(ctx, -16, -3, -23, -3, '#aa9c6c', 1.5); }
+  }
+  if (!player && !guard && (p.state === 'interested' || p.state === 'happy')) {
+    rounded(ctx, 8, -19, 6, 9, 1, '#718577'); rounded(ctx, 9, -18, 4, 5, 1, '#e9ead3');
+    if (p.state === 'happy') {
+      rounded(ctx, -16, -53, 32, 16, 5, '#fffdf0', '#d8dcc4'); text(ctx, '♥ 咔嚓', 0, -45, 7, '#cd8b86');
+    } else if (p.photo > 0) {
+      ctx.beginPath(); ctx.arc(0, -42, 5, -.5 * Math.PI, -.5 * Math.PI + Math.PI * 2 * Math.min(1, p.photo / 2.2)); ctx.strokeStyle = '#c49a67'; ctx.lineWidth = 2; ctx.stroke();
+    }
+  }
+  ctx.restore();
+}
+function gAlert(g) { return g.suspicion > .15 || g.state !== 'patrol'; }
+function draw(time) {
+  ctx.clearRect(0, 0, WIDTH, HEIGHT); ctx.drawImage(map, 0, 0);
+  // Animated water and pad rings add life without obscuring the playing field.
+  ctx.strokeStyle = '#ecf6e366'; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.ellipse(504, 286, 23 + Math.sin(time * 1.7) * 3, 11, 0, 0, Math.PI * 2); ctx.stroke();
+  if (game.status === 'playing') {
+    drawRoutes(); game.guards.forEach(drawVision);
+    if (game.player.path.length) {
+      ctx.beginPath(); ctx.moveTo(game.player.x, game.player.y); for (const p of game.player.path) ctx.lineTo(p.x, p.y);
+      ctx.strokeStyle = '#c58f5a88'; ctx.lineWidth = 2; ctx.setLineDash([3, 7]); ctx.stroke(); ctx.setLineDash([]);
+      const p = game.player.path[game.player.path.length - 1]; ctx.beginPath(); ctx.arc(p.x, p.y, 8, 0, Math.PI * 2); ctx.strokeStyle = '#c58f5a99'; ctx.lineWidth = 1.5; ctx.stroke();
+    }
+  }
+  if (!game.board.held) {
+    const radius = 92 + Math.sin(time * 2) * 3;
+    ctx.beginPath(); ctx.ellipse(game.board.x, game.board.y, radius, radius * .55, 0, 0, Math.PI * 2);
+    ctx.fillStyle = '#edcf6b09'; ctx.fill(); ctx.strokeStyle = '#c8ae6c33'; ctx.lineWidth = 1; ctx.setLineDash([4, 8]); ctx.stroke(); ctx.setLineDash([]);
+  }
+  const actors = [...game.students.map(p => ({ p, kind: 'student' })), ...game.guards.map(p => ({ p, kind: 'guard' })), { p: game.player, kind: 'player' }];
+  if (!game.board.held) actors.push({ p: game.board, kind: 'board' });
+  actors.sort((a, b) => a.p.y - b.p.y);
+  for (const { p, kind } of actors) kind === 'board' ? drawBoard(p.x, p.y, false, time) : drawPerson(p, kind, time);
+  if (game.board.confiscate > 0 && !game.board.held) {
+    rounded(ctx, game.board.x - 28, game.board.y - 86, 56, 7, 3, '#fff2d8', '#d9a278');
+    rounded(ctx, game.board.x - 27, game.board.y - 85, 54 * Math.min(1, game.board.confiscate / 2), 5, 2, '#d98866');
+    text(ctx, '正在撤走！', game.board.x, game.board.y - 96, 10, '#bc7259', '700');
+  }
+  for (const e of game.effects) {
+    const progress = 1 - e.life / e.total;
+    ctx.globalAlpha = Math.min(1, e.life * 2);
+    const y = e.y - progress * 28;
+    ctx.font = 'bold 12px "PingFang SC","Microsoft YaHei",sans-serif'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.strokeStyle = '#fffdf0'; ctx.lineWidth = 3; ctx.strokeText(e.text, e.x, y); ctx.fillStyle = e.color; ctx.fillText(e.text, e.x, y); ctx.globalAlpha = 1;
+  }
+  if (game.invincible > 0 && game.status === 'playing') { text(ctx, '备用立牌补给中 · 暂时安全', game.player.x, game.player.y + 26, 10, '#6a9362', '600'); }
+}
+
+function setText(id, value) { const el = $(id); if (el.textContent !== String(value)) el.textContent = value; }
+function formatTime(time) { const seconds = Math.max(0, Math.ceil(time)); return `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`; }
+function renderFeed() {
+  if (feedId === game.events[0]?.id) return;
+  feedId = game.events[0]?.id;
+  $('event-feed').replaceChildren();
+  for (const e of game.events.slice(0, 6)) {
+    const row = document.createElement('div'); row.className = `event-item ${e.type}`;
+    const dot = document.createElement('span'); dot.className = 'event-dot';
+    const p = document.createElement('p'), who = document.createElement('b'); who.textContent = e.who;
+    p.append(who, document.createTextNode(e.message));
+    const time = document.createElement('time'); time.textContent = formatTime(e.time);
+    row.append(dot, p, time); $('event-feed').append(row);
+  }
+}
+function renderUI() {
+  const playing = game.status === 'playing', finished = game.status === 'finished';
+  setText('time', formatTime(game.duration - game.elapsed)); setText('score', game.score); setText('target', game.target); setText('lives', game.lives); setText('hearts', game.hearts); setText('ready-target', game.target);
+  $('time').closest('.timer').classList.toggle('urgent', game.duration - game.elapsed < 30);
+  $('goal-progress').style.width = `${Math.min(100, game.score / game.target * 100)}%`;
+  $('heat-progress').style.width = `${game.heat}%`;
+  $('stamina').style.width = `${game.stamina}%`;
+  setText('heat-label', game.heat < 15 ? '悄悄开摆' : game.heat < 38 ? '小有名气' : game.heat < 65 ? '全校围观' : '校园热搜第一');
+  setText('heat-hint', game.heat > 55 ? '人气爆棚！安保会增加巡逻。' : '越热闹，越容易引来安保。');
+  setText('goal-stamp', game.score >= game.target ? '目标达成 ✓' : game.score ? `还差 ${Math.max(0, game.target - game.score)} 人` : '等你开摆');
+  const near = distance(game.player, game.board) < 83;
+  setText('interact-label', game.board.held ? '放下奶龙' : near ? '抱起奶龙' : '靠近奶龙');
+  setText('action-hint', game.board.held ? '找个好地方，开摆！' : near ? '安保来了就抱龙跑路' : '点击地图，走到奶龙旁边');
+  $('interact-button').disabled = !playing; $('pause-button').disabled = game.status === 'ready' || finished;
+  $('pause-button').setAttribute('aria-label', game.status === 'paused' ? '继续游戏' : '暂停游戏');
+  $('pause-use').setAttribute('href', game.status === 'paused' ? '#i-play' : '#i-pause');
+  const location = spotAt(game.board);
+  setText('board-location', game.board.held ? '奶龙在怀里 · 暂停营业' : `${location.name} · 打卡速度 ×${location.multiplier}`);
+  $('board-status-dot').classList.toggle('placed', !game.board.held);
+  const detected = game.alarm > .15 || game.guards.some(g => g.state !== 'patrol');
+  $('alert-banner').hidden = !detected || !playing;
+  $('alert-banner').classList.toggle('danger', game.alarm > .65 || game.board.confiscate > 0);
+  setText('alert-text', game.board.confiscate > 0 ? '要被收走了！快抱起奶龙！' : game.board.held && game.guards.some(g => g.state === 'chase') ? '安保追来了！冲刺或躲进树荫' : game.alarm > .65 ? '安保正在赶来，准备搬家！' : '有人注意到奶龙了…');
+  $('grove-badge').hidden = !(playing && game.board.held && inGrove(game.player));
+  for (const [type, item] of Object.entries(UPGRADES)) {
+    const level = game.upgrades[type], maxed = level >= item.prices.length;
+    const btn = document.querySelector(`[data-upgrade="${type}"]`);
+    btn.disabled = !playing || maxed || game.hearts < item.prices[level];
+    btn.classList.toggle('affordable', !btn.disabled); btn.classList.toggle('maxed', maxed);
+    setText(`${type}-level`, level ? `Lv.${level}` : '');
+    setText(`${type}-detail`, maxed ? '升级已到位，快乐再加倍' : item.detail[level]);
+    const price = $(`${type}-price`);
+    const priceText = maxed ? '已满级' : String(item.prices[level]);
+    if (price.dataset.price !== priceText) {
+      price.dataset.price = priceText; price.replaceChildren(document.createTextNode(priceText));
+      if (!maxed) { const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.classList.add('icon'); const use = document.createElementNS('http://www.w3.org/2000/svg', 'use'); use.setAttribute('href', '#i-heart'); svg.append(use); price.append(svg); }
+    }
+  }
+  renderFeed();
+  if (game.score > previousScore) sound('photo');
+  if (game.losses > previousLosses) sound('loss');
+  previousScore = game.score; previousLosses = game.losses;
+  if (renderedStatus !== game.status) {
+    renderedStatus = game.status;
+    $('stage-overlay').hidden = playing;
+    $('start-card').hidden = game.status !== 'ready'; $('pause-card').hidden = game.status !== 'paused'; $('result-card').hidden = !finished;
+  }
+  if (finished && !resultReported) {
+    resultReported = true;
+    const r = game.result, record = r.score > best;
+    if (record) { best = r.score; try { localStorage.setItem('nailoong-campus-best', String(best)); } catch {} }
+    setText('best', best); setText('result-score', r.score); setText('result-earned', r.earned); setText('result-moves', r.relocations);
+    setText('result-eyebrow', r.won ? 'CAMPUS SUPERSTAR' : 'THE DRAGON WILL RETURN');
+    setText('result-title', r.won ? '今天的校园顶流！' : r.losses >= 3 ? '龙红了，纸板没了。' : '离顶流，只差一点点。');
+    setText('result-copy', r.won ? `下课铃响，${r.score} 位同学的相册里都有奶龙。` : r.losses >= 3 ? '后勤库存告急！换个点位，下次一定。' : `已经让 ${r.score} 位同学开心了，下次冲到 ${game.target} 人！`);
+    $('new-record').hidden = !record; sound(r.won ? 'win' : 'loss');
+  }
+}
+function getAudio() { if (!audio) { const Audio = window.AudioContext || window.webkitAudioContext; if (Audio) audio = new Audio(); } if (audio?.state === 'suspended') audio.resume().catch(() => {}); }
+function sound(kind) {
+  if (muted || !audio) return;
+  const notes = kind === 'photo' ? [660, 880] : kind === 'upgrade' ? [440, 660, 880] : kind === 'win' ? [523, 659, 784, 1046] : kind === 'loss' ? [330, 220] : [390];
+  for (let i = 0; i < notes.length; i++) {
+    const oscillator = audio.createOscillator(), gain = audio.createGain(), t = audio.currentTime + i * .08;
+    oscillator.type = 'sine'; oscillator.frequency.value = notes[i]; gain.gain.setValueAtTime(.0001, t); gain.gain.exponentialRampToValueAtTime(.045, t + .008); gain.gain.exponentialRampToValueAtTime(.0001, t + .15);
+    oscillator.connect(gain); gain.connect(audio.destination); oscillator.start(t); oscillator.stop(t + .16);
+  }
+}
+function clearInput() { keys.clear(); touches.clear(); runToggle = false; $('run-button').setAttribute('aria-pressed', 'false'); document.querySelectorAll('[data-dir]').forEach(b => b.classList.remove('pressed')); }
+function start() { getAudio(); game.start(); clearInput(); renderUI(); }
+function newRound() { game.reset(mode); clearInput(); feedId = -1; resultReported = false; previousScore = 0; previousLosses = 0; renderUI(); }
+function pauseToggle() { if (game.status === 'playing') game.pause(); else if (game.status === 'paused') game.resume(); clearInput(); renderUI(); }
+function interact() { getAudio(); if (game.interact()) sound('place'); renderUI(); }
+$('start-button').addEventListener('click', start);
+$('pause-button').addEventListener('click', pauseToggle); $('resume-button').addEventListener('click', pauseToggle);
+$('restart-button').addEventListener('click', newRound); $('again-button').addEventListener('click', newRound);
+$('interact-button').addEventListener('click', interact);
+$('run-button').addEventListener('click', () => { if (game.status !== 'playing') return; runToggle = !runToggle; $('run-button').setAttribute('aria-pressed', String(runToggle)); });
+document.querySelectorAll('[data-mode]').forEach(button => button.addEventListener('click', () => {
+  mode = button.dataset.mode; document.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('selected', b === button)); newRound();
+}));
+document.querySelectorAll('[data-upgrade]').forEach(button => button.addEventListener('click', () => { if (game.buy(button.dataset.upgrade)) sound('upgrade'); renderUI(); }));
+$('sound-button').addEventListener('click', () => {
+  muted = !muted; if (!muted) getAudio(); $('sound-use').setAttribute('href', muted ? '#i-mute' : '#i-sound');
+  $('sound-button').setAttribute('aria-label', muted ? '开启音效' : '关闭音效'); $('sound-button').title = muted ? '开启音效' : '关闭音效'; if (!muted) sound('photo');
+});
+function showHelp() { helpWasPlaying = game.status === 'playing'; game.pause(); clearInput(); renderUI(); $('help-dialog').showModal(); }
+function hideHelp() { $('help-dialog').close(); }
+$('help-button').addEventListener('click', showHelp); $('credits-button').addEventListener('click', showHelp);
+$('close-help').addEventListener('click', hideHelp); $('help-ok').addEventListener('click', hideHelp);
+$('help-dialog').addEventListener('close', () => { if (helpWasPlaying) game.resume(); helpWasPlaying = false; renderUI(); });
+$('help-dialog').addEventListener('click', e => { if (e.target === $('help-dialog')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) hideHelp(); } });
+window.addEventListener('keydown', e => {
+  if ($('help-dialog').open) return;
+  const key = e.key.toLowerCase();
+  if (['arrowup', 'arrowdown', 'arrowleft', 'arrowright', ' ', 'shift'].includes(key)) e.preventDefault();
+  if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright', 'shift'].includes(key)) keys.add(key);
+  if (!e.repeat && (key === 'e' || key === ' ')) interact();
+  if (!e.repeat && (key === 'escape' || key === 'p')) pauseToggle();
+  if (!e.repeat && key === 'enter' && game.status === 'ready') start();
+});
+window.addEventListener('keyup', e => keys.delete(e.key.toLowerCase()));
+window.addEventListener('blur', () => { clearInput(); game.pause(); renderUI(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) { clearInput(); game.pause(); renderUI(); } });
+canvas.addEventListener('pointerdown', e => {
+  if (game.status !== 'playing') return;
+  const rect = canvas.getBoundingClientRect(); game.moveTo({ x: (e.clientX - rect.left) / rect.width * WIDTH, y: (e.clientY - rect.top) / rect.height * HEIGHT });
+});
+document.querySelectorAll('[data-dir]').forEach(button => {
+  const direction = button.dataset.dir;
+  button.addEventListener('pointerdown', e => { e.preventDefault(); if (game.status !== 'playing') return; button.setPointerCapture(e.pointerId); touches.add(direction); button.classList.add('pressed'); });
+  const release = e => { e.preventDefault(); touches.delete(direction); button.classList.remove('pressed'); };
+  button.addEventListener('pointerup', release); button.addEventListener('pointercancel', release); button.addEventListener('lostpointercapture', release);
+});
+function frame(timestamp) {
+  const dt = last ? Math.min(.05, (timestamp - last) / 1000) : 0; last = timestamp;
+  const input = { x: Number(keys.has('d') || keys.has('arrowright') || touches.has('right')) - Number(keys.has('a') || keys.has('arrowleft') || touches.has('left')), y: Number(keys.has('s') || keys.has('arrowdown') || touches.has('down')) - Number(keys.has('w') || keys.has('arrowup') || touches.has('up')), run: keys.has('shift') || runToggle };
+  game.update(dt, input); draw(timestamp / 1000); uiTimer += dt;
+  if (uiTimer >= .12 || game.status !== renderedStatus) { renderUI(); uiTimer = 0; }
+  requestAnimationFrame(frame);
+}
+renderUI(); requestAnimationFrame(frame);
+
+</script>
+</body>
+</html>

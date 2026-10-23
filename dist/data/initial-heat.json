@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "retired": true,
+  "note": "V2仅计游戏实际成绩，本文件不再读取，无初始热度。",
+  "scores": {}
+}

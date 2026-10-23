@@ -8,6 +8,7 @@
   <title>此处禁止摆龙 · 校园摆龙计划</title>
   <link rel="icon" type="image/svg+xml" href="./assets/nailoong.svg">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./school-league.css">
 </head>
 <body>
   <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
@@ -65,5 +66,6 @@
   </main>
   <dialog id="help-dialog"><div class="dialog-top"><span class="eyebrow">社团新生入门手册</span><button class="icon-button" id="close-help" aria-label="关闭说明"><svg class="icon"><use href="#i-close"/></svg></button></div><h2>摆得下，也要跑得掉。</h2><div class="help-steps"><div><span>01</span><p><b>选个好位置</b>方向键 / WASD 移动，或点击地图寻路。食堂打卡快，树林能藏身。按 <kbd>E</kbd> 或空格放下立牌。</p></div><div><span>02</span><p><b>等同学来打卡</b>站在立牌附近的同学会自动拍照，每人只算一次。打卡得好感，可以购买右侧三种升级。</p></div><div><span>03</span><p><b>安保来了就搬家</b>黄色视野变红时，赶快靠近立牌按 <kbd>E</kbd> 抱走。按住 <kbd>Shift</kbd> 冲刺；抱龙躲进树荫能避开远处视线。</p></div><div><span>04</span><p><b>撑到下课就算赢</b>3 分钟内达成打卡目标，并保住至少 1 张立牌。立牌被撤或抱龙被追上会损失 1 张，南门有备用立牌。</p></div></div><div class="help-note">前 11 秒是新手保护期。<kbd>Esc</kbd> / <kbd>P</kbd> 暂停。手机可用方向按钮、冲刺和放置按钮。</div><div class="credits"><h3>开源与形象参考</h3><p>格子地图与 Canvas 循环参考 <a href="https://gist.github.com/straker/769fb461e066147ea16ac2cb9463beae" target="_blank" rel="noreferrer">Straker · Basic Bomberman（CC0）↗</a>；校园规则、AI、经营系统和界面为本项目编写。</p><p>奶龙造型参考 <a href="https://www.nailoong.com/ipStar/Nailong/" target="_blank" rel="noreferrer">第七印象奶龙官网 ↗</a>，游戏内使用手绘简化 SVG 同人立牌。</p><p><a href="https://github.com/LuanluanSauce/SecretYellowLoong/archive/refs/heads/main.zip" download>下载这一版完整源码 ↗</a> · <a href="./offline.html" download="SecretYellowLoong-offline.html">下载离线版 ↗</a> · <a href="./assets/nailoong.svg" download="nailoong.svg">奶龙 SVG 立牌 ↗</a></p></div><button id="help-ok" class="primary-button">懂了，这就去摆龙 <svg class="icon"><use href="#i-arrow"/></svg></button></dialog>
   <script type="module" src="./game.js"></script>
+  <script type="module" src="./school-league.js"></script>
 </body>
 </html>

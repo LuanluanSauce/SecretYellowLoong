@@ -23,7 +23,11 @@ jobs:
     steps:
       - name: Check out source
         uses: actions/checkout@v4
-      - name: Check JavaScript syntax
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check source and school data
         run: npm run check
       - name: Validate gameplay scenarios
         run: npm test

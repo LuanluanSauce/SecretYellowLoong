@@ -7,8 +7,10 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const read = path => readFileSync(resolve(root, path), 'utf8');
 const svg = `data:image/svg+xml;base64,${Buffer.from(read('dist/assets/nailoong.svg')).toString('base64')}`;
 const engine = read('dist/engine.js').replace(/^export\s+/gm, '');
-const controller = read('dist/game.js').replace(/^import\s+.*from\s+['"]\.\/engine\.js['"];?\s*$/m, '');
-const code = `${engine}\n${controller}`.replaceAll('./assets/nailoong.svg', svg);
+const controller = read('dist/game.js').replace(/^import\s+.*from\s+['"]\.\/engine\.js['"];?\s*$/m, '').replace(/^import ['"]\.\/school-league\.js['"];?\s*$/m, '');
+const leagueCore = read('dist/league-core.js').replace(/^export\s+/gm, '');
+const leagueUI = read('dist/school-league.js').replace(/^import\s+.*from\s+['"]\.\/league-core\.js['"];?\s*$/m, '');
+const code = `${engine}\n${leagueCore}\n${leagueUI}\n${controller}`.replaceAll('./assets/nailoong.svg', svg);
 const check = spawnSync(process.execPath, ['--input-type=module', '--check'], { input: code, encoding: 'utf8' });
 if (check.status !== 0) throw new Error(check.stderr || 'Offline game script did not parse');
 
@@ -17,8 +19,12 @@ const scriptTag = '<script type="module" src="./game.js"></script>';
 let html = read('dist/index.html');
 if (!html.includes(styleTag) || !html.includes(scriptTag)) throw new Error('Expected entrypoints were not found');
 html = html.replace(styleTag, `<style>\n${read('dist/style.css')}\n</style>`)
+  .replace('<link rel="stylesheet" href="./school-league.css">', `<style>\n${read('dist/school-league.css')}\n</style>`)
+  .replace('<script type="module" src="./school-league.js"></script>', '')
   .replace(scriptTag, `<script type="module">\n${code.replaceAll('</script', '<\\/script')}\n</script>`)
   .replaceAll('./assets/nailoong.svg', svg);
+const embedded = { catalog: JSON.parse(read('dist/data/schools.json')), config: { ...JSON.parse(read('dist/data/league-config.json')), storageMode: 'local', apiBaseUrl: '' } };
+html = html.replace('<script type="module">', `<script>window.__NAILOONG_LEAGUE_DATA__=${JSON.stringify(embedded).replaceAll('<', '\\u003c')};</script>\n<script type="module">`);
 if (/\b(?:src|href)=["']\.\/assets\//.test(html) || /<script[^>]*\bsrc=/.test(html) || /<link[^>]*rel="stylesheet"/.test(html)) {
   throw new Error('An offline runtime asset was not embedded');
 }

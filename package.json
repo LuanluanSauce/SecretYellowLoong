@@ -1,11 +1,13 @@
 {
   "name": "nailoong-campus-hide-and-seek",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "node server/server.mjs",
+    "validate:data": "node scripts/validate-data.mjs",
     "build": "node scripts/build.mjs",
-    "test": "node --test tests/scenarios.test.js",
-    "check": "node --check dist/engine.js && node --check dist/game.js"
+    "test": "node --test tests/*.test.js",
+    "check": "node --check dist/engine.js && node --check dist/game.js && node --check dist/school-league.js && node --check dist/league-core.js && node --check server/server.mjs && node scripts/validate-data.mjs"
   }
 }

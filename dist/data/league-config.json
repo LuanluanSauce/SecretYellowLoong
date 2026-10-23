@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "storageMode": "local",
+  "apiBaseUrl": "",
+  "seasonId": "campus-live-s1",
+  "seasonTitle": "校园摆龙联赛 · 从零开榜",
+  "rules": {
+    "normalPointsPerPhoto": 1,
+    "easyPointsPerPhoto": 1,
+    "winBonus": 0,
+    "maxPhotos": 150
+  },
+  "dailyClientRoundLimit": 60,
+  "dailyIpRoundLimit": 300
+}

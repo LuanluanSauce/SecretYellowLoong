@@ -5,4 +5,8 @@ node_modules/
 .openai/
 .DS_Store
 *.log
+server/runtime/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
 

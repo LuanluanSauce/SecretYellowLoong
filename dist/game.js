@@ -1,4 +1,5 @@
 import { CampusGame, TILE, WIDTH, HEIGHT, BUILDINGS, GROVES, SPOTS, PATROLS, UPGRADES, blocked, center, distance, inGrove, spotAt, pathfind } from './engine.js';
+import './school-league.js';
 
 const $ = id => document.getElementById(id);
 const canvas = $('game'), ctx = canvas.getContext('2d');
@@ -8,6 +9,8 @@ const map = document.createElement('canvas'); map.width = WIDTH; map.height = HE
 const ground = map.getContext('2d');
 const keys = new Set(), touches = new Set();
 let last = 0, uiTimer = 0, feedId = -1, renderedStatus = '', muted = true, audio = null, runToggle = false, resultReported = false, helpWasPlaying = false, previousScore = 0, previousLosses = 0, mode = 'normal';
+let leagueGameRoundId = '';
+let leagueGameStarting = false;
 let best = 0;
 try { best = Number(localStorage.getItem('nailoong-campus-best') || 0) || 0; } catch {}
 $('best').textContent = best;
@@ -333,6 +336,7 @@ function renderUI() {
     setText('result-title', r.won ? '今天的校园顶流！' : r.losses >= 3 ? '龙红了，纸板没了。' : '离顶流，只差一点点。');
     setText('result-copy', r.won ? `下课铃响，${r.score} 位同学的相册里都有奶龙。` : r.losses >= 3 ? '后勤库存告急！换个点位，下次一定。' : `已经让 ${r.score} 位同学开心了，下次冲到 ${game.target} 人！`);
     $('new-record').hidden = !record; sound(r.won ? 'win' : 'loss');
+    window.dispatchEvent(new CustomEvent('nailoong:round-end', { detail: { roundId: leagueGameRoundId, result: { ...r } } }));
   }
 }
 function getAudio() { if (!audio) { const Audio = window.AudioContext || window.webkitAudioContext; if (Audio) audio = new Audio(); } if (audio?.state === 'suspended') audio.resume().catch(() => {}); }
@@ -346,7 +350,27 @@ function sound(kind) {
   }
 }
 function clearInput() { keys.clear(); touches.clear(); runToggle = false; $('run-button').setAttribute('aria-pressed', 'false'); document.querySelectorAll('[data-dir]').forEach(b => b.classList.remove('pressed')); }
-function start() { getAudio(); game.start(); clearInput(); renderUI(); }
+async function start() {
+  if (game.status !== 'ready' || leagueGameStarting) return;
+  getAudio(); leagueGameStarting = true;
+  const button = $('start-button'), label = button.innerHTML;
+  button.disabled = true; button.textContent = '正在进入校园…';
+  document.querySelectorAll('[data-mode]').forEach(b => { b.disabled = true; });
+  try {
+    leagueGameRoundId = crypto.randomUUID?.() || `round_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    const detail = { roundId: leagueGameRoundId, mode: game.mode, ticketReady: null };
+    window.dispatchEvent(new CustomEvent('nailoong:round-start', { detail }));
+    // Start the game clock after the shared service issues the ticket, so a slow
+    // connection cannot make a legitimate completed round look too short.
+    if (detail.ticketReady) { try { await detail.ticketReady; } catch { /* Gameplay remains available if the league is offline. */ } }
+    game.start(); clearInput();
+    if (document.hidden || document.querySelector('dialog[open]')) game.pause();
+    renderUI();
+  } finally {
+    button.innerHTML = label; button.disabled = false; leagueGameStarting = false;
+    document.querySelectorAll('[data-mode]').forEach(b => { b.disabled = false; });
+  }
+}
 function newRound() { game.reset(mode); clearInput(); feedId = -1; resultReported = false; previousScore = 0; previousLosses = 0; renderUI(); }
 function pauseToggle() { if (game.status === 'playing') game.pause(); else if (game.status === 'paused') game.resume(); clearInput(); renderUI(); }
 function interact() { getAudio(); if (game.interact()) sound('place'); renderUI(); }
@@ -370,7 +394,7 @@ $('close-help').addEventListener('click', hideHelp); $('help-ok').addEventListen
 $('help-dialog').addEventListener('close', () => { if (helpWasPlaying) game.resume(); helpWasPlaying = false; renderUI(); });
 $('help-dialog').addEventListener('click', e => { if (e.target === $('help-dialog')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) hideHelp(); } });
 window.addEventListener('keydown', e => {
-  if ($('help-dialog').open) return;
+  if (document.querySelector('dialog[open]') || e.target.closest?.('input,select,textarea,[contenteditable="true"]')) return;
   const key = e.key.toLowerCase();
   if (['arrowup', 'arrowdown', 'arrowleft', 'arrowright', ' ', 'shift'].includes(key)) e.preventDefault();
   if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright', 'shift'].includes(key)) keys.add(key);
@@ -379,6 +403,7 @@ window.addEventListener('keydown', e => {
   if (!e.repeat && key === 'enter' && game.status === 'ready') start();
 });
 window.addEventListener('keyup', e => keys.delete(e.key.toLowerCase()));
+window.addEventListener('nailoong:league-open', () => { game.pause(); clearInput(); renderUI(); });
 window.addEventListener('blur', () => { clearInput(); game.pause(); renderUI(); });
 document.addEventListener('visibilitychange', () => { if (document.hidden) { clearInput(); game.pause(); renderUI(); } });
 canvas.addEventListener('pointerdown', e => {

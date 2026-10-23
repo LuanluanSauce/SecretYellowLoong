@@ -1,0 +1,257 @@
+﻿schoolId,schoolName,initialHeat,posts,likes,comments,collectedAt,sourceUrl,note
+cn-pku,北京大学,,,,,,,在此填入你统计的真实数据
+cn-ruc,中国人民大学,,,,,,,在此填入你统计的真实数据
+cn-tsinghua,清华大学,,,,,,,在此填入你统计的真实数据
+cn-bjtu,北京交通大学,,,,,,,在此填入你统计的真实数据
+cn-bjut,北京工业大学,,,,,,,在此填入你统计的真实数据
+cn-buaa,北京航空航天大学,,,,,,,在此填入你统计的真实数据
+cn-bit,北京理工大学,,,,,,,在此填入你统计的真实数据
+cn-ustb,北京科技大学,,,,,,,在此填入你统计的真实数据
+cn-buct,北京化工大学,,,,,,,在此填入你统计的真实数据
+cn-bupt,北京邮电大学,,,,,,,在此填入你统计的真实数据
+cn-cau,中国农业大学,,,,,,,在此填入你统计的真实数据
+cn-bfu,北京林业大学,,,,,,,在此填入你统计的真实数据
+cn-bucm,北京中医药大学,,,,,,,在此填入你统计的真实数据
+cn-bnu,北京师范大学,,,,,,,在此填入你统计的真实数据
+cn-bfsu,北京外国语大学,,,,,,,在此填入你统计的真实数据
+cn-cuc,中国传媒大学,,,,,,,在此填入你统计的真实数据
+cn-cufe,中央财经大学,,,,,,,在此填入你统计的真实数据
+cn-uibe,对外经济贸易大学,,,,,,,在此填入你统计的真实数据
+cn-bsu,北京体育大学,,,,,,,在此填入你统计的真实数据
+cn-ccom,中央音乐学院,,,,,,,在此填入你统计的真实数据
+cn-muc,中央民族大学,,,,,,,在此填入你统计的真实数据
+cn-cupl,中国政法大学,,,,,,,在此填入你统计的真实数据
+cn-ncepu,华北电力大学,,,,,,,在此填入你统计的真实数据
+cn-cumtb,中国矿业大学（北京）,,,,,,,在此填入你统计的真实数据
+cn-cugb,中国地质大学（北京）,,,,,,,在此填入你统计的真实数据
+cn-cupb,中国石油大学（北京）,,,,,,,在此填入你统计的真实数据
+cn-nankai,南开大学,,,,,,,在此填入你统计的真实数据
+cn-tju,天津大学,,,,,,,在此填入你统计的真实数据
+cn-tmu,天津医科大学,,,,,,,在此填入你统计的真实数据
+cn-hebut,河北工业大学,,,,,,,在此填入你统计的真实数据
+cn-tyut,太原理工大学,,,,,,,在此填入你统计的真实数据
+cn-imu,内蒙古大学,,,,,,,在此填入你统计的真实数据
+cn-lnu,辽宁大学,,,,,,,在此填入你统计的真实数据
+cn-dlut,大连理工大学,,,,,,,在此填入你统计的真实数据
+cn-neu,东北大学,,,,,,,在此填入你统计的真实数据
+cn-dlmu,大连海事大学,,,,,,,在此填入你统计的真实数据
+cn-jlu,吉林大学,,,,,,,在此填入你统计的真实数据
+cn-ybu,延边大学,,,,,,,在此填入你统计的真实数据
+cn-nenu,东北师范大学,,,,,,,在此填入你统计的真实数据
+cn-hit,哈尔滨工业大学,,,,,,,在此填入你统计的真实数据
+cn-hrbeu,哈尔滨工程大学,,,,,,,在此填入你统计的真实数据
+cn-neau,东北农业大学,,,,,,,在此填入你统计的真实数据
+cn-nefu,东北林业大学,,,,,,,在此填入你统计的真实数据
+cn-fudan,复旦大学,,,,,,,在此填入你统计的真实数据
+cn-tongji,同济大学,,,,,,,在此填入你统计的真实数据
+cn-sjtu,上海交通大学,,,,,,,在此填入你统计的真实数据
+cn-ecust,华东理工大学,,,,,,,在此填入你统计的真实数据
+cn-dhu,东华大学,,,,,,,在此填入你统计的真实数据
+cn-ecnu,华东师范大学,,,,,,,在此填入你统计的真实数据
+cn-shisu,上海外国语大学,,,,,,,在此填入你统计的真实数据
+cn-sufe,上海财经大学,,,,,,,在此填入你统计的真实数据
+cn-shu,上海大学,,,,,,,在此填入你统计的真实数据
+cn-nmmu,海军军医大学,,,,,,,在此填入你统计的真实数据
+cn-nju,南京大学,,,,,,,在此填入你统计的真实数据
+cn-suda,苏州大学,,,,,,,在此填入你统计的真实数据
+cn-seu,东南大学,,,,,,,在此填入你统计的真实数据
+cn-nuaa,南京航空航天大学,,,,,,,在此填入你统计的真实数据
+cn-njust,南京理工大学,,,,,,,在此填入你统计的真实数据
+cn-cumt,中国矿业大学,,,,,,,在此填入你统计的真实数据
+cn-hhu,河海大学,,,,,,,在此填入你统计的真实数据
+cn-jiangnan,江南大学,,,,,,,在此填入你统计的真实数据
+cn-njau,南京农业大学,,,,,,,在此填入你统计的真实数据
+cn-cpu,中国药科大学,,,,,,,在此填入你统计的真实数据
+cn-njnu,南京师范大学,,,,,,,在此填入你统计的真实数据
+cn-zju,浙江大学,,,,,,,在此填入你统计的真实数据
+cn-ahu,安徽大学,,,,,,,在此填入你统计的真实数据
+cn-ustc,中国科学技术大学,,,,,,,在此填入你统计的真实数据
+cn-hfut,合肥工业大学,,,,,,,在此填入你统计的真实数据
+cn-xmu,厦门大学,,,,,,,在此填入你统计的真实数据
+cn-fzu,福州大学,,,,,,,在此填入你统计的真实数据
+cn-ncu,南昌大学,,,,,,,在此填入你统计的真实数据
+cn-sdu,山东大学,,,,,,,在此填入你统计的真实数据
+cn-ouc,中国海洋大学,,,,,,,在此填入你统计的真实数据
+cn-upc,中国石油大学（华东）,,,,,,,在此填入你统计的真实数据
+cn-zzu,郑州大学,,,,,,,在此填入你统计的真实数据
+cn-whu,武汉大学,,,,,,,在此填入你统计的真实数据
+cn-hust,华中科技大学,,,,,,,在此填入你统计的真实数据
+cn-cugw,中国地质大学（武汉）,,,,,,,在此填入你统计的真实数据
+cn-whut,武汉理工大学,,,,,,,在此填入你统计的真实数据
+cn-hzau,华中农业大学,,,,,,,在此填入你统计的真实数据
+cn-ccnu,华中师范大学,,,,,,,在此填入你统计的真实数据
+cn-zuel,中南财经政法大学,,,,,,,在此填入你统计的真实数据
+cn-hnu,湖南大学,,,,,,,在此填入你统计的真实数据
+cn-csu,中南大学,,,,,,,在此填入你统计的真实数据
+cn-hunnu,湖南师范大学,,,,,,,在此填入你统计的真实数据
+cn-nudt,国防科技大学,,,,,,,在此填入你统计的真实数据
+cn-sysu,中山大学,,,,,,,在此填入你统计的真实数据
+cn-jnu,暨南大学,,,,,,,在此填入你统计的真实数据
+cn-scut,华南理工大学,,,,,,,在此填入你统计的真实数据
+cn-scnu,华南师范大学,,,,,,,在此填入你统计的真实数据
+cn-gxu,广西大学,,,,,,,在此填入你统计的真实数据
+cn-hainu,海南大学,,,,,,,在此填入你统计的真实数据
+cn-scu,四川大学,,,,,,,在此填入你统计的真实数据
+cn-swjtu,西南交通大学,,,,,,,在此填入你统计的真实数据
+cn-uestc,电子科技大学,,,,,,,在此填入你统计的真实数据
+cn-sicau,四川农业大学,,,,,,,在此填入你统计的真实数据
+cn-swufe,西南财经大学,,,,,,,在此填入你统计的真实数据
+cn-cqu,重庆大学,,,,,,,在此填入你统计的真实数据
+cn-swu,西南大学,,,,,,,在此填入你统计的真实数据
+cn-gzu,贵州大学,,,,,,,在此填入你统计的真实数据
+cn-ynu,云南大学,,,,,,,在此填入你统计的真实数据
+cn-utibet,西藏大学,,,,,,,在此填入你统计的真实数据
+cn-nwu,西北大学,,,,,,,在此填入你统计的真实数据
+cn-xjtu,西安交通大学,,,,,,,在此填入你统计的真实数据
+cn-nwpu,西北工业大学,,,,,,,在此填入你统计的真实数据
+cn-xidian,西安电子科技大学,,,,,,,在此填入你统计的真实数据
+cn-chd,长安大学,,,,,,,在此填入你统计的真实数据
+cn-nwafu,西北农林科技大学,,,,,,,在此填入你统计的真实数据
+cn-snnu,陕西师范大学,,,,,,,在此填入你统计的真实数据
+cn-afmu,空军军医大学,,,,,,,在此填入你统计的真实数据
+cn-lzu,兰州大学,,,,,,,在此填入你统计的真实数据
+cn-qhu,青海大学,,,,,,,在此填入你统计的真实数据
+cn-nxu,宁夏大学,,,,,,,在此填入你统计的真实数据
+cn-xju,新疆大学,,,,,,,在此填入你统计的真实数据
+cn-shzu,石河子大学,,,,,,,在此填入你统计的真实数据
+uk-abertay-university,Abertay University,,,,,,,在此填入你统计的真实数据
+uk-aberystwyth-university,Aberystwyth University,,,,,,,在此填入你统计的真实数据
+uk-anglia-ruskin-university,Anglia Ruskin University,,,,,,,在此填入你统计的真实数据
+uk-aston-university,Aston University,,,,,,,在此填入你统计的真实数据
+uk-bangor-university,Bangor University,,,,,,,在此填入你统计的真实数据
+uk-bath-spa-university,Bath Spa University,,,,,,,在此填入你统计的真实数据
+uk-birkbeck-university-of-london,"Birkbeck, University of London",,,,,,,在此填入你统计的真实数据
+uk-birmingham-city-university,Birmingham City University,,,,,,,在此填入你统计的真实数据
+uk-birmingham-newman-university,Birmingham Newman University,,,,,,,在此填入你统计的真实数据
+uk-bournemouth-university,Bournemouth University,,,,,,,在此填入你统计的真实数据
+uk-brunel-university-of-london,Brunel University of London,,,,,,,在此填入你统计的真实数据
+uk-buckinghamshire-new-university,Buckinghamshire New University,,,,,,,在此填入你统计的真实数据
+uk-canterbury-christ-church-university,Canterbury Christ Church University,,,,,,,在此填入你统计的真实数据
+uk-cardiff-metropolitan-university,Cardiff Metropolitan University,,,,,,,在此填入你统计的真实数据
+uk-cardiff-university,卡迪夫大学,,,,,,,在此填入你统计的真实数据
+uk-city-st-george-s-university-of-london,伦敦大学城市圣乔治学院,,,,,,,在此填入你统计的真实数据
+uk-courtauld-institute-of-art,Courtauld Institute of Art,,,,,,,在此填入你统计的真实数据
+uk-coventry-university,Coventry University,,,,,,,在此填入你统计的真实数据
+uk-cranfield-university,Cranfield University,,,,,,,在此填入你统计的真实数据
+uk-de-montfort-university,De Montfort University,,,,,,,在此填入你统计的真实数据
+uk-durham-university,杜伦大学,,,,,,,在此填入你统计的真实数据
+uk-edge-hill-university,Edge Hill University,,,,,,,在此填入你统计的真实数据
+uk-edinburgh-napier-university,Edinburgh Napier University,,,,,,,在此填入你统计的真实数据
+uk-falmouth-university,Falmouth University,,,,,,,在此填入你统计的真实数据
+uk-glasgow-caledonian-university,Glasgow Caledonian University,,,,,,,在此填入你统计的真实数据
+uk-the-glasgow-school-of-art,The Glasgow School of Art,,,,,,,在此填入你统计的真实数据
+uk-goldsmiths-university-of-london,"Goldsmiths, University of London",,,,,,,在此填入你统计的真实数据
+uk-guildhall-school-of-music-and-drama,Guildhall School of Music and Drama,,,,,,,在此填入你统计的真实数据
+uk-harper-adams-university,Harper Adams University,,,,,,,在此填入你统计的真实数据
+uk-heriot-watt-university,赫瑞瓦特大学,,,,,,,在此填入你统计的真实数据
+uk-imperial-college-london,帝国理工学院,,,,,,,在此填入你统计的真实数据
+uk-keele-university,Keele University,,,,,,,在此填入你统计的真实数据
+uk-king-s-college-london,伦敦国王学院,,,,,,,在此填入你统计的真实数据
+uk-lancaster-university,兰卡斯特大学,,,,,,,在此填入你统计的真实数据
+uk-leeds-beckett-university,Leeds Beckett University,,,,,,,在此填入你统计的真实数据
+uk-leeds-trinity-university,Leeds Trinity University,,,,,,,在此填入你统计的真实数据
+uk-lincoln-bishop-university,林肯主教大学,,,,,,,在此填入你统计的真实数据
+uk-liverpool-hope-university,Liverpool Hope University,,,,,,,在此填入你统计的真实数据
+uk-liverpool-john-moores-university,Liverpool John Moores University,,,,,,,在此填入你统计的真实数据
+uk-liverpool-school-of-tropical-medicine,Liverpool School of Tropical Medicine,,,,,,,在此填入你统计的真实数据
+uk-london-business-school,London Business School,,,,,,,在此填入你统计的真实数据
+uk-london-metropolitan-university,London Metropolitan University,,,,,,,在此填入你统计的真实数据
+uk-london-and-south-east-university-group,伦敦与东南大学集团,,,,,,,在此填入你统计的真实数据
+uk-london-school-of-economics-and-political-science,伦敦政治经济学院,,,,,,,在此填入你统计的真实数据
+uk-london-school-of-hygiene-and-tropical-medicine,London School of Hygiene and Tropical Medicine,,,,,,,在此填入你统计的真实数据
+uk-london-south-bank-university,London South Bank University,,,,,,,在此填入你统计的真实数据
+uk-loughborough-university,拉夫堡大学,,,,,,,在此填入你统计的真实数据
+uk-manchester-metropolitan-university,Manchester Metropolitan University,,,,,,,在此填入你统计的真实数据
+uk-middlesex-university,Middlesex University,,,,,,,在此填入你统计的真实数据
+uk-newcastle-university,纽卡斯尔大学,,,,,,,在此填入你统计的真实数据
+uk-northumbria-university,Northumbria University,,,,,,,在此填入你统计的真实数据
+uk-norwich-university-of-the-arts,Norwich University of the Arts,,,,,,,在此填入你统计的真实数据
+uk-nottingham-trent-university,Nottingham Trent University,,,,,,,在此填入你统计的真实数据
+uk-the-open-university,The Open University,,,,,,,在此填入你统计的真实数据
+uk-oxford-brookes-university,Oxford Brookes University,,,,,,,在此填入你统计的真实数据
+uk-plymouth-marjon-university,Plymouth Marjon University,,,,,,,在此填入你统计的真实数据
+uk-queen-margaret-university,Queen Margaret University,,,,,,,在此填入你统计的真实数据
+uk-queen-mary-university-of-london,伦敦玛丽女王大学,,,,,,,在此填入你统计的真实数据
+uk-queen-s-university-belfast,贝尔法斯特女王大学,,,,,,,在此填入你统计的真实数据
+uk-regent-s-university-london,Regent's University London,,,,,,,在此填入你统计的真实数据
+uk-robert-gordon-university,Robert Gordon University,,,,,,,在此填入你统计的真实数据
+uk-royal-central-school-of-speech-drama,Royal Central School of Speech & Drama,,,,,,,在此填入你统计的真实数据
+uk-royal-college-of-art,Royal College of Art,,,,,,,在此填入你统计的真实数据
+uk-royal-college-of-music-london,"Royal College of Music, London",,,,,,,在此填入你统计的真实数据
+uk-royal-holloway-university-of-london,"Royal Holloway, University of London",,,,,,,在此填入你统计的真实数据
+uk-the-royal-veterinary-college,The Royal Veterinary College,,,,,,,在此填入你统计的真实数据
+uk-sheffield-hallam-university,Sheffield Hallam University,,,,,,,在此填入你统计的真实数据
+uk-soas-university-of-london,"SOAS, University of London",,,,,,,在此填入你统计的真实数据
+uk-solent-university,Solent University,,,,,,,在此填入你统计的真实数据
+uk-st-mary-s-university-twickenham,"St Mary's University, Twickenham",,,,,,,在此填入你统计的真实数据
+uk-swansea-university,斯旺西大学,,,,,,,在此填入你统计的真实数据
+uk-teesside-university,Teesside University,,,,,,,在此填入你统计的真实数据
+uk-trinity-laban-conservatoire-of-music-and-dance,Trinity Laban Conservatoire of Music and Dance,,,,,,,在此填入你统计的真实数据
+uk-ulster-university,Ulster University,,,,,,,在此填入你统计的真实数据
+uk-university-college-london,伦敦大学学院,,,,,,,在此填入你统计的真实数据
+uk-university-for-the-creative-arts,University for the Creative Arts,,,,,,,在此填入你统计的真实数据
+uk-university-of-aberdeen,阿伯丁大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-bath,巴斯大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-bedfordshire,University of Bedfordshire,,,,,,,在此填入你统计的真实数据
+uk-university-of-birmingham,伯明翰大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-bradford,University of Bradford,,,,,,,在此填入你统计的真实数据
+uk-university-of-brighton,University of Brighton,,,,,,,在此填入你统计的真实数据
+uk-university-of-bristol,布里斯托大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-buckingham,University of Buckingham,,,,,,,在此填入你统计的真实数据
+uk-university-of-cambridge,剑桥大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-chester,University of Chester,,,,,,,在此填入你统计的真实数据
+uk-university-of-chichester,University of Chichester,,,,,,,在此填入你统计的真实数据
+uk-university-of-cumbria,University of Cumbria,,,,,,,在此填入你统计的真实数据
+uk-university-of-derby,University of Derby,,,,,,,在此填入你统计的真实数据
+uk-university-of-dundee,邓迪大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-east-anglia,东英吉利大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-east-london,University of East London,,,,,,,在此填入你统计的真实数据
+uk-university-of-edinburgh,爱丁堡大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-essex,University of Essex,,,,,,,在此填入你统计的真实数据
+uk-university-of-exeter,埃克塞特大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-glasgow,格拉斯哥大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-gloucestershire,University of Gloucestershire,,,,,,,在此填入你统计的真实数据
+uk-university-of-greater-manchester,大曼彻斯特大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-hertfordshire,University of Hertfordshire,,,,,,,在此填入你统计的真实数据
+uk-university-of-huddersfield,University of Huddersfield,,,,,,,在此填入你统计的真实数据
+uk-university-of-hull,University of Hull,,,,,,,在此填入你统计的真实数据
+uk-university-of-lancashire,兰开夏大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-leeds,利兹大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-leicester,莱斯特大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-lincoln,University of Lincoln,,,,,,,在此填入你统计的真实数据
+uk-university-of-liverpool,利物浦大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-london,University of London,,,,,,,在此填入你统计的真实数据
+uk-university-of-manchester,曼彻斯特大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-northampton,University of Northampton,,,,,,,在此填入你统计的真实数据
+uk-university-of-nottingham,诺丁汉大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-oxford,牛津大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-plymouth,University of Plymouth,,,,,,,在此填入你统计的真实数据
+uk-university-of-portsmouth,University of Portsmouth,,,,,,,在此填入你统计的真实数据
+uk-university-of-reading,雷丁大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-roehampton,University of Roehampton,,,,,,,在此填入你统计的真实数据
+uk-university-of-salford,University of Salford,,,,,,,在此填入你统计的真实数据
+uk-university-of-sheffield,谢菲尔德大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-south-wales,University of South Wales,,,,,,,在此填入你统计的真实数据
+uk-university-of-southampton,南安普顿大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-staffordshire,斯塔福德郡大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-st-andrews,圣安德鲁斯大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-stirling,University of Stirling,,,,,,,在此填入你统计的真实数据
+uk-university-of-strathclyde,斯特拉斯克莱德大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-suffolk,University of Suffolk,,,,,,,在此填入你统计的真实数据
+uk-university-of-sunderland,University of Sunderland,,,,,,,在此填入你统计的真实数据
+uk-university-of-surrey,萨里大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-sussex,萨塞克斯大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-the-arts-london,伦敦艺术大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-the-highlands-and-islands,University of the Highlands and Islands,,,,,,,在此填入你统计的真实数据
+uk-university-of-the-west-of-england-bristol,"University of the West of England, Bristol",,,,,,,在此填入你统计的真实数据
+uk-university-of-the-west-of-scotland,University of the West of Scotland,,,,,,,在此填入你统计的真实数据
+uk-university-of-wales-trinity-saint-david,University of Wales Trinity Saint David,,,,,,,在此填入你统计的真实数据
+uk-university-of-warwick,华威大学,,,,,,,在此填入你统计的真实数据
+uk-university-of-west-london,University of West London,,,,,,,在此填入你统计的真实数据
+uk-university-of-westminster,University of Westminster,,,,,,,在此填入你统计的真实数据
+uk-university-of-winchester,University of Winchester,,,,,,,在此填入你统计的真实数据
+uk-university-of-wolverhampton,University of Wolverhampton,,,,,,,在此填入你统计的真实数据
+uk-university-of-worcester,University of Worcester,,,,,,,在此填入你统计的真实数据
+uk-university-of-york,约克大学,,,,,,,在此填入你统计的真实数据
+uk-wrexham-university,Wrexham University,,,,,,,在此填入你统计的真实数据
+uk-york-st-john-university,York St John University,,,,,,,在此填入你统计的真实数据

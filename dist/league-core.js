@@ -5,8 +5,12 @@ export function normalizeSearch(value) {
 export const schoolCountry = school => school.countryCode || (school.region === 'UK' ? 'GB' : school.region);
 export function searchSchools(schools, query = '', country = 'ALL', mapRegionId = '') {
   const key = normalizeSearch(query), code = country === 'UK' ? 'GB' : country;
-  return schools.filter(s => (code === 'ALL' || schoolCountry(s) === code) && (!mapRegionId || s.mapRegionId === mapRegionId) && (!key ||
-    [s.name, s.englishName, s.id, ...(s.aliases || [])].some(v => normalizeSearch(v).includes(key))));
+  return schools.map((school, index) => {
+    const values = [school.name, school.englishName, school.id, ...(school.aliases || [])].map(normalizeSearch);
+    const relevance = !key ? 0 : values.some(value => value === key) ? 3 : values.some(value => value.startsWith(key)) ? 2 : values.some(value => value.includes(key)) ? 1 : -1;
+    return { school, index, relevance };
+  }).filter(({ school, relevance }) => (code === 'ALL' || schoolCountry(school) === code) && (!mapRegionId || school.mapRegionId === mapRegionId) && relevance >= 0)
+    .sort((a, b) => b.relevance - a.relevance || a.index - b.index).map(({ school }) => school);
 }
 export function validateLeagueData(catalog, config) {
   if (catalog.schemaVersion !== 1 || config.schemaVersion !== 2) throw new Error('学校榜版本已更新，请刷新页面');
@@ -104,17 +108,26 @@ export class LocalLeague {
 export class RemoteLeague {
   constructor(data, clientId, fetcher = fetch) { this.data = data; this.clientId = clientId; this.fetcher = fetcher; }
   async request(path, payload) {
-    const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 8000);
-    try {
-      const response = await this.fetcher(`${this.data.config.apiBaseUrl.replace(/\/$/, '')}${path}`, {
-        method: payload ? 'POST' : 'GET', headers: payload ? { 'Content-Type': 'application/json' } : {},
-        body: payload ? JSON.stringify(payload) : undefined, cache: 'no-store', signal: controller.signal,
-      });
-      let body; try { body = await response.json(); } catch { throw new Error('榜单服务暂不可用，请稍后重试'); }
-      if (!response.ok) throw new Error(body.error || '榜单暂时连接不上，请稍后重试');
-      return body;
-    } catch (e) { if (e.name === 'AbortError' || e instanceof TypeError) throw new Error('网络未连接，成绩暂未提交，请重试'); throw e; }
-    finally { clearTimeout(timer); }
+    const url = `${this.data.config.apiBaseUrl.replace(/\/$/, '')}${path}`;
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 20000);
+      try {
+        const response = await Reflect.apply(this.fetcher, globalThis, [url, {
+          method: payload ? 'POST' : 'GET', headers: payload ? { 'Content-Type': 'application/json' } : {},
+          body: payload ? JSON.stringify(payload) : undefined, cache: 'no-store', signal: controller.signal,
+        }]);
+        let body; try { body = await response.json(); } catch { throw new Error('榜单服务暂不可用，请稍后重试'); }
+        if (!response.ok) throw new Error(body.error || '榜单暂时连接不上，请稍后重试');
+        return body;
+      } catch (e) {
+        const temporaryNetworkFailure = e?.name === 'AbortError' || e instanceof TypeError;
+        if (!temporaryNetworkFailure) throw e;
+        if (attempt === 0) { await new Promise(resolve => setTimeout(resolve, 600)); continue; }
+        if (e?.name === 'AbortError') throw new Error('网络响应超时，请重试');
+        const reason = e?.message && e.message !== 'Failed to fetch' ? `（${e.message}）` : '';
+        throw new Error(`网络连接中断${reason}，请重试`);
+      } finally { clearTimeout(timer); }
+    }
   }
   async getStandings(board = 'total') { return (await this.request(`/leaderboard?seasonId=${encodeURIComponent(this.data.config.seasonId)}&board=${board}`)).schools; }
   async startRound({ mode }) { return this.request('/rounds/start', { mode, clientId: this.clientId, seasonId: this.data.config.seasonId }); }

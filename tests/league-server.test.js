@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtempSync, rmSync, cpSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { createLeagueServer } from '../server/server.mjs';
 const result = score => ({ mode: 'normal', score, survived: 180, losses: 0, relocations: 4, won: score >= 24 });
 async function open(options = {}) {
@@ -83,7 +84,7 @@ test('forged tickets, unknown schools, invalid board types and disallowed origin
   } finally { await app.close(); }
 });
 test('persistent totals and best rounds survive restarts and directory updates; mapped regions use sum versus maximum', async () => {
-  const runtime = resolve(new URL('../server/runtime/', import.meta.url).pathname); mkdirSync(runtime, { recursive: true });
+  const runtime = resolve(fileURLToPath(new URL('../server/runtime/', import.meta.url))); mkdirSync(runtime, { recursive: true });
   const temp = mkdtempSync(resolve(runtime, 'integration-')), dbPath = resolve(temp, 'league.sqlite'), dataDir = resolve(temp, 'data');
   cpSync(new URL('../dist/data', import.meta.url), dataDir, { recursive: true });
   let app = await open({ dbPath, dataDir });

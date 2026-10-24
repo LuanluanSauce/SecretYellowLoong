@@ -12,7 +12,7 @@ const panel = leagueElement('section', 'school-result-panel'); panel.id = 'schoo
 panel.innerHTML = `<div class="school-panel-heading"><b>这一局，为母校上分。</b><span id="school-round-points">+0 赞</span></div>
   <p class="school-league-mode" id="school-league-mode">正在准备校园榜单…</p>
   <div class="school-picker-controls"><select id="school-region" aria-label="筛选学校所在国家或地区"></select><input id="school-search" type="search" placeholder="搜校名、英文名或简称" autocomplete="off" aria-label="搜索自己的学校"></div>
-  <div class="school-options" id="school-options" role="group" aria-label="可选学校"></div>
+  <div class="school-options" id="school-options" role="group" aria-label="可选学校"><p class="school-empty">正在加载学校名单…</p></div>
   <div class="school-picked" id="school-picked">先选学校，再把这局快乐送过去。</div>
   <button id="school-submit" class="primary-button" disabled>为母校贡献本局点赞</button>
   <p class="school-message" id="school-message" role="status" aria-live="polite"></p>
@@ -41,9 +41,17 @@ function leagueCountryOptions() {
 async function leagueLoad() {
   const embedded = window.__NAILOONG_LEAGUE_DATA__;
   const load = async name => {
-    const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 6000);
-    try { const r = await fetch(new URL(`./data/${name}`, import.meta.url), { cache: 'no-store', signal: controller.signal }); if (!r.ok) throw new Error(); return await r.json(); }
-    catch { throw new Error('学校数据暂未加载成功，请刷新重试'); } finally { clearTimeout(timer); }
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const controller = new AbortController(), timer = setTimeout(() => controller.abort(), 20000);
+      try {
+        const r = await fetch(new URL(`./data/${name}`, import.meta.url), { cache: 'no-store', signal: controller.signal });
+        if (!r.ok) throw new Error();
+        return await r.json();
+      } catch {
+        if (attempt === 1) throw new Error('学校数据暂未加载成功，请刷新重试');
+        await new Promise(resolve => setTimeout(resolve, 600));
+      } finally { clearTimeout(timer); }
+    }
   };
   const [catalog, config] = embedded ? [embedded.catalog, embedded.config] : await Promise.all([load('schools.json'), load('league-config.json')]);
   leagueData = validateLeagueData(catalog, config);
@@ -52,7 +60,13 @@ async function leagueLoad() {
   if (!catalog.schools.some(s => s.id === leagueSchool)) leagueSchool = '';
   leagueCountryOptions(); leagueRenderPicker();
 }
-const leagueReady = leagueLoad().catch(e => { leagueMessage(e.message, true); leagueGet('school-league-mode').textContent = '榜单暂未准备好，游戏仍可正常进行'; throw e; });
+const leagueReady = leagueLoad().catch(e => {
+  const holder = leagueGet('school-options'); holder.replaceChildren();
+  const error = leagueElement('p', 'school-empty school-load-error', `${e.message}。`);
+  const retry = leagueElement('button', 'school-reload-button', '重新加载学校名单'); retry.type = 'button';
+  retry.addEventListener('click', () => location.reload()); holder.append(error, retry);
+  leagueMessage(e.message, true); leagueGet('school-league-mode').textContent = '榜单暂未准备好，游戏仍可正常进行'; throw e;
+});
 leagueReady.catch(() => {});
 function leagueRenderPicker() {
   if (!leagueData) return;
@@ -153,7 +167,15 @@ leagueGet('school-submit').addEventListener('click', async () => {
   const roundId = leagueActiveId, schoolId = leagueSchool, result = leagueResult, ticketPromise = leagueTicketPromise;
   leagueBusy = true; leagueRenderPicker(); leagueMessage('正在把快乐送回母校…');
   try {
-    const ticket = await ticketPromise; if (roundId !== leagueActiveId) return;
+    let ticket;
+    try { ticket = await ticketPromise; }
+    catch {
+      if (roundId !== leagueActiveId) return;
+      leagueMessage('开局凭证连接失败，正在重新申请并提交…');
+      const retry = leagueReady.then(() => leagueAdapter.startRound({ roundId, mode: result.mode }));
+      retry.catch(() => {}); leagueTicketPromise = retry; ticket = await retry;
+    }
+    if (roundId !== leagueActiveId) return;
     const receipt = await leagueAdapter.submit({ schoolId, result, ticket });
     if (roundId !== leagueActiveId) return;
     leagueReceipt = receipt;

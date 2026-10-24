@@ -8,6 +8,12 @@
 
 这个游戏不调用 ChatGPT、OpenAI API 或境外 CDN；所有运行资源都保存在 `dist/` 中，可以部署在普通静态网站托管上。
 
+### Cloudflare Workers + D1（共享校园榜）
+
+Cloudflare 正式版本已部署在 <https://game.loong.ydtandll.com>。仓库中的 `worker/index.js`、`migrations/` 与 `wrangler.jsonc` 会把静态游戏、排行榜 API 和 D1 数据库部署为一个 Worker。开局凭证使用无状态 HMAC 签名；只有成功提交才写入 D1，唯一对局 ID、原子 UPSERT 与 D1 batch 事务共同防止重试重复加分。
+
+第一次部署请按 [DEPLOY-CLOUDFLARE.md](./DEPLOY-CLOUDFLARE.md) 操作。Cloudflare 版本与本地 Node + SQLite 版本使用不同数据库；普通 Cloudflare 免费网络不包含中国大陆节点，大陆访问质量需要实际测试。
+
 ### 腾讯 EdgeOne Makers
 
 导入本仓库，框架选 Other，根目录为仓库根目录。`edgeone.json` 已提供配置：安装命令 `node --version`，构建命令 `npm run build`，输出目录 `dist`。

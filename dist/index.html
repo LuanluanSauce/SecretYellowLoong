@@ -9,8 +9,21 @@
   <link rel="icon" type="image/svg+xml" href="./assets/nailoong.svg">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./school-league.css">
+  <style>
+    #app-loading{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:#f6f5ee;color:#23251f;transition:opacity .22s ease,visibility .22s ease}
+    #app-loading.is-ready{opacity:0;visibility:hidden;pointer-events:none}
+    .app-loading-card{width:min(82vw,320px);text-align:center;font:600 14px/1.55 system-ui,sans-serif;letter-spacing:.04em}
+    .app-loading-mark{display:block;margin:0 auto 18px;width:52px;height:52px;border:4px solid #d8d3c5;border-top-color:#edb92f;border-radius:50%;animation:app-loading-spin .8s linear infinite}
+    .app-loading-card b{display:block;margin-bottom:5px;font-size:18px}.app-loading-card small{color:#737267;font-weight:500}
+    @keyframes app-loading-spin{to{transform:rotate(360deg)}}
+    @media(prefers-reduced-motion:reduce){.app-loading-mark{animation:none;border-top-color:#d8d3c5;background:#edb92f}}
+  </style>
 </head>
 <body>
+  <div id="app-loading" role="status" aria-live="polite"><div class="app-loading-card"><span class="app-loading-mark"></span><b>正在加载校园地图</b><small id="app-loading-note">奶龙正在赶来的路上…</small></div></div>
+  <script>
+    (()=>{const box=document.getElementById('app-loading'),note=document.getElementById('app-loading-note');const slow=setTimeout(()=>{note.textContent='网络有点慢，再等一下或刷新重试。'},5000);addEventListener('load',()=>{clearTimeout(slow);requestAnimationFrame(()=>setTimeout(()=>box.classList.add('is-ready'),80));},{once:true});})();
+  </script>
   <svg class="icon-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
     <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 6h4l2-3h4l2 3h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>

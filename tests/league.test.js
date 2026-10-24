@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { LocalLeague, calculatePoints, rankStandings, aggregateRegions, searchSchools, validateLeagueData } from '../dist/league-core.js';
+import { LocalLeague, RemoteLeague, calculatePoints, rankStandings, aggregateRegions, searchSchools, validateLeagueData } from '../dist/league-core.js';
 const read = name => JSON.parse(readFileSync(new URL(`../dist/data/${name}`, import.meta.url), 'utf8'));
 const data = validateLeagueData(read('schools.json'), read('league-config.json'));
 const result = score => ({ mode: 'normal', score, survived: 180, losses: 0, relocations: 4, won: score >= 24 });
@@ -9,10 +9,22 @@ const memory = () => { const map = new Map(); return { getItem: k => map.get(k),
 const submit = async (league, roundId, schoolId, score) => league.submit({ schoolId, result: result(score), ticket: await league.startRound({ roundId, mode: 'normal' }) });
 
 test('directory remains searchable while both participation boards start empty', async () => {
-  assert.equal(data.catalog.schools.length, 256);
+  assert.equal(data.catalog.schools.length, 560);
+  assert.deepEqual(Object.fromEntries(Object.entries(data.catalog.countries)), {
+    CN: '中国', HK: '中国香港', SG: '新加坡', US: '美国', CA: '加拿大', JP: '日本', AU: '澳大利亚', GB: '英国',
+  });
   assert.equal(searchSchools(data.catalog.schools, 'UCL', 'GB').some(s => s.englishName === 'University College London'), true);
   assert.equal(searchSchools(data.catalog.schools, '爱丁堡')[0].englishName, 'University of Edinburgh');
   assert.equal(searchSchools(data.catalog.schools, '北大', 'CN')[0].id, 'cn-pku');
+  assert.equal(searchSchools(data.catalog.schools, '港大', 'HK')[0].id, 'hk-the-university-of-hong-kong');
+  assert.equal(searchSchools(data.catalog.schools, 'NUS', 'SG')[0].id, 'sg-national-university-of-singapore');
+  assert.equal(searchSchools(data.catalog.schools, 'MIT', 'US')[0].id, 'us-massachusetts-institute-of-technology');
+  assert.equal(searchSchools(data.catalog.schools, 'UBC', 'CA')[0].id, 'ca-university-of-british-columbia-the');
+  assert.equal(searchSchools(data.catalog.schools, '京大', 'JP')[0].id, 'jp-kyoto-university');
+  assert.equal(searchSchools(data.catalog.schools, 'UNSW', 'AU')[0].id, 'au-unsw');
+  assert.deepEqual(Object.fromEntries(['HK', 'SG', 'US', 'CA', 'JP', 'AU'].map(code => [code, searchSchools(data.catalog.schools, '', code).length])), {
+    HK: 8, SG: 7, US: 69, CA: 97, JP: 85, AU: 38,
+  });
   const league = new LocalLeague(data, memory());
   assert.deepEqual(await league.getStandings('total'), []); assert.deepEqual(await league.getStandings('best'), []);
   await league.startRound({ roundId: 'not-finished', mode: 'normal' });
@@ -62,4 +74,21 @@ test('regional totals sum school contributions while regional single-round score
   assert.deepEqual(aggregateRegions(rows), [{ countryCode: 'CN', mapRegionId: 'CN-11', totalHeat: 150, bestHeat: 40, rounds: 6, schools: 2 }]);
   assert.equal(searchSchools(schools, '', 'CN', 'CN-11').length, 2);
   assert.equal(rankStandings(schools, contributions, 'best')[0].id, 'c');
+});
+test('remote league retries one transient network failure without changing the request', async () => {
+  const calls = [];
+  const fetcher = async function (url, options) {
+    assert.equal(this, globalThis);
+    calls.push({ url, method: options.method, body: options.body });
+    if (calls.length === 1) throw new TypeError('temporary network failure');
+    return new Response(JSON.stringify({ roundId: 'signed-round', token: 'signed-token' }), {
+      status: 201,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  };
+  const remoteData = { ...data, config: { ...data.config, storageMode: 'remote', apiBaseUrl: '/api' } };
+  const ticket = await new RemoteLeague(remoteData, 'visitor_retry_0001', fetcher).startRound({ mode: 'normal' });
+  assert.deepEqual(ticket, { roundId: 'signed-round', token: 'signed-token' });
+  assert.equal(calls.length, 2);
+  assert.deepEqual(calls[0], calls[1]);
 });

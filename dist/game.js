@@ -353,7 +353,10 @@ function clearInput() { keys.clear(); touches.clear(); runToggle = false; $('run
 async function start() {
   if (game.status !== 'ready' || leagueGameStarting) return;
   getAudio(); leagueGameStarting = true;
-  const button = $('start-button'), label = button.innerHTML;
+  const button = $('start-button');
+  button.dataset.readyLabel ||= button.innerHTML;
+  const label = button.dataset.readyLabel;
+  let started = false;
   button.disabled = true; button.textContent = '正在进入校园…';
   document.querySelectorAll('[data-mode]').forEach(b => { b.disabled = true; });
   try {
@@ -362,12 +365,16 @@ async function start() {
     window.dispatchEvent(new CustomEvent('nailoong:round-start', { detail }));
     // Start the game clock after the shared service issues the ticket, so a slow
     // connection cannot make a legitimate completed round look too short.
-    if (detail.ticketReady) { try { await detail.ticketReady; } catch { /* Gameplay remains available if the league is offline. */ } }
+    if (detail.ticketReady) await detail.ticketReady;
     game.start(); clearInput();
+    started = true;
     if (document.hidden || document.querySelector('dialog[open]')) game.pause();
     renderUI();
+  } catch (error) {
+    button.textContent = error?.message || '榜单连接失败，点这里重试';
   } finally {
-    button.innerHTML = label; button.disabled = false; leagueGameStarting = false;
+    if (started) button.innerHTML = label;
+    button.disabled = false; leagueGameStarting = false;
     document.querySelectorAll('[data-mode]').forEach(b => { b.disabled = false; });
   }
 }

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>校园榜网络诊断</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; background: #fff8dc; color: #281d10; }
+    body { max-width: 680px; margin: 0 auto; padding: 32px 18px; }
+    main { background: white; border: 2px solid #281d10; border-radius: 20px; padding: 24px; box-shadow: 6px 6px 0 #f3c94f; }
+    button { border: 0; border-radius: 999px; padding: 12px 18px; margin: 4px; font: inherit; font-weight: 700; cursor: pointer; background: #ffd83d; color: #281d10; }
+    button:disabled { opacity: .55; cursor: wait; }
+    pre { min-height: 170px; white-space: pre-wrap; overflow-wrap: anywhere; padding: 14px; border-radius: 12px; background: #211d18; color: #f8f4e8; }
+    small { color: #705f48; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>校园榜网络诊断</h1>
+    <p>只测试当前浏览器能否连接 Worker，不写入排行榜，也不会显示签名凭证。</p>
+    <button id="run">开始测试</button><button id="copy" disabled>复制结果</button>
+    <pre id="result">等待测试…</pre>
+    <small>如果 POST 失败但 GET 成功，通常是当前网络、浏览器扩展或代理拦截了接口请求。</small>
+  </main>
+  <script>
+    const runButton = document.getElementById('run');
+    const copyButton = document.getElementById('copy');
+    const result = document.getElementById('result');
+    const report = { page: location.href, origin: location.origin, online: navigator.onLine, userAgent: navigator.userAgent };
+    const test = async (name, url, options = {}) => {
+      const started = performance.now();
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 30000);
+      try {
+        const response = await fetch(url, { ...options, cache: 'no-store', signal: controller.signal });
+        let body;
+        try { body = await response.json(); } catch { body = null; }
+        report[name] = { ok: response.ok, status: response.status, ms: Math.round(performance.now() - started), error: body?.error || null };
+      } catch (error) {
+        report[name] = { ok: false, status: 0, ms: Math.round(performance.now() - started), exception: error?.name || 'Error', message: error?.message || String(error) };
+      } finally { clearTimeout(timer); }
+      result.textContent = JSON.stringify(report, null, 2);
+    };
+    runButton.addEventListener('click', async () => {
+      runButton.disabled = true; copyButton.disabled = true; result.textContent = '正在测试 GET…';
+      await test('getHealth', `/api/health?networkTest=${Date.now()}`);
+      result.textContent = `${JSON.stringify(report, null, 2)}\n\n正在测试 POST…`;
+      await test('postStart', '/api/rounds/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ seasonId: 'campus-live-s1', clientId: `network_probe_${Date.now()}`, mode: 'normal' }),
+      });
+      result.textContent = JSON.stringify(report, null, 2);
+      runButton.disabled = false; copyButton.disabled = false;
+    });
+    copyButton.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(result.textContent); copyButton.textContent = '已复制'; }
+      catch { result.focus(); }
+    });
+  </script>
+</body>
+</html>

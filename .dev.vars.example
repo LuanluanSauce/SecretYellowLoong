@@ -1,0 +1,3 @@
+# Copy this file to .dev.vars for local Wrangler development.
+# Use a different random value in production via `wrangler secret put`.
+LEAGUE_HASH_SECRET="replace-with-at-least-32-random-characters"

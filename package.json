@@ -5,9 +5,16 @@
   "type": "module",
   "scripts": {
     "start": "node server/server.mjs",
+    "worker:dev": "wrangler dev",
+    "worker:deploy": "npm run check && npm test && wrangler deploy",
+    "d1:migrate:local": "wrangler d1 migrations apply loong-league --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply loong-league --remote",
     "validate:data": "node scripts/validate-data.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test tests/*.test.js",
-    "check": "node --check dist/engine.js && node --check dist/game.js && node --check dist/school-league.js && node --check dist/league-core.js && node --check server/server.mjs && node scripts/validate-data.mjs"
+    "check": "node --check dist/engine.js && node --check dist/game.js && node --check dist/school-league.js && node --check dist/league-core.js && node --check server/server.mjs && node --check worker/index.js && node scripts/validate-data.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
   }
 }

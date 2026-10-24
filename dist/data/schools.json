@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-22",
-  "coverage": "中国原211名单，按独立办学实体拆分地矿油北京与外地学校、华北电力合并校区；英国以UUK当前成员为首批名单（排除直布罗陀），包含专门院校，非全英国穷尽名单。",
+  "updatedAt": "2026-10-24",
+  "coverage": "中国原211名单；英国Universities UK成员；中国香港教资会资助大学；新加坡6所自治大学及政府支持的UAS；美国AAU美国成员；加拿大Universities Canada成员；日本国立大学协会成员；澳大利亚Universities Australia成员。均为有明确边界的首批名单，并非各地全部高校。",
   "sources": [
     {
       "title": "教育部原211学校名单",
@@ -10,6 +10,30 @@
     {
       "title": "Universities UK members",
       "url": "https://www.universitiesuk.ac.uk/about-us/our-members"
+    },
+    {
+      "title": "香港教资会资助大学",
+      "url": "https://www.ugc.edu.hk/eng/ugc/site/fund_inst.html"
+    },
+    {
+      "title": "Singapore MOE post-secondary institutions",
+      "url": "https://www.moe.gov.sg/post-secondary/overview"
+    },
+    {
+      "title": "AAU Member Universities",
+      "url": "https://www.aau.edu/resource-library/aau-member-universities-by-year-of-entry"
+    },
+    {
+      "title": "Universities Canada members",
+      "url": "https://univcan.ca/about-universities-canada/our-members/"
+    },
+    {
+      "title": "日本国立大学协会会员名册",
+      "url": "https://www.janu.jp/janu/about/"
+    },
+    {
+      "title": "Universities Australia members",
+      "url": "https://universitiesaustralia.edu.au/our-universities/"
     }
   ],
   "schools": [
@@ -3093,10 +3117,3621 @@
       "countryCode": "GB",
       "mapRegionId": null,
       "geoStatus": "pending"
+    },
+    {
+      "id": "hk-city-university-of-hong-kong",
+      "name": "香港城市大学",
+      "englishName": "City University of Hong Kong",
+      "region": "HK",
+      "aliases": [
+        "CityU",
+        "城大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-hong-kong-baptist-university",
+      "name": "香港浸会大学",
+      "englishName": "Hong Kong Baptist University",
+      "region": "HK",
+      "aliases": [
+        "HKBU",
+        "浸大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-lingnan-university",
+      "name": "岭南大学",
+      "englishName": "Lingnan University",
+      "region": "HK",
+      "aliases": [
+        "LU",
+        "岭大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-the-chinese-university-of-hong-kong",
+      "name": "香港中文大学",
+      "englishName": "The Chinese University of Hong Kong",
+      "region": "HK",
+      "aliases": [
+        "CUHK",
+        "港中大",
+        "中大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-the-education-university-of-hong-kong",
+      "name": "香港教育大学",
+      "englishName": "The Education University of Hong Kong",
+      "region": "HK",
+      "aliases": [
+        "EdUHK",
+        "教大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-the-hong-kong-polytechnic-university",
+      "name": "香港理工大学",
+      "englishName": "The Hong Kong Polytechnic University",
+      "region": "HK",
+      "aliases": [
+        "PolyU",
+        "港理工",
+        "理大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-the-hong-kong-university-of-science-and-technology",
+      "name": "香港科技大学",
+      "englishName": "The Hong Kong University of Science and Technology",
+      "region": "HK",
+      "aliases": [
+        "HKUST",
+        "港科大",
+        "科大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "hk-the-university-of-hong-kong",
+      "name": "香港大学",
+      "englishName": "The University of Hong Kong",
+      "region": "HK",
+      "aliases": [
+        "HKU",
+        "港大"
+      ],
+      "group": "香港教资会资助大学",
+      "countryCode": "HK",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-national-university-of-singapore",
+      "name": "National University of Singapore",
+      "englishName": "National University of Singapore",
+      "region": "SG",
+      "aliases": [
+        "NUS",
+        "新加坡国立大学",
+        "新国大"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-nanyang-technological-university",
+      "name": "Nanyang Technological University",
+      "englishName": "Nanyang Technological University",
+      "region": "SG",
+      "aliases": [
+        "NTU",
+        "南洋理工大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-singapore-management-university",
+      "name": "Singapore Management University",
+      "englishName": "Singapore Management University",
+      "region": "SG",
+      "aliases": [
+        "SMU",
+        "新加坡管理大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-singapore-university-of-technology-and-design",
+      "name": "Singapore University of Technology and Design",
+      "englishName": "Singapore University of Technology and Design",
+      "region": "SG",
+      "aliases": [
+        "SUTD",
+        "新加坡科技设计大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-singapore-institute-of-technology",
+      "name": "Singapore Institute of Technology",
+      "englishName": "Singapore Institute of Technology",
+      "region": "SG",
+      "aliases": [
+        "SIT",
+        "新加坡理工大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-singapore-university-of-social-sciences",
+      "name": "Singapore University of Social Sciences",
+      "englishName": "Singapore University of Social Sciences",
+      "region": "SG",
+      "aliases": [
+        "SUSS",
+        "新加坡社科大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "sg-university-of-the-arts-singapore",
+      "name": "University of the Arts Singapore",
+      "englishName": "University of the Arts Singapore",
+      "region": "SG",
+      "aliases": [
+        "UAS",
+        "新加坡艺术大学"
+      ],
+      "group": "新加坡政府支持大学",
+      "countryCode": "SG",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-arizona-state-university",
+      "name": "Arizona State University",
+      "englishName": "Arizona State University",
+      "region": "US",
+      "aliases": [
+        "ASU",
+        "亚利桑那州立大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-georgia-institute-of-technology",
+      "name": "Georgia Institute of Technology",
+      "englishName": "Georgia Institute of Technology",
+      "region": "US",
+      "aliases": [
+        "Georgia Tech",
+        "GT",
+        "佐治亚理工学院"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-indiana-university",
+      "name": "Indiana University",
+      "englishName": "Indiana University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-michigan-state-university",
+      "name": "Michigan State University",
+      "englishName": "Michigan State University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-ohio-state-university",
+      "name": "The Ohio State University",
+      "englishName": "The Ohio State University",
+      "region": "US",
+      "aliases": [
+        "Ohio State",
+        "OSU",
+        "俄亥俄州立大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-pennsylvania-state-university",
+      "name": "The Pennsylvania State University",
+      "englishName": "The Pennsylvania State University",
+      "region": "US",
+      "aliases": [
+        "Penn State",
+        "PSU",
+        "宾夕法尼亚州立大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-purdue-university",
+      "name": "Purdue University",
+      "englishName": "Purdue University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-rutgers-university-new-brunswick",
+      "name": "Rutgers University – New Brunswick",
+      "englishName": "Rutgers University – New Brunswick",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-stony-brook-university-the-state-university-of-new-york",
+      "name": "Stony Brook University – The State University of New York",
+      "englishName": "Stony Brook University – The State University of New York",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-texas-a-and-m-university",
+      "name": "Texas A&M University",
+      "englishName": "Texas A&M University",
+      "region": "US",
+      "aliases": [
+        "TAMU",
+        "德州农工大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-arizona",
+      "name": "The University of Arizona",
+      "englishName": "The University of Arizona",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-at-buffalo-the-state-university-of-new-york",
+      "name": "University at Buffalo – The State University of New York",
+      "englishName": "University at Buffalo – The State University of New York",
+      "region": "US",
+      "aliases": [
+        "University at Buffalo",
+        "UB",
+        "SUNY Buffalo"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-berkeley",
+      "name": "University of California, Berkeley",
+      "englishName": "University of California, Berkeley",
+      "region": "US",
+      "aliases": [
+        "UC Berkeley",
+        "UCB",
+        "加州大学伯克利分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-davis",
+      "name": "University of California, Davis",
+      "englishName": "University of California, Davis",
+      "region": "US",
+      "aliases": [
+        "UC Davis",
+        "UCD",
+        "加州大学戴维斯分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-irvine",
+      "name": "University of California, Irvine",
+      "englishName": "University of California, Irvine",
+      "region": "US",
+      "aliases": [
+        "UC Irvine",
+        "UCI",
+        "加州大学欧文分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-los-angeles",
+      "name": "University of California, Los Angeles",
+      "englishName": "University of California, Los Angeles",
+      "region": "US",
+      "aliases": [
+        "UCLA",
+        "加州大学洛杉矶分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-riverside",
+      "name": "University of California, Riverside",
+      "englishName": "University of California, Riverside",
+      "region": "US",
+      "aliases": [
+        "UC Riverside",
+        "UCR"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-san-diego",
+      "name": "University of California, San Diego",
+      "englishName": "University of California, San Diego",
+      "region": "US",
+      "aliases": [
+        "UC San Diego",
+        "UCSD",
+        "加州大学圣迭戈分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-santa-barbara",
+      "name": "University of California, Santa Barbara",
+      "englishName": "University of California, Santa Barbara",
+      "region": "US",
+      "aliases": [
+        "UC Santa Barbara",
+        "UCSB"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-california-santa-cruz",
+      "name": "University of California, Santa Cruz",
+      "englishName": "University of California, Santa Cruz",
+      "region": "US",
+      "aliases": [
+        "UC Santa Cruz",
+        "UCSC"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-colorado-boulder",
+      "name": "University of Colorado, Boulder",
+      "englishName": "University of Colorado, Boulder",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-florida",
+      "name": "University of Florida",
+      "englishName": "University of Florida",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-illinois-urbana-champaign",
+      "name": "University of Illinois Urbana-Champaign",
+      "englishName": "University of Illinois Urbana-Champaign",
+      "region": "US",
+      "aliases": [
+        "UIUC",
+        "伊利诺伊大学厄巴纳-香槟分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-iowa",
+      "name": "The University of Iowa",
+      "englishName": "The University of Iowa",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-kansas",
+      "name": "The University of Kansas",
+      "englishName": "The University of Kansas",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-maryland-at-college-park",
+      "name": "University of Maryland at College Park",
+      "englishName": "University of Maryland at College Park",
+      "region": "US",
+      "aliases": [
+        "UMD",
+        "University of Maryland"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-michigan",
+      "name": "University of Michigan",
+      "englishName": "University of Michigan",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-minnesota-twin-cities",
+      "name": "University of Minnesota, Twin Cities",
+      "englishName": "University of Minnesota, Twin Cities",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-missouri-columbia",
+      "name": "University of Missouri, Columbia",
+      "englishName": "University of Missouri, Columbia",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-north-carolina-at-chapel-hill",
+      "name": "The University of North Carolina at Chapel Hill",
+      "englishName": "The University of North Carolina at Chapel Hill",
+      "region": "US",
+      "aliases": [
+        "UNC",
+        "UNC Chapel Hill",
+        "北卡罗来纳大学教堂山分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-oregon",
+      "name": "University of Oregon",
+      "englishName": "University of Oregon",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-pittsburgh",
+      "name": "University of Pittsburgh",
+      "englishName": "University of Pittsburgh",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-south-florida",
+      "name": "University of South Florida",
+      "englishName": "University of South Florida",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-texas-at-austin",
+      "name": "The University of Texas at Austin",
+      "englishName": "The University of Texas at Austin",
+      "region": "US",
+      "aliases": [
+        "UT Austin",
+        "UTA",
+        "德克萨斯大学奥斯汀分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-utah",
+      "name": "The University of Utah",
+      "englishName": "The University of Utah",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-virginia",
+      "name": "University of Virginia",
+      "englishName": "University of Virginia",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-washington",
+      "name": "University of Washington",
+      "englishName": "University of Washington",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-wisconsin-madison",
+      "name": "The University of Wisconsin – Madison",
+      "englishName": "The University of Wisconsin – Madison",
+      "region": "US",
+      "aliases": [
+        "UW–Madison",
+        "UW Madison",
+        "威斯康星大学麦迪逊分校"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-boston-university",
+      "name": "Boston University",
+      "englishName": "Boston University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-brandeis-university",
+      "name": "Brandeis University",
+      "englishName": "Brandeis University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-brown-university",
+      "name": "Brown University",
+      "englishName": "Brown University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-california-institute-of-technology",
+      "name": "California Institute of Technology",
+      "englishName": "California Institute of Technology",
+      "region": "US",
+      "aliases": [
+        "Caltech",
+        "加州理工学院"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-carnegie-mellon-university",
+      "name": "Carnegie Mellon University",
+      "englishName": "Carnegie Mellon University",
+      "region": "US",
+      "aliases": [
+        "CMU",
+        "卡内基梅隆大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-case-western-reserve-university",
+      "name": "Case Western Reserve University",
+      "englishName": "Case Western Reserve University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-columbia-university",
+      "name": "Columbia University",
+      "englishName": "Columbia University",
+      "region": "US",
+      "aliases": [
+        "哥伦比亚大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-cornell-university",
+      "name": "Cornell University",
+      "englishName": "Cornell University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-dartmouth",
+      "name": "Dartmouth",
+      "englishName": "Dartmouth",
+      "region": "US",
+      "aliases": [
+        "Dartmouth College",
+        "达特茅斯学院"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-duke-university",
+      "name": "Duke University",
+      "englishName": "Duke University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-emory-university",
+      "name": "Emory University",
+      "englishName": "Emory University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-george-washington-university",
+      "name": "The George Washington University",
+      "englishName": "The George Washington University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-harvard-university",
+      "name": "Harvard University",
+      "englishName": "Harvard University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-johns-hopkins-university",
+      "name": "The Johns Hopkins University",
+      "englishName": "The Johns Hopkins University",
+      "region": "US",
+      "aliases": [
+        "Johns Hopkins University",
+        "JHU",
+        "约翰斯·霍普金斯大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-massachusetts-institute-of-technology",
+      "name": "Massachusetts Institute of Technology",
+      "englishName": "Massachusetts Institute of Technology",
+      "region": "US",
+      "aliases": [
+        "MIT",
+        "麻省理工学院"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-new-york-university",
+      "name": "New York University",
+      "englishName": "New York University",
+      "region": "US",
+      "aliases": [
+        "NYU",
+        "纽约大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-northwestern-university",
+      "name": "Northwestern University",
+      "englishName": "Northwestern University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-princeton-university",
+      "name": "Princeton University",
+      "englishName": "Princeton University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-rice-university",
+      "name": "Rice University",
+      "englishName": "Rice University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-stanford-university",
+      "name": "Stanford University",
+      "englishName": "Stanford University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-tufts-university",
+      "name": "Tufts University",
+      "englishName": "Tufts University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-tulane-university",
+      "name": "Tulane University",
+      "englishName": "Tulane University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-the-university-of-chicago",
+      "name": "The University of Chicago",
+      "englishName": "The University of Chicago",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-miami",
+      "name": "University of Miami",
+      "englishName": "University of Miami",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-notre-dame",
+      "name": "University of Notre Dame",
+      "englishName": "University of Notre Dame",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-pennsylvania",
+      "name": "University of Pennsylvania",
+      "englishName": "University of Pennsylvania",
+      "region": "US",
+      "aliases": [
+        "UPenn",
+        "Penn",
+        "宾夕法尼亚大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-rochester",
+      "name": "University of Rochester",
+      "englishName": "University of Rochester",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-university-of-southern-california",
+      "name": "University of Southern California",
+      "englishName": "University of Southern California",
+      "region": "US",
+      "aliases": [
+        "USC",
+        "南加州大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-vanderbilt-university",
+      "name": "Vanderbilt University",
+      "englishName": "Vanderbilt University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-washington-university-in-st-louis",
+      "name": "Washington University in St. Louis",
+      "englishName": "Washington University in St. Louis",
+      "region": "US",
+      "aliases": [
+        "WashU",
+        "圣路易斯华盛顿大学"
+      ],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "us-yale-university",
+      "name": "Yale University",
+      "englishName": "Yale University",
+      "region": "US",
+      "aliases": [],
+      "group": "美国AAU成员校",
+      "countryCode": "US",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-athabasca-university",
+      "name": "Athabasca University",
+      "englishName": "Athabasca University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-concordia-university-of-edmonton",
+      "name": "Concordia University of Edmonton",
+      "englishName": "Concordia University of Edmonton",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-king-s-university-the",
+      "name": "King’s University (The)",
+      "englishName": "King’s University (The)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-macewan-university",
+      "name": "MacEwan University",
+      "englishName": "MacEwan University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-mount-royal-university",
+      "name": "Mount Royal University",
+      "englishName": "Mount Royal University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-mary-s-university",
+      "name": "St. Mary’s University",
+      "englishName": "St. Mary’s University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-alberta",
+      "name": "University of Alberta",
+      "englishName": "University of Alberta",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-calgary",
+      "name": "University of Calgary",
+      "englishName": "University of Calgary",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-lethbridge",
+      "name": "University of Lethbridge",
+      "englishName": "University of Lethbridge",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-capilano-university",
+      "name": "Capilano University",
+      "englishName": "Capilano University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-emily-carr-university-of-art-design",
+      "name": "Emily Carr University of Art + Design",
+      "englishName": "Emily Carr University of Art + Design",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-kwantlen-polytechnic-university",
+      "name": "Kwantlen Polytechnic University",
+      "englishName": "Kwantlen Polytechnic University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-royal-roads-university",
+      "name": "Royal Roads University",
+      "englishName": "Royal Roads University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-simon-fraser-university",
+      "name": "Simon Fraser University",
+      "englishName": "Simon Fraser University",
+      "region": "CA",
+      "aliases": [
+        "SFU",
+        "西蒙菲莎大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-thompson-rivers-university",
+      "name": "Thompson Rivers University",
+      "englishName": "Thompson Rivers University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-trinity-western-university",
+      "name": "Trinity Western University",
+      "englishName": "Trinity Western University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-british-columbia-the",
+      "name": "University of British Columbia (The)",
+      "englishName": "University of British Columbia (The)",
+      "region": "CA",
+      "aliases": [
+        "University of British Columbia",
+        "UBC",
+        "英属哥伦比亚大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-northern-british-columbia",
+      "name": "University of Northern British Columbia",
+      "englishName": "University of Northern British Columbia",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-the-fraser-valley",
+      "name": "University of the Fraser Valley",
+      "englishName": "University of the Fraser Valley",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-victoria",
+      "name": "University of Victoria",
+      "englishName": "University of Victoria",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-vancouver-island-university",
+      "name": "Vancouver Island University",
+      "englishName": "Vancouver Island University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-brandon-university",
+      "name": "Brandon University",
+      "englishName": "Brandon University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-canadian-mennonite-university",
+      "name": "Canadian Mennonite University",
+      "englishName": "Canadian Mennonite University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-paul-s-college",
+      "name": "St. Paul’s College",
+      "englishName": "St. Paul’s College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-de-saint-boniface",
+      "name": "Université de Saint-Boniface",
+      "englishName": "Université de Saint-Boniface",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-manitoba",
+      "name": "University of Manitoba",
+      "englishName": "University of Manitoba",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-winnipeg-the",
+      "name": "University of Winnipeg (The)",
+      "englishName": "University of Winnipeg (The)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-mount-allison-university",
+      "name": "Mount Allison University",
+      "englishName": "Mount Allison University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-thomas-university",
+      "name": "St. Thomas University",
+      "englishName": "St. Thomas University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-de-moncton",
+      "name": "Université de Moncton",
+      "englishName": "Université de Moncton",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-new-brunswick",
+      "name": "University of New Brunswick",
+      "englishName": "University of New Brunswick",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-memorial-university-of-newfoundland-and-labrador",
+      "name": "Memorial University of Newfoundland and Labrador",
+      "englishName": "Memorial University of Newfoundland and Labrador",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-acadia-university",
+      "name": "Acadia University",
+      "englishName": "Acadia University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-cape-breton-university",
+      "name": "Cape Breton University",
+      "englishName": "Cape Breton University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-dalhousie-university",
+      "name": "Dalhousie University",
+      "englishName": "Dalhousie University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-mount-saint-vincent-university",
+      "name": "Mount Saint Vincent University",
+      "englishName": "Mount Saint Vincent University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-nscad-university",
+      "name": "NSCAD University",
+      "englishName": "NSCAD University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-saint-mary-s-university",
+      "name": "Saint Mary’s University",
+      "englishName": "Saint Mary’s University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-francis-xavier-university",
+      "name": "St. Francis Xavier University",
+      "englishName": "St. Francis Xavier University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-sainte-anne",
+      "name": "Université Sainte-Anne",
+      "englishName": "Université Sainte-Anne",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-king-s-college",
+      "name": "University of King’s College",
+      "englishName": "University of King’s College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-algoma-university",
+      "name": "Algoma University",
+      "englishName": "Algoma University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-brock-university",
+      "name": "Brock University",
+      "englishName": "Brock University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-carleton-university",
+      "name": "Carleton University",
+      "englishName": "Carleton University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-huron-university-college",
+      "name": "Huron University College",
+      "englishName": "Huron University College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-king-s-university-college-at-western-university",
+      "name": "King’s University College at Western University",
+      "englishName": "King’s University College at Western University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-lakehead-university",
+      "name": "Lakehead University",
+      "englishName": "Lakehead University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-laurentian-university",
+      "name": "Laurentian University",
+      "englishName": "Laurentian University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-mcmaster-university",
+      "name": "McMaster University",
+      "englishName": "McMaster University",
+      "region": "CA",
+      "aliases": [
+        "McMaster",
+        "麦克马斯特大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-nipissing-university",
+      "name": "Nipissing University",
+      "englishName": "Nipissing University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-ocad-university",
+      "name": "OCAD University",
+      "englishName": "OCAD University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-ontario-tech-university",
+      "name": "Ontario Tech University",
+      "englishName": "Ontario Tech University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-queen-s-university",
+      "name": "Queen’s University",
+      "englishName": "Queen’s University",
+      "region": "CA",
+      "aliases": [
+        "Queen's University",
+        "Queens University",
+        "女王大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-redeemer-university",
+      "name": "Redeemer University",
+      "englishName": "Redeemer University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-royal-military-college-of-canada",
+      "name": "Royal Military College of Canada",
+      "englishName": "Royal Military College of Canada",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-jerome-s-university",
+      "name": "St. Jerome’s University",
+      "englishName": "St. Jerome’s University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-toronto-metropolitan-university",
+      "name": "Toronto Metropolitan University",
+      "englishName": "Toronto Metropolitan University",
+      "region": "CA",
+      "aliases": [
+        "TMU",
+        "多伦多都会大学",
+        "Ryerson University"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-trent-university",
+      "name": "Trent University",
+      "englishName": "Trent University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-guelph",
+      "name": "University of Guelph",
+      "englishName": "University of Guelph",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-ottawa",
+      "name": "University of Ottawa",
+      "englishName": "University of Ottawa",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-st-michael-s-college",
+      "name": "University of St. Michael’s College",
+      "englishName": "University of St. Michael’s College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-sudbury",
+      "name": "University of Sudbury",
+      "englishName": "University of Sudbury",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-toronto",
+      "name": "University of Toronto",
+      "englishName": "University of Toronto",
+      "region": "CA",
+      "aliases": [
+        "U of T",
+        "UofT",
+        "多伦多大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-trinity-college",
+      "name": "University of Trinity College",
+      "englishName": "University of Trinity College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-waterloo",
+      "name": "University of Waterloo",
+      "englishName": "University of Waterloo",
+      "region": "CA",
+      "aliases": [
+        "Waterloo",
+        "滑铁卢大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-windsor",
+      "name": "University of Windsor",
+      "englishName": "University of Windsor",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-victoria-university",
+      "name": "Victoria University",
+      "englishName": "Victoria University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-western-university",
+      "name": "Western University",
+      "englishName": "Western University",
+      "region": "CA",
+      "aliases": [
+        "University of Western Ontario",
+        "UWO",
+        "西安大略大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-wilfrid-laurier-university",
+      "name": "Wilfrid Laurier University",
+      "englishName": "Wilfrid Laurier University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-york-university",
+      "name": "York University",
+      "englishName": "York University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-prince-edward-island",
+      "name": "University of Prince Edward Island",
+      "englishName": "University of Prince Edward Island",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-bishop-s-university",
+      "name": "Bishop’s University",
+      "englishName": "Bishop’s University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-concordia-university",
+      "name": "Concordia University",
+      "englishName": "Concordia University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-ecole-de-technologie-superieure",
+      "name": "École de technologie supérieure",
+      "englishName": "École de technologie supérieure",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-ecole-nationale-d-administration-publique",
+      "name": "École nationale d’administration publique",
+      "englishName": "École nationale d’administration publique",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-hec-montreal",
+      "name": "HEC Montréal",
+      "englishName": "HEC Montréal",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-institut-national-de-la-recherche-scientifique",
+      "name": "Institut national de la recherche scientifique",
+      "englishName": "Institut national de la recherche scientifique",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-mcgill-university",
+      "name": "McGill University",
+      "englishName": "McGill University",
+      "region": "CA",
+      "aliases": [
+        "McGill",
+        "麦吉尔大学"
+      ],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-polytechnique-montreal",
+      "name": "Polytechnique Montréal",
+      "englishName": "Polytechnique Montréal",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-de-montreal",
+      "name": "Université de Montréal",
+      "englishName": "Université de Montréal",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-de-sherbrooke",
+      "name": "Université de Sherbrooke",
+      "englishName": "Université de Sherbrooke",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec",
+      "name": "Université du Québec",
+      "englishName": "Université du Québec",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-a-chicoutimi-uqac",
+      "name": "Université du Québec à Chicoutimi (UQAC)",
+      "englishName": "Université du Québec à Chicoutimi (UQAC)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-a-montreal-uqam",
+      "name": "Université du Québec à Montréal (UQAM)",
+      "englishName": "Université du Québec à Montréal (UQAM)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-a-rimouski-uqar",
+      "name": "Université du Québec à Rimouski (UQAR)",
+      "englishName": "Université du Québec à Rimouski (UQAR)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-a-trois-rivieres-uqtr",
+      "name": "Université du Québec à Trois-Rivières (UQTR)",
+      "englishName": "Université du Québec à Trois-Rivières (UQTR)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-en-abitibi-temiscamingue-uqat",
+      "name": "Université du Québec en Abitibi-Témiscamingue (UQAT)",
+      "englishName": "Université du Québec en Abitibi-Témiscamingue (UQAT)",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-du-quebec-en-outaouais",
+      "name": "Université du Québec en Outaouais",
+      "englishName": "Université du Québec en Outaouais",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-laval",
+      "name": "Université Laval",
+      "englishName": "Université Laval",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-universite-teluq",
+      "name": "Université TÉLUQ",
+      "englishName": "Université TÉLUQ",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-campion-college",
+      "name": "Campion College",
+      "englishName": "Campion College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-first-nations-university-of-canada",
+      "name": "First Nations University of Canada",
+      "englishName": "First Nations University of Canada",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-luther-college",
+      "name": "Luther College",
+      "englishName": "Luther College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-st-thomas-more-college",
+      "name": "St. Thomas More College",
+      "englishName": "St. Thomas More College",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-regina",
+      "name": "University of Regina",
+      "englishName": "University of Regina",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-university-of-saskatchewan",
+      "name": "University of Saskatchewan",
+      "englishName": "University of Saskatchewan",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "ca-yukon-university",
+      "name": "Yukon University",
+      "englishName": "Yukon University",
+      "region": "CA",
+      "aliases": [],
+      "group": "Universities Canada成员校",
+      "countryCode": "CA",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hokkaido-university",
+      "name": "北海道大学",
+      "englishName": "Hokkaido University",
+      "region": "JP",
+      "aliases": [
+        "北大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hokkaido-university-of-education",
+      "name": "北海道教育大学",
+      "englishName": "Hokkaido University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-muroran-institute-of-technology",
+      "name": "室兰工业大学",
+      "englishName": "Muroran Institute of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-otaru-university-of-commerce",
+      "name": "小樽商科大学",
+      "englishName": "Otaru University of Commerce",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-obihiro-university-of-agriculture-and-veterinary-medicine",
+      "name": "带广畜产大学",
+      "englishName": "Obihiro University of Agriculture and Veterinary Medicine",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kitami-institute-of-technology",
+      "name": "北见工业大学",
+      "englishName": "Kitami Institute of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-asahikawa-medical-university",
+      "name": "旭川医科大学",
+      "englishName": "Asahikawa Medical University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hirosaki-university",
+      "name": "弘前大学",
+      "englishName": "Hirosaki University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-iwate-university",
+      "name": "岩手大学",
+      "englishName": "Iwate University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tohoku-university",
+      "name": "东北大学",
+      "englishName": "Tohoku University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-miyagi-university-of-education",
+      "name": "宫城教育大学",
+      "englishName": "Miyagi University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-akita-university",
+      "name": "秋田大学",
+      "englishName": "Akita University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-yamagata-university",
+      "name": "山形大学",
+      "englishName": "Yamagata University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-fukushima-university",
+      "name": "福岛大学",
+      "englishName": "Fukushima University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-the-university-of-tokyo",
+      "name": "东京大学",
+      "englishName": "The University of Tokyo",
+      "region": "JP",
+      "aliases": [
+        "东大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokyo-university-of-foreign-studies",
+      "name": "东京外国语大学",
+      "englishName": "Tokyo University of Foreign Studies",
+      "region": "JP",
+      "aliases": [
+        "TUFS"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-institute-of-science-tokyo",
+      "name": "东京科学大学",
+      "englishName": "Institute of Science Tokyo",
+      "region": "JP",
+      "aliases": [
+        "Science Tokyo",
+        "东京工业大学",
+        "东京医科齿科大学"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokyo-gakugei-university",
+      "name": "东京学艺大学",
+      "englishName": "Tokyo Gakugei University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokyo-university-of-agriculture-and-technology",
+      "name": "东京农工大学",
+      "englishName": "Tokyo University of Agriculture and Technology",
+      "region": "JP",
+      "aliases": [
+        "TUAT"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokyo-university-of-the-arts",
+      "name": "东京艺术大学",
+      "englishName": "Tokyo University of the Arts",
+      "region": "JP",
+      "aliases": [
+        "东京艺大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokyo-university-of-marine-science-and-technology",
+      "name": "东京海洋大学",
+      "englishName": "Tokyo University of Marine Science and Technology",
+      "region": "JP",
+      "aliases": [
+        "TUMSAT"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-ochanomizu-university",
+      "name": "御茶水女子大学",
+      "englishName": "Ochanomizu University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-the-university-of-electro-communications",
+      "name": "电气通信大学",
+      "englishName": "The University of Electro-Communications",
+      "region": "JP",
+      "aliases": [
+        "UEC"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hitotsubashi-university",
+      "name": "一桥大学",
+      "englishName": "Hitotsubashi University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-national-graduate-institute-for-policy-studies",
+      "name": "政策研究大学院大学",
+      "englishName": "National Graduate Institute for Policy Studies",
+      "region": "JP",
+      "aliases": [
+        "GRIPS"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-ibaraki-university",
+      "name": "茨城大学",
+      "englishName": "Ibaraki University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-tsukuba",
+      "name": "筑波大学",
+      "englishName": "University of Tsukuba",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tsukuba-university-of-technology",
+      "name": "筑波技术大学",
+      "englishName": "Tsukuba University of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-utsunomiya-university",
+      "name": "宇都宫大学",
+      "englishName": "Utsunomiya University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-gunma-university",
+      "name": "群马大学",
+      "englishName": "Gunma University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-saitama-university",
+      "name": "埼玉大学",
+      "englishName": "Saitama University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-chiba-university",
+      "name": "千叶大学",
+      "englishName": "Chiba University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-yokohama-national-university",
+      "name": "横滨国立大学",
+      "englishName": "Yokohama National University",
+      "region": "JP",
+      "aliases": [
+        "YNU"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-the-graduate-university-for-advanced-studies-sokendai",
+      "name": "综合研究大学院大学",
+      "englishName": "The Graduate University for Advanced Studies, SOKENDAI",
+      "region": "JP",
+      "aliases": [
+        "SOKENDAI"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-niigata-university",
+      "name": "新潟大学",
+      "englishName": "Niigata University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nagaoka-university-of-technology",
+      "name": "长冈技术科学大学",
+      "englishName": "Nagaoka University of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-joetsu-university-of-education",
+      "name": "上越教育大学",
+      "englishName": "Joetsu University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-yamanashi",
+      "name": "山梨大学",
+      "englishName": "University of Yamanashi",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-shinshu-university",
+      "name": "信州大学",
+      "englishName": "Shinshu University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-toyama",
+      "name": "富山大学",
+      "englishName": "University of Toyama",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kanazawa-university",
+      "name": "金泽大学",
+      "englishName": "Kanazawa University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-japan-advanced-institute-of-science-and-technology",
+      "name": "北陆先端科学技术大学院大学",
+      "englishName": "Japan Advanced Institute of Science and Technology",
+      "region": "JP",
+      "aliases": [
+        "JAIST"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-fukui",
+      "name": "福井大学",
+      "englishName": "University of Fukui",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-shizuoka-university",
+      "name": "静冈大学",
+      "englishName": "Shizuoka University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hamamatsu-university-school-of-medicine",
+      "name": "滨松医科大学",
+      "englishName": "Hamamatsu University School of Medicine",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-gifu-university",
+      "name": "岐阜大学",
+      "englishName": "Gifu University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nagoya-university",
+      "name": "名古屋大学",
+      "englishName": "Nagoya University",
+      "region": "JP",
+      "aliases": [
+        "名大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-aichi-university-of-education",
+      "name": "爱知教育大学",
+      "englishName": "Aichi University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nagoya-institute-of-technology",
+      "name": "名古屋工业大学",
+      "englishName": "Nagoya Institute of Technology",
+      "region": "JP",
+      "aliases": [
+        "名工大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-toyohashi-university-of-technology",
+      "name": "丰桥技术科学大学",
+      "englishName": "Toyohashi University of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-mie-university",
+      "name": "三重大学",
+      "englishName": "Mie University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-shiga-university",
+      "name": "滋贺大学",
+      "englishName": "Shiga University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-shiga-university-of-medical-science",
+      "name": "滋贺医科大学",
+      "englishName": "Shiga University of Medical Science",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kyoto-university",
+      "name": "京都大学",
+      "englishName": "Kyoto University",
+      "region": "JP",
+      "aliases": [
+        "京大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kyoto-university-of-education",
+      "name": "京都教育大学",
+      "englishName": "Kyoto University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kyoto-institute-of-technology",
+      "name": "京都工艺纤维大学",
+      "englishName": "Kyoto Institute of Technology",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-the-university-of-osaka",
+      "name": "大阪大学",
+      "englishName": "The University of Osaka",
+      "region": "JP",
+      "aliases": [
+        "Osaka University",
+        "阪大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-osaka-kyoiku-university",
+      "name": "大阪教育大学",
+      "englishName": "Osaka Kyoiku University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hyogo-university-of-teacher-education",
+      "name": "兵库教育大学",
+      "englishName": "Hyogo University of Teacher Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kobe-university",
+      "name": "神户大学",
+      "englishName": "Kobe University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nara-university-of-education",
+      "name": "奈良教育大学",
+      "englishName": "Nara University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nara-women-s-university",
+      "name": "奈良女子大学",
+      "englishName": "Nara Women’s University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nara-institute-of-science-and-technology",
+      "name": "奈良先端科学技术大学院大学",
+      "englishName": "Nara Institute of Science and Technology",
+      "region": "JP",
+      "aliases": [
+        "NAIST"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-wakayama-university",
+      "name": "和歌山大学",
+      "englishName": "Wakayama University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tottori-university",
+      "name": "鸟取大学",
+      "englishName": "Tottori University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-shimane-university",
+      "name": "岛根大学",
+      "englishName": "Shimane University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-okayama-university",
+      "name": "冈山大学",
+      "englishName": "Okayama University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-hiroshima-university",
+      "name": "广岛大学",
+      "englishName": "Hiroshima University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-yamaguchi-university",
+      "name": "山口大学",
+      "englishName": "Yamaguchi University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-tokushima-university",
+      "name": "德岛大学",
+      "englishName": "Tokushima University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-naruto-university-of-education",
+      "name": "鸣门教育大学",
+      "englishName": "Naruto University of Education",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kagawa-university",
+      "name": "香川大学",
+      "englishName": "Kagawa University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-ehime-university",
+      "name": "爱媛大学",
+      "englishName": "Ehime University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kochi-university",
+      "name": "高知大学",
+      "englishName": "Kochi University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-teacher-education-fukuoka",
+      "name": "福冈教育大学",
+      "englishName": "University of Teacher Education Fukuoka",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kyushu-university",
+      "name": "九州大学",
+      "englishName": "Kyushu University",
+      "region": "JP",
+      "aliases": [
+        "九大"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kyushu-institute-of-technology",
+      "name": "九州工业大学",
+      "englishName": "Kyushu Institute of Technology",
+      "region": "JP",
+      "aliases": [
+        "Kyutech"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-saga-university",
+      "name": "佐贺大学",
+      "englishName": "Saga University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-nagasaki-university",
+      "name": "长崎大学",
+      "englishName": "Nagasaki University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kumamoto-university",
+      "name": "熊本大学",
+      "englishName": "Kumamoto University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-oita-university",
+      "name": "大分大学",
+      "englishName": "Oita University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-miyazaki",
+      "name": "宫崎大学",
+      "englishName": "University of Miyazaki",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-kagoshima-university",
+      "name": "鹿儿岛大学",
+      "englishName": "Kagoshima University",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-national-institute-of-fitness-and-sports-in-kanoya",
+      "name": "鹿屋体育大学",
+      "englishName": "National Institute of Fitness and Sports in Kanoya",
+      "region": "JP",
+      "aliases": [
+        "NIFS"
+      ],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "jp-university-of-the-ryukyus",
+      "name": "琉球大学",
+      "englishName": "University of the Ryukyus",
+      "region": "JP",
+      "aliases": [],
+      "group": "日本国立大学协会成员校",
+      "countryCode": "JP",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-australian-national-university",
+      "name": "The Australian National University",
+      "englishName": "The Australian National University",
+      "region": "AU",
+      "aliases": [
+        "Australian National University",
+        "ANU",
+        "澳大利亚国立大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-canberra",
+      "name": "University of Canberra",
+      "englishName": "University of Canberra",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-australian-catholic-university",
+      "name": "Australian Catholic University",
+      "englishName": "Australian Catholic University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-notre-dame-australia",
+      "name": "The University of Notre Dame Australia",
+      "englishName": "The University of Notre Dame Australia",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-charles-sturt-university",
+      "name": "Charles Sturt University",
+      "englishName": "Charles Sturt University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-macquarie-university",
+      "name": "Macquarie University",
+      "englishName": "Macquarie University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-southern-cross-university",
+      "name": "Southern Cross University",
+      "englishName": "Southern Cross University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-new-england",
+      "name": "The University of New England",
+      "englishName": "The University of New England",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-newcastle",
+      "name": "The University of Newcastle",
+      "englishName": "The University of Newcastle",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-sydney",
+      "name": "The University of Sydney",
+      "englishName": "The University of Sydney",
+      "region": "AU",
+      "aliases": [
+        "University of Sydney",
+        "USYD",
+        "悉尼大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-technology-sydney",
+      "name": "University of Technology Sydney",
+      "englishName": "University of Technology Sydney",
+      "region": "AU",
+      "aliases": [
+        "UTS",
+        "悉尼科技大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-wollongong",
+      "name": "University of Wollongong",
+      "englishName": "University of Wollongong",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-unsw",
+      "name": "UNSW",
+      "englishName": "UNSW",
+      "region": "AU",
+      "aliases": [
+        "University of New South Wales",
+        "新南威尔士大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-western-sydney-university",
+      "name": "Western Sydney University",
+      "englishName": "Western Sydney University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-charles-darwin-university",
+      "name": "Charles Darwin University",
+      "englishName": "Charles Darwin University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-bond-university",
+      "name": "Bond University",
+      "englishName": "Bond University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-cquniversity-australia",
+      "name": "CQUniversity Australia",
+      "englishName": "CQUniversity Australia",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-griffith-university",
+      "name": "Griffith University",
+      "englishName": "Griffith University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-james-cook-university",
+      "name": "James Cook University",
+      "englishName": "James Cook University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-queensland-university-of-technology",
+      "name": "Queensland University of Technology",
+      "englishName": "Queensland University of Technology",
+      "region": "AU",
+      "aliases": [
+        "QUT",
+        "昆士兰科技大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-queensland",
+      "name": "The University of Queensland",
+      "englishName": "The University of Queensland",
+      "region": "AU",
+      "aliases": [
+        "University of Queensland",
+        "UQ",
+        "昆士兰大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-southern-queensland",
+      "name": "University of Southern Queensland",
+      "englishName": "University of Southern Queensland",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-the-sunshine-coast",
+      "name": "University of the Sunshine Coast",
+      "englishName": "University of the Sunshine Coast",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-adelaide-university",
+      "name": "Adelaide University",
+      "englishName": "Adelaide University",
+      "region": "AU",
+      "aliases": [
+        "University of Adelaide",
+        "University of South Australia",
+        "阿德莱德大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-flinders-university",
+      "name": "Flinders University",
+      "englishName": "Flinders University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-university-of-tasmania",
+      "name": "University of Tasmania",
+      "englishName": "University of Tasmania",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-deakin-university",
+      "name": "Deakin University",
+      "englishName": "Deakin University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-federation-university-australia",
+      "name": "Federation University Australia",
+      "englishName": "Federation University Australia",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-la-trobe-university",
+      "name": "La Trobe University",
+      "englishName": "La Trobe University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-monash-university",
+      "name": "Monash University",
+      "englishName": "Monash University",
+      "region": "AU",
+      "aliases": [
+        "莫纳什大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-rmit-university",
+      "name": "RMIT University",
+      "englishName": "RMIT University",
+      "region": "AU",
+      "aliases": [
+        "RMIT",
+        "皇家墨尔本理工大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-swinburne-university-of-technology",
+      "name": "Swinburne University of Technology",
+      "englishName": "Swinburne University of Technology",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-melbourne",
+      "name": "The University of Melbourne",
+      "englishName": "The University of Melbourne",
+      "region": "AU",
+      "aliases": [
+        "University of Melbourne",
+        "UniMelb",
+        "墨尔本大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-victoria-university",
+      "name": "Victoria University",
+      "englishName": "Victoria University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-curtin-university",
+      "name": "Curtin University",
+      "englishName": "Curtin University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-edith-cowan-university",
+      "name": "Edith Cowan University",
+      "englishName": "Edith Cowan University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-murdoch-university",
+      "name": "Murdoch University",
+      "englishName": "Murdoch University",
+      "region": "AU",
+      "aliases": [],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
+    },
+    {
+      "id": "au-the-university-of-western-australia",
+      "name": "The University of Western Australia",
+      "englishName": "The University of Western Australia",
+      "region": "AU",
+      "aliases": [
+        "University of Western Australia",
+        "UWA",
+        "西澳大学"
+      ],
+      "group": "Universities Australia成员校",
+      "countryCode": "AU",
+      "mapRegionId": null,
+      "geoStatus": "pending"
     }
   ],
   "countries": {
     "CN": "中国",
+    "HK": "中国香港",
+    "SG": "新加坡",
+    "US": "美国",
+    "CA": "加拿大",
+    "JP": "日本",
+    "AU": "澳大利亚",
     "GB": "英国"
   }
 }
